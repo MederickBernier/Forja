@@ -1,0 +1,19 @@
+.root {
+    -forja-bg-page:    -forja-zinc-900;
+    -forja-bg-surface: -forja-zinc-800;
+    -forja-bg-card:    -forja-zinc-800;
+
+    -forja-text-primary:   -forja-zinc-50;
+    -forja-text-secondary: -forja-zinc-400;
+    -forja-text-muted:     -forja-zinc-600;
+    -forja-text-disabled:  -forja-zinc-700;
+
+    -forja-border-default: -forja-zinc-700;
+    -forja-border-strong:  -forja-zinc-600;
+
+    -forja-input-bg:          -forja-zinc-800;
+    -forja-input-bg-hover:    -forja-zinc-700;
+    -forja-input-bg-disabled: -forja-zinc-800;
+
+    -forja-overlay-bg: rgba(255, 255, 255, 0.04);
+}

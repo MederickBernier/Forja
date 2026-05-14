@@ -1,0 +1,52 @@
+.root {
+    -forja-accent:        #4F46E5;
+    -forja-accent-hover:  #4338CA;
+    -forja-accent-active: #3730A3;
+    -forja-accent-focus:  #6366F1;
+    -forja-accent-tint:   #EEF2FF;
+
+    -forja-zinc-50:  #fafafa;
+    -forja-zinc-100: #f4f4f5;
+    -forja-zinc-200: #e4e4e7;
+    -forja-zinc-400: #a1a1aa;
+    -forja-zinc-500: #71717a;
+    -forja-zinc-600: #52525b;
+    -forja-zinc-700: #3f3f46;
+    -forja-zinc-800: #27272a;
+    -forja-zinc-900: #18181b;
+
+    -forja-success:      #22C55E;
+    -forja-warning:      #F59E0B;
+    -forja-danger:       #EF4444;
+    -forja-info:         #3B82F6;
+
+    -forja-success-tint: #ECFDF5;
+    -forja-warning-tint: #FFFBEB;
+    -forja-danger-tint:  #FEF2F2;
+    -forja-info-tint:    #EFF6FF;
+
+    -forja-radius-xs: 2px;
+    -forja-radius-sm: 4px;
+    -forja-radius-md: 6px;
+    -forja-radius-lg: 8px;
+    -forja-radius-xl: 12px;
+
+    -forja-spacing-xs:  4px;
+    -forja-spacing-sm:  8px;
+    -forja-spacing-md:  12px;
+    -forja-spacing-lg:  16px;
+    -forja-spacing-xl:  24px;
+    -forja-spacing-2xl: 32px;
+    -forja-spacing-3xl: 48px;
+
+    -forja-font-size-display:    24px;
+    -forja-font-size-heading:    18px;
+    -forja-font-size-subheading: 14px;
+    -forja-font-size-body:       13px;
+    -forja-font-size-small:      11px;
+    -forja-font-size-mono:       12px;
+
+    -forja-component-height-compact:     28px;
+    -forja-component-height-default:     36px;
+    -forja-component-height-comfortable: 44px;
+}

@@ -50,3 +50,65 @@
     -forja-component-height-default:     36px;
     -forja-component-height-comfortable: 44px;
 }
+
+.forja-button {
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 16px;
+    -fx-min-height: 36px;
+    -fx-max-height: 36px;
+    -fx-cursor: hand;
+    -fx-border-width: 0.5px;
+}
+
+.forja-button:primary {
+    -fx-background-color: -forja-accent;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.forja-button:primary:hover {
+    -fx-background-color: -forja-accent-hover;
+}
+
+.forja-button:primary:pressed {
+    -fx-background-color: -forja-accent-active;
+}
+
+.forja-button:secondary {
+    -fx-background-color: -forja-zinc-100;
+    -fx-text-fill: -forja-zinc-900;
+    -fx-border-color: -forja-zinc-200;
+}
+
+.forja-button:secondary:hover {
+    -fx-background-color: -forja-zinc-200;
+}
+
+.forja-button:ghost {
+    -fx-background-color: transparent;
+    -fx-text-fill: -forja-zinc-900;
+    -fx-border-color: -forja-zinc-200;
+}
+
+.forja-button:ghost:hover {
+    -fx-background-color: -forja-zinc-100;
+}
+
+.forja-button:danger {
+    -fx-background-color: -forja-danger;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.forja-button:danger:hover {
+    -fx-background-color: derive(-forja-danger, -15%);
+}
+
+.forja-button:disabled,
+.forja-button:loading {
+    -fx-opacity: 0.4;
+    -fx-cursor: default;
+}

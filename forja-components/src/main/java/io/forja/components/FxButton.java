@@ -1,5 +1,6 @@
 package io.forja.components;
 
+import io.forja.builder.FxComponentBuilder;
 import io.forja.skin.FxButtonSkin;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ObjectProperty;
@@ -9,6 +10,8 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.control.Skin;
+
+import static io.forja.Forja.applyBase;
 
 /**
  * A styled button component build on top of {@link Button}.
@@ -165,46 +168,51 @@ public class FxButton extends Button{
     public static Builder builder(){return new Builder();}
 
     /**
-     * Fluent builder for constructing an {@link FxButton}
+     * Fluent builder for constructing an {@link FxButton}.
      *
-     * <p>All builder methods return {code this} to support chaining.
-     * Call {@link #build()} to produce the configured {@link FxButton}.</p>
+     * <p>All builder methods return {@code this} to support chaining.
+     * Call {@link #build()} to produce the configured {@link FxButton}.
      *
      * <p>Defaults:
      * <ul>
-     *     <li>text - empty string</li>
-     *     <li>variant - {@link ButtonVariant#PRIMARY}</li>
-     *     <li>loading - {@code false}</li>
-     *     <li>onAction - none</li>
+     *   <li>text — empty string</li>
+     *   <li>variant — {@link ButtonVariant#PRIMARY}</li>
+     *   <li>loading — {@code false}</li>
+     *   <li>onAction — none</li>
      * </ul>
-     * </p>
+     *
+     * <p>Inherited from {@link io.forja.builder.FxComponentBuilder}:
+     * <ul>
+     *   <li>id, disabled, visible, styleClass, style, tooltip, userData</li>
+     * </ul>
      */
-    public static class Builder{
+    public static class Builder extends FxComponentBuilder<FxButton, Builder> {
+
         private String text = "";
         private ButtonVariant variant = ButtonVariant.PRIMARY;
         private boolean loading = false;
         private EventHandler<ActionEvent> onAction;
 
         /**
-         * sets the label text displayed on the button.
+         * Sets the label text displayed on the button.
          *
          * @param text the button label, must not be {@code null}
          * @return this builder
          */
-        public Builder text(String text){
+        public Builder text(String text) {
             this.text = text;
             return this;
         }
 
         /**
-         * Sets the visual variant of the button
+         * Sets the visual variant of the button.
          *
-         * <p>Defaults to {@link ButtonVariant#PRIMARY} if not specified.</p>
+         * <p>Defaults to {@link ButtonVariant#PRIMARY} if not specified.
          *
          * @param variant the desired variant, must not be {@code null}
          * @return this builder
          */
-        public Builder variant(ButtonVariant variant){
+        public Builder variant(ButtonVariant variant) {
             this.variant = variant;
             return this;
         }
@@ -212,39 +220,41 @@ public class FxButton extends Button{
         /**
          * Sets the initial loading state of the button.
          *
-         * <p>when {@code true}, the button is faded and non-interactive.
-         * Defaults to {@code false}</p>
+         * <p>When {@code true}, the button is faded and non-interactive.
+         * Defaults to {@code false}.
          *
          * @param loading {@code true} to start in loading state
          * @return this builder
          */
-        public Builder loading(boolean loading){
+        public Builder loading(boolean loading) {
             this.loading = loading;
             return this;
         }
 
         /**
-         * Sets the action handle fired when the button is clicked.
+         * Sets the action handler fired when the button is clicked.
          *
          * @param handler the event handler, or {@code null} for no action
          * @return this builder
          */
-        public Builder onAction(EventHandler<ActionEvent> handler){
+        public Builder onAction(EventHandler<ActionEvent> handler) {
             this.onAction = handler;
             return this;
         }
 
         /**
-         * Constructs and returns the configured {@link FxButton}
+         * Constructs and returns the configured {@link FxButton}.
          *
          * @return a new {@link FxButton} with the properties set on this builder
          */
-        public FxButton build(){
-            FxButton button = new FxButton(text,variant);
+        @Override
+        public FxButton build() {
+            FxButton button = new FxButton(text, variant);
             button.setLoading(loading);
-            if(onAction != null){
+            if (onAction != null) {
                 button.setOnAction(onAction);
             }
+            applyBase(button);
             return button;
         }
     }

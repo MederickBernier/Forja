@@ -1,8 +1,12 @@
 io/forja/skin/FxButtonSkin$1.class
+io/forja/builder/FxComponentBuilder.class
 io/forja/FxTheme.class
 io/forja/Forja$1.class
 io/forja/Forja.class
 io/forja/components/ButtonVariant.class
 io/forja/components/FxButton$Builder.class
+io/forja/styling/FxStyleBuilder.class
 io/forja/skin/FxButtonSkin.class
+io/forja/styling/FxStyle.class
+io/forja/util/ForjaStylesheets.class
 io/forja/components/FxButton.class

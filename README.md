@@ -144,6 +144,7 @@ Legend: ✅ available · 🔨 in progress · ⏳ planned
 - ⏳ FxContainer (max-width centered)
 - ⏳ FxSection
 - ⏳ FxCard
+- ✅ FxSeparator
 - ⏳ FxDivider
 - ⏳ FxSpacer
 - ⏳ FxAspectRatio

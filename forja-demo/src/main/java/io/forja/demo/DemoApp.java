@@ -4,9 +4,12 @@ import io.forja.Forja;
 import io.forja.components.ButtonVariant;
 import io.forja.components.FxButton;
 import io.forja.components.FxLabel;
+import io.forja.components.FxSeparator;
 import io.forja.components.LabelVariant;
+import io.forja.components.SeparatorVariant;
 import javafx.application.Application;
 import javafx.geometry.Insets;
+import javafx.geometry.Orientation;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -61,13 +64,42 @@ public class DemoApp extends Application {
                 FxLabel.builder().text("Muted body — secondary information").variant(LabelVariant.BODY).muted(true).build()
         );
 
+        FxLabel primitivesSectionLabel = FxLabel.builder()
+                .text("Primitives")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        VBox separators = new VBox(12);
+        separators.getChildren().addAll(
+                FxLabel.builder().text("Hairline (0.5px)").variant(LabelVariant.SMALL).muted(true).build(),
+                FxSeparator.builder().variant(SeparatorVariant.HAIRLINE).build(),
+                FxLabel.builder().text("Default (1px)").variant(LabelVariant.SMALL).muted(true).build(),
+                FxSeparator.builder().variant(SeparatorVariant.DEFAULT).build(),
+                FxLabel.builder().text("Strong (2px)").variant(LabelVariant.SMALL).muted(true).build(),
+                FxSeparator.builder().variant(SeparatorVariant.STRONG).build()
+        );
+
+        HBox verticalSeparatorRow = new HBox(12);
+        verticalSeparatorRow.getChildren().addAll(
+                FxLabel.builder().text("Left").variant(LabelVariant.BODY).build(),
+                FxSeparator.builder().orientation(Orientation.VERTICAL).variant(SeparatorVariant.DEFAULT).build(),
+                FxLabel.builder().text("Middle").variant(LabelVariant.BODY).build(),
+                FxSeparator.builder().orientation(Orientation.VERTICAL).variant(SeparatorVariant.STRONG).build(),
+                FxLabel.builder().text("Right").variant(LabelVariant.BODY).build()
+        );
+
+        VBox primitives = new VBox(16);
+        primitives.getChildren().addAll(separators, verticalSeparatorRow);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
-                typographySectionLabel, typography
+                typographySectionLabel, typography,
+                primitivesSectionLabel, primitives
         );
 
-        Scene scene = new Scene(root, 800, 600);
+        Scene scene = new Scene(root, 800, 800);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

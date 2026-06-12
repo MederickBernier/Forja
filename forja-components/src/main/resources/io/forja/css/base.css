@@ -154,3 +154,39 @@
 .forja-label:disabled {
     -fx-text-fill: -forja-text-disabled;
 }
+
+.forja-separator > .line {
+    -fx-border-color: -forja-border-default;
+    -fx-border-style: solid;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-insets: 0;
+}
+
+.forja-separator:vertical > .line {
+    -fx-border-width: 0 0 0 1;
+}
+
+.forja-separator:hairline > .line {
+    -fx-border-width: 0.5 0 0 0;
+}
+
+.forja-separator:hairline:vertical > .line {
+    -fx-border-width: 0 0 0 0.5;
+}
+
+.forja-separator:default > .line {
+    -fx-border-width: 1 0 0 0;
+}
+
+.forja-separator:default:vertical > .line {
+    -fx-border-width: 0 0 0 1;
+}
+
+.forja-separator:strong > .line {
+    -fx-border-width: 2 0 0 0;
+    -fx-border-color: -forja-border-strong;
+}
+
+.forja-separator:strong:vertical > .line {
+    -fx-border-width: 0 0 0 2;
+}

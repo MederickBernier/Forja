@@ -58,13 +58,192 @@ Button save = FxButton.builder()
 
 Early development. Not yet published to Maven Central.
 
-| Milestone | Status |
-|-----------|--------|
-| v0.1 — token layer, core components | 🔨 In progress |
-| v0.2 — form controls, feedback | ⏳ Planned |
-| v0.3 — navigation, overlays | ⏳ Planned |
-| v0.4 — data display, validation system | ⏳ Planned |
-| v1.0 — stable API, Maven Central | ⏳ Planned |
+Legend: ✅ available · 🔨 in progress · ⏳ planned
+
+### Foundation
+
+| Piece | Status |
+|-------|--------|
+| Token layer (palette, typography, spacing, radii, semantic colors) | ✅ |
+| Theme system (light / dark / system) | ✅ |
+| `Forja` installer | ✅ |
+| `FxComponentBuilder` base builder | ✅ |
+| `FxStyle` / `FxStyleBuilder` per-instance overrides | ✅ |
+| `ForjaStylesheets` scoped stylesheet registry | ✅ |
+| Bundled fonts (Inter, JetBrains Mono) | ⏳ |
+| Javadoc site & Maven Central release | ⏳ |
+
+### Components
+
+#### Typography
+- ✅ FxLabel
+- ⏳ FxText
+- ⏳ FxHeading
+- ⏳ FxCode
+- ⏳ FxKbd
+- ⏳ FxLink
+- ⏳ FxBlockquote
+- ⏳ FxList (ordered / unordered)
+
+#### Buttons & Actions
+- ✅ FxButton
+- ⏳ FxIconButton
+- ⏳ FxToggleButton
+- ⏳ FxSplitButton
+- ⏳ FxButtonGroup (segmented)
+- ⏳ FxMenuButton
+- ⏳ FxCopyButton
+
+#### Inputs
+- ⏳ FxTextField
+- ⏳ FxTextArea
+- ⏳ FxPasswordField
+- ⏳ FxNumberField
+- ⏳ FxMaskedInput
+- ⏳ FxSearchField
+- ⏳ FxOTPInput
+- ⏳ FxAutocomplete
+- ⏳ FxTagInput
+- ⏳ FxRichTextEditor
+- ⏳ FxMarkdownEditor
+- ⏳ FxCodeEditor
+- ⏳ FxJsonEditor
+
+#### Selection
+- ⏳ FxCheckBox
+- ⏳ FxCheckGroup
+- ⏳ FxRadioGroup
+- ⏳ FxSwitch
+- ⏳ FxSlider
+- ⏳ FxRangeSlider
+- ⏳ FxComboBox
+- ⏳ FxMultiSelect
+- ⏳ FxSegmentedControl
+- ⏳ FxRating
+- ⏳ FxColorPicker
+
+#### Date & Time
+- ⏳ FxDatePicker
+- ⏳ FxTimePicker
+- ⏳ FxDateTimePicker
+- ⏳ FxDateRangePicker
+- ⏳ FxCalendar
+- ⏳ FxMiniCalendar
+
+#### Files & Media Input
+- ⏳ FxFileChooser
+- ⏳ FxFileDropzone
+- ⏳ FxImagePicker
+- ⏳ FxImageCropper
+
+#### Layout
+- ⏳ FxStack (vertical flow)
+- ⏳ FxRow (horizontal flow)
+- ⏳ FxGrid
+- ⏳ FxFlex
+- ⏳ FxContainer (max-width centered)
+- ⏳ FxSection
+- ⏳ FxCard
+- ⏳ FxDivider
+- ⏳ FxSpacer
+- ⏳ FxAspectRatio
+- ⏳ FxScrollArea
+- ⏳ FxSplitView (resizable split)
+- ⏳ FxResizablePane
+- ⏳ FxCollapse / FxAccordion
+- ⏳ FxStickyHeader
+- ⏳ FxResponsive (breakpoint helpers)
+
+#### Navigation
+- ⏳ FxAppBar / FxNavbar
+- ⏳ FxSidebar
+- ⏳ FxSidebarNav
+- ⏳ FxBreadcrumbs
+- ⏳ FxTabs
+- ⏳ FxVerticalTabs
+- ⏳ FxStepper
+- ⏳ FxPagination
+- ⏳ FxMenuBar
+- ⏳ FxContextMenu
+- ⏳ FxDropdownMenu
+- ⏳ FxCommandPalette
+- ⏳ FxAnchorNav (in-page jumps)
+
+#### Feedback & Status
+- ⏳ FxAlert
+- ⏳ FxBanner
+- ⏳ FxToast
+- ⏳ FxNotificationCenter
+- ⏳ FxProgressBar
+- ⏳ FxProgressCircle
+- ⏳ FxSkeleton
+- ⏳ FxBadge
+- ⏳ FxChip
+- ⏳ FxStatusDot
+- ⏳ FxEmptyState
+- ⏳ FxErrorState
+- ⏳ FxResultPage (success / failure summary)
+
+#### Overlays
+- ⏳ FxDialog
+- ⏳ FxConfirmDialog
+- ⏳ FxFormDialog
+- ⏳ FxDrawer
+- ⏳ FxBottomSheet
+- ⏳ FxPopover
+- ⏳ FxTooltip
+- ⏳ FxHoverCard
+- ⏳ FxLightbox
+
+#### Data Display
+- ⏳ FxTable
+- ⏳ FxDataGrid (sortable, filterable, paginated)
+- ⏳ FxList
+- ⏳ FxVirtualList
+- ⏳ FxTree
+- ⏳ FxTreeTable
+- ⏳ FxTimeline
+- ⏳ FxStat (KPI card)
+- ⏳ FxAvatar
+- ⏳ FxAvatarGroup
+- ⏳ FxImage (with fallback / loading)
+- ⏳ FxKanbanBoard
+- ⏳ FxMasonry
+- ⏳ FxCarousel
+- ⏳ FxDescriptionList
+
+#### Charts
+- ⏳ FxLineChart
+- ⏳ FxBarChart
+- ⏳ FxPieChart
+- ⏳ FxDonutChart
+- ⏳ FxAreaChart
+- ⏳ FxScatterPlot
+- ⏳ FxSparkline
+- ⏳ FxGauge
+- ⏳ FxHeatmap
+- ⏳ FxRadarChart
+
+#### Media
+- ⏳ FxVideoPlayer
+- ⏳ FxAudioPlayer
+- ⏳ FxImageGallery
+- ⏳ FxWaveform
+
+#### Validation
+- ⏳ FxForm (declarative form binding)
+- ⏳ FxFormField (label + control + error slot)
+- ⏳ FxValidator (rule engine)
+- ⏳ FxErrorSummary
+
+#### Utilities
+- ⏳ FxThemeToggle
+- ⏳ FxKeybindingHint
+- ⏳ FxSearchHighlight
+- ⏳ FxScrollSpy
+- ⏳ FxIcon (icon glyph wrapper)
+- ⏳ FxPortal (render-elsewhere helper)
+- ⏳ FxFocusTrap
 
 ## License
 

@@ -3,10 +3,11 @@ package io.forja.demo;
 import io.forja.Forja;
 import io.forja.components.ButtonVariant;
 import io.forja.components.FxButton;
+import io.forja.components.FxLabel;
+import io.forja.components.LabelVariant;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -18,11 +19,16 @@ public class DemoApp extends Application {
         VBox root = new VBox(24);
         root.setPadding(new Insets(32));
 
-        Label heading = new Label("Forja Demo");
-        heading.setStyle("-fx-font-size: 24px; -fx-font-weight: bold;");
+        FxLabel heading = FxLabel.builder()
+                .text("Forja Demo")
+                .variant(LabelVariant.DISPLAY)
+                .build();
 
-        Label buttonLabel = new Label("Buttons");
-        buttonLabel.setStyle("-fx-font-size: 13px; -fx-text-fill: #71717a;");
+        FxLabel buttonSectionLabel = FxLabel.builder()
+                .text("Buttons")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
 
         HBox buttons = new HBox(8);
         buttons.getChildren().addAll(
@@ -38,7 +44,28 @@ public class DemoApp extends Application {
                 FxButton.builder().text("Disabled").variant(ButtonVariant.SECONDARY).loading(true).build()
         );
 
-        root.getChildren().addAll(heading, buttonLabel, buttons, disabledButtons);
+        FxLabel typographySectionLabel = FxLabel.builder()
+                .text("Typography")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        VBox typography = new VBox(8);
+        typography.getChildren().addAll(
+                FxLabel.builder().text("Display — 24px / bold").variant(LabelVariant.DISPLAY).build(),
+                FxLabel.builder().text("Heading — 18px / bold").variant(LabelVariant.HEADING).build(),
+                FxLabel.builder().text("Subheading — 14px / bold").variant(LabelVariant.SUBHEADING).build(),
+                FxLabel.builder().text("Body — 13px / normal").variant(LabelVariant.BODY).build(),
+                FxLabel.builder().text("Small — 11px / normal").variant(LabelVariant.SMALL).build(),
+                FxLabel.builder().text("Mono — 12px / JetBrains Mono").variant(LabelVariant.MONO).build(),
+                FxLabel.builder().text("Muted body — secondary information").variant(LabelVariant.BODY).muted(true).build()
+        );
+
+        root.getChildren().addAll(
+                heading,
+                buttonSectionLabel, buttons, disabledButtons,
+                typographySectionLabel, typography
+        );
 
         Scene scene = new Scene(root, 800, 600);
         Forja.install(scene);

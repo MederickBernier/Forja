@@ -112,3 +112,45 @@
     -fx-opacity: 0.4;
     -fx-cursor: default;
 }
+
+.forja-label {
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 13px;
+}
+
+.forja-label:display {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.forja-label:heading {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.forja-label:subheading {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.forja-label:body {
+    -fx-font-size: 13px;
+}
+
+.forja-label:small {
+    -fx-font-size: 11px;
+    -fx-text-fill: -forja-text-secondary;
+}
+
+.forja-label:mono {
+    -fx-font-size: 12px;
+    -fx-font-family: "JetBrains Mono";
+}
+
+.forja-label:muted {
+    -fx-text-fill: -forja-text-muted;
+}
+
+.forja-label:disabled {
+    -fx-text-fill: -forja-text-disabled;
+}

@@ -97,7 +97,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxLabel
 - ✅ FxLink
 - ✅ FxText
-- ⏳ FxBlockquote · P0
+- ✅ FxBlockquote
 - ⏳ FxKbd · P0
 - ⏳ FxCode · P0
 - ⏳ FxBulletList (ordered / unordered) · P2

@@ -1,4 +1,5 @@
 io/forja/components/FxLabelTest.class
+io/forja/components/FxBlockquoteTest.class
 io/forja/components/FxLinkTest.class
 io/forja/components/FxSeparatorTest.class
 io/forja/components/FxIconButtonTest.class

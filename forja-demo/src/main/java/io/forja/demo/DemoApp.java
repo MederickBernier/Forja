@@ -2,6 +2,7 @@ package io.forja.demo;
 
 import io.forja.Forja;
 import io.forja.components.ButtonVariant;
+import io.forja.components.FxBlockquote;
 import io.forja.components.FxButton;
 import io.forja.components.FxIcon;
 import io.forja.components.FxIconButton;
@@ -202,6 +203,25 @@ public class DemoApp extends Application {
                         .build()
         );
 
+        FxLabel blockquotesSectionLabel = FxLabel.builder()
+                .text("Blockquotes")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        VBox blockquotes = new VBox(16);
+        blockquotes.getChildren().addAll(
+                FxBlockquote.builder()
+                        .quote("Shape what already works.")
+                        .cite("— Forja motto")
+                        .maxWidth(640)
+                        .build(),
+                FxBlockquote.builder()
+                        .quote("JavaFX is capable, battle-tested, and running in production across hospitals, factories, and enterprise systems that will never see Electron.")
+                        .maxWidth(640)
+                        .build()
+        );
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -210,10 +230,11 @@ public class DemoApp extends Application {
                 iconsSectionLabel, icons,
                 iconButtonsSectionLabel, iconButtons,
                 linksSectionLabel, links,
-                paragraphsSectionLabel, paragraphs
+                paragraphsSectionLabel, paragraphs,
+                blockquotesSectionLabel, blockquotes
         );
 
-        Scene scene = new Scene(root, 900, 1320);
+        Scene scene = new Scene(root, 900, 1500);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

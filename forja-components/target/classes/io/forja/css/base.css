@@ -310,3 +310,20 @@
 .forja-text:disabled {
     -fx-text-fill: -forja-text-disabled;
 }
+
+.forja-blockquote {
+    -fx-border-color: transparent transparent transparent -forja-accent;
+    -fx-border-width: 0 0 0 3px;
+    -fx-border-insets: 0;
+    -fx-padding: 4px 0 4px 16px;
+    -fx-spacing: 8px;
+}
+
+.forja-blockquote-quote {
+    -fx-font-style: italic;
+    -fx-text-fill: -forja-text-primary;
+}
+
+.forja-blockquote-cite {
+    -fx-text-fill: -forja-text-muted;
+}

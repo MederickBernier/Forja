@@ -188,7 +188,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ⏳ FxCommandPalette · P3
 
 #### Feedback & Status
-- ⏳ FxBadge · P0
+- ✅ FxBadge
 - ⏳ FxChip · P0
 - ⏳ FxStatusDot · P0
 - ⏳ FxProgressBar · P1

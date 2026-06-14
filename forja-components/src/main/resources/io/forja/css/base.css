@@ -357,3 +357,50 @@
 .forja-code:disabled {
     -fx-text-fill: -forja-text-disabled;
 }
+
+.forja-badge {
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-padding: 2px 8px 2px 8px;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+}
+
+.forja-badge:default {
+    -fx-background-color: -forja-zinc-100;
+    -fx-text-fill: -forja-zinc-700;
+}
+
+.forja-badge:muted {
+    -fx-background-color: -forja-zinc-100;
+    -fx-text-fill: -forja-text-muted;
+}
+
+.forja-badge:accent {
+    -fx-background-color: -forja-accent-tint;
+    -fx-text-fill: -forja-accent-active;
+}
+
+.forja-badge:success {
+    -fx-background-color: -forja-success-tint;
+    -fx-text-fill: -forja-success;
+}
+
+.forja-badge:warning {
+    -fx-background-color: -forja-warning-tint;
+    -fx-text-fill: -forja-warning;
+}
+
+.forja-badge:danger {
+    -fx-background-color: -forja-danger-tint;
+    -fx-text-fill: -forja-danger;
+}
+
+.forja-badge:info {
+    -fx-background-color: -forja-info-tint;
+    -fx-text-fill: -forja-info;
+}
+
+.forja-badge:disabled {
+    -fx-opacity: 0.5;
+}

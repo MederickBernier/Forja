@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxBadgeTest" time="2.04" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxRowTest" time="2.135" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="javafx.runtime.version" value="12.0.1+2"/>
@@ -61,9 +61,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="allVariantsHaveCorrespondingPseudoClass" classname="io.forja.components.FxBadgeTest" time="0.631"/>
-  <testcase name="constructorVariants" classname="io.forja.components.FxBadgeTest" time="0.417"/>
-  <testcase name="builderSetsAllProperties" classname="io.forja.components.FxBadgeTest" time="0.313"/>
-  <testcase name="builderDefaults" classname="io.forja.components.FxBadgeTest" time="0.311"/>
-  <testcase name="variantPseudoClassUpdates" classname="io.forja.components.FxBadgeTest" time="0.364"/>
+  <testcase name="changingGapUpdatesPixelSpacing" classname="io.forja.components.FxRowTest" time="0.422"/>
+  <testcase name="allTokensMapToCorrectPixels" classname="io.forja.components.FxRowTest" time="0.673"/>
+  <testcase name="constructorVariants" classname="io.forja.components.FxRowTest" time="0.414"/>
+  <testcase name="builderSetsAllProperties" classname="io.forja.components.FxRowTest" time="0.312"/>
+  <testcase name="builderDefaults" classname="io.forja.components.FxRowTest" time="0.311"/>
 </testsuite>

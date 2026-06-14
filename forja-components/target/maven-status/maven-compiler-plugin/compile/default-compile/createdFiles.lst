@@ -32,6 +32,7 @@ io/forja/skin/FxChipSkin$1.class
 io/forja/skin/FxTextSkin.class
 io/forja/components/FxSeparator$Builder.class
 io/forja/components/FxIconButton.class
+io/forja/components/FxRow.class
 io/forja/skin/FxLabelSkin.class
 io/forja/components/FxLabel.class
 io/forja/components/FxBadge.class
@@ -65,6 +66,7 @@ io/forja/components/FxStack.class
 io/forja/components/FxIcon.class
 io/forja/skin/FxButtonSkin$1.class
 io/forja/components/FxAvatarGroup$Builder.class
+io/forja/components/FxRow$Builder.class
 io/forja/components/AvatarSize.class
 io/forja/components/FxAvatar.class
 io/forja/skin/FxSeparatorSkin$1.class

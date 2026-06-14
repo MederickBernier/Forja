@@ -21,6 +21,7 @@ import io.forja.components.FxLabel;
 import io.forja.components.FxLink;
 import io.forja.components.FxSeparator;
 import io.forja.components.FxSpacer;
+import io.forja.components.FxRow;
 import io.forja.components.FxStack;
 import io.forja.components.SpacingSize;
 import io.forja.components.FxText;
@@ -478,6 +479,38 @@ public class DemoApp extends Application {
 
         HBox stacks = new HBox(32, stackSm, stackLg, stackXl);
 
+        FxLabel rowsSectionLabel = FxLabel.builder()
+                .text("Rows")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        FxRow rowSm = FxRow.builder()
+                .gap(SpacingSize.SM)
+                .children(
+                        FxBadge.builder().text("A").variant(BadgeVariant.ACCENT).build(),
+                        FxBadge.builder().text("B").variant(BadgeVariant.ACCENT).build(),
+                        FxBadge.builder().text("C").variant(BadgeVariant.ACCENT).build()
+                ).build();
+
+        FxRow rowLg = FxRow.builder()
+                .gap(SpacingSize.LG)
+                .children(
+                        FxBadge.builder().text("A").variant(BadgeVariant.SUCCESS).build(),
+                        FxBadge.builder().text("B").variant(BadgeVariant.SUCCESS).build(),
+                        FxBadge.builder().text("C").variant(BadgeVariant.SUCCESS).build()
+                ).build();
+
+        FxRow rowXl = FxRow.builder()
+                .gap(SpacingSize.XL)
+                .children(
+                        FxBadge.builder().text("A").variant(BadgeVariant.WARNING).build(),
+                        FxBadge.builder().text("B").variant(BadgeVariant.WARNING).build(),
+                        FxBadge.builder().text("C").variant(BadgeVariant.WARNING).build()
+                ).build();
+
+        VBox rows = new VBox(8, rowSm, rowLg, rowXl);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -496,10 +529,11 @@ public class DemoApp extends Application {
                 spacersSectionLabel, spacers,
                 avatarsSectionLabel, avatars,
                 avatarGroupsSectionLabel, avatarGroups,
-                stacksSectionLabel, stacks
+                stacksSectionLabel, stacks,
+                rowsSectionLabel, rows
         );
 
-        Scene scene = new Scene(root, 900, 2600);
+        Scene scene = new Scene(root, 900, 2740);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

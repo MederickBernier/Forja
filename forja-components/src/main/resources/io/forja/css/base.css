@@ -224,3 +224,65 @@
 .forja-icon-button:ghost .forja-icon {
     -fx-icon-color: -forja-zinc-900;
 }
+
+.forja-link {
+    -fx-text-fill: -forja-accent;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-graphic-text-gap: 4px;
+    -fx-cursor: hand;
+}
+
+.forja-link:hover {
+    -fx-underline: true;
+}
+
+.forja-link:default {
+    -fx-text-fill: -forja-accent;
+}
+
+.forja-link:default:hover {
+    -fx-text-fill: -forja-accent-hover;
+}
+
+.forja-link:muted {
+    -fx-text-fill: -forja-text-muted;
+}
+
+.forja-link:muted:hover {
+    -fx-text-fill: -forja-text-secondary;
+}
+
+.forja-link:external {
+    -fx-text-fill: -forja-accent;
+}
+
+.forja-link:external:hover {
+    -fx-text-fill: -forja-accent-hover;
+}
+
+.forja-link:default .forja-icon,
+.forja-link:external .forja-icon {
+    -fx-icon-color: -forja-accent;
+}
+
+.forja-link:default:hover .forja-icon,
+.forja-link:external:hover .forja-icon {
+    -fx-icon-color: -forja-accent-hover;
+}
+
+.forja-link:muted .forja-icon {
+    -fx-icon-color: -forja-text-muted;
+}
+
+.forja-link:focused {
+    -fx-border-color: -forja-accent-focus;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 2px;
+}
+
+.forja-link:disabled {
+    -fx-text-fill: -forja-text-disabled;
+    -fx-cursor: default;
+}

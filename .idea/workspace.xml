@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ada2d8-726f-4065-b80a-ec655913ac3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/forja-components/src/main/resources/io/forja/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/main/resources/io/forja/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/builder/FxComponentBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/ButtonVariant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxButton$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/classes/io/forja/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/styling/FxStyle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/styling/FxStyleBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/util/ForjaStylesheets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

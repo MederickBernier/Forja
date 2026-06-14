@@ -6,10 +6,12 @@ import io.forja.components.FxButton;
 import io.forja.components.FxIcon;
 import io.forja.components.FxIconButton;
 import io.forja.components.FxLabel;
+import io.forja.components.FxLink;
 import io.forja.components.FxSeparator;
 import io.forja.components.IconPosition;
 import io.forja.components.IconVariant;
 import io.forja.components.LabelVariant;
+import io.forja.components.LinkVariant;
 import io.forja.components.SeparatorVariant;
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -159,16 +161,30 @@ public class DemoApp extends Application {
         VBox iconButtons = new VBox(12);
         iconButtons.getChildren().addAll(iconButtonsLeft, iconButtonsRight, iconButtonsOnly);
 
+        FxLabel linksSectionLabel = FxLabel.builder()
+                .text("Links")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        HBox links = new HBox(24);
+        links.getChildren().addAll(
+                FxLink.builder().text("Default link").variant(LinkVariant.DEFAULT).build(),
+                FxLink.builder().text("Muted link").variant(LinkVariant.MUTED).build(),
+                FxLink.builder().text("External docs").variant(LinkVariant.EXTERNAL).build()
+        );
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
                 typographySectionLabel, typography,
                 primitivesSectionLabel, primitives,
                 iconsSectionLabel, icons,
-                iconButtonsSectionLabel, iconButtons
+                iconButtonsSectionLabel, iconButtons,
+                linksSectionLabel, links
         );
 
-        Scene scene = new Scene(root, 900, 1050);
+        Scene scene = new Scene(root, 900, 1130);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

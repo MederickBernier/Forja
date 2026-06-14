@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxButtonTest" time="2.295" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxLinkTest" time="4.213" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="javafx.runtime.version" value="12.0.1+2"/>
@@ -61,10 +61,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="loadingDisablesButtonAndSetsPseudoClass" classname="io.forja.components.FxButtonTest" time="0.438"/>
-  <testcase name="skinAttachesViaSceneRendering" classname="io.forja.components.FxButtonTest" time="0.328"/>
-  <testcase name="constructorVariants" classname="io.forja.components.FxButtonTest" time="0.437"/>
-  <testcase name="builderSetsAllProperties" classname="io.forja.components.FxButtonTest" time="0.374"/>
-  <testcase name="builderDefaults" classname="io.forja.components.FxButtonTest" time="0.329"/>
-  <testcase name="variantPseudoClassUpdates" classname="io.forja.components.FxButtonTest" time="0.384"/>
+  <testcase name="allVariantsHaveCorrespondingPseudoClass" classname="io.forja.components.FxLinkTest" time="1.072">
+    <system-err><![CDATA[Jun 14, 2026 12:05:18 AM com.sun.javafx.application.PlatformImpl startup
+WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @719cd484'
+]]></system-err>
+  </testcase>
+  <testcase name="externalVariantAddsTrailingIcon" classname="io.forja.components.FxLinkTest" time="0.332"/>
+  <testcase name="userSuppliedGraphicSurvivesNonExternalVariantSwitch" classname="io.forja.components.FxLinkTest" time="0.436"/>
+  <testcase name="switchingAwayFromExternalClearsManagedIcon" classname="io.forja.components.FxLinkTest" time="0.377"/>
+  <testcase name="constructorVariants" classname="io.forja.components.FxLinkTest" time="0.43"/>
+  <testcase name="builderSetsAllProperties" classname="io.forja.components.FxLinkTest" time="0.382"/>
+  <testcase name="switchingToExternalReplacesUserGraphicWithManagedIcon" classname="io.forja.components.FxLinkTest" time="0.438"/>
+  <testcase name="builderDefaults" classname="io.forja.components.FxLinkTest" time="0.329"/>
+  <testcase name="variantPseudoClassUpdates" classname="io.forja.components.FxLinkTest" time="0.379"/>
 </testsuite>

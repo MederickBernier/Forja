@@ -190,7 +190,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 #### Feedback & Status
 - ✅ FxBadge
 - ✅ FxChip
-- ⏳ FxStatusDot · P0
+- ✅ FxStatusDot
 - ⏳ FxProgressBar · P1
 - ⏳ FxProgressCircle · P1
 - ⏳ FxAlert · P1

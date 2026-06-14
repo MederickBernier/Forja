@@ -7,6 +7,8 @@ import io.forja.components.ChipVariant;
 import io.forja.components.FxBadge;
 import io.forja.components.FxBlockquote;
 import io.forja.components.FxChip;
+import io.forja.components.FxStatusDot;
+import io.forja.components.StatusDotVariant;
 import io.forja.components.FxButton;
 import io.forja.components.FxCode;
 import io.forja.components.FxIcon;
@@ -336,6 +338,24 @@ public class DemoApp extends Application {
         VBox chips = new VBox(8);
         chips.getChildren().addAll(chipVariants, chipRemovable);
 
+        FxLabel statusDotsSectionLabel = FxLabel.builder()
+                .text("Status Dots")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        HBox statusDots = new HBox(16);
+        statusDots.setAlignment(Pos.CENTER_LEFT);
+        statusDots.getChildren().addAll(
+                dotWithLabel(StatusDotVariant.DEFAULT, "idle"),
+                dotWithLabel(StatusDotVariant.MUTED, "draft"),
+                dotWithLabel(StatusDotVariant.ACCENT, "active"),
+                dotWithLabel(StatusDotVariant.SUCCESS, "online"),
+                dotWithLabel(StatusDotVariant.WARNING, "degraded"),
+                dotWithLabel(StatusDotVariant.DANGER, "offline"),
+                dotWithLabel(StatusDotVariant.INFO, "syncing")
+        );
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -349,15 +369,26 @@ public class DemoApp extends Application {
                 kbdSectionLabel, kbds,
                 codeSectionLabel, codes,
                 badgesSectionLabel, badges,
-                chipsSectionLabel, chips
+                chipsSectionLabel, chips,
+                statusDotsSectionLabel, statusDots
         );
 
-        Scene scene = new Scene(root, 900, 1980);
+        Scene scene = new Scene(root, 900, 2080);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");
         stage.setScene(scene);
         stage.show();
+    }
+
+    private static HBox dotWithLabel(StatusDotVariant variant, String label) {
+        HBox box = new HBox(6);
+        box.setAlignment(Pos.CENTER_LEFT);
+        box.getChildren().addAll(
+                FxStatusDot.builder().variant(variant).build(),
+                FxLabel.builder().text(label).variant(LabelVariant.BODY).build()
+        );
+        return box;
     }
 
     private static VBox iconWithLabel(String literal, IconVariant variant, String label) {

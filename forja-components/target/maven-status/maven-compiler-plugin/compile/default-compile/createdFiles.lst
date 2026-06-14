@@ -4,6 +4,7 @@ io/forja/components/LabelVariant.class
 io/forja/components/FxKbd$Builder.class
 io/forja/components/FxIcon$Builder.class
 io/forja/FxTheme.class
+io/forja/components/FxStatusDot$1.class
 io/forja/components/FxCode.class
 io/forja/Forja.class
 io/forja/components/ButtonVariant.class
@@ -47,12 +48,15 @@ io/forja/components/SeparatorVariant.class
 io/forja/skin/FxLabelSkin$1.class
 io/forja/components/TextVariant.class
 io/forja/components/FxBlockquote.class
+io/forja/components/StatusDotVariant.class
 io/forja/styling/FxStyleBuilder.class
 io/forja/components/FxKbd.class
+io/forja/components/FxStatusDot$Builder.class
 io/forja/components/FxLink$Builder.class
 io/forja/components/FxButton.class
 io/forja/components/FxIcon.class
 io/forja/skin/FxButtonSkin$1.class
 io/forja/skin/FxSeparatorSkin$1.class
+io/forja/components/FxStatusDot.class
 io/forja/components/IconPosition.class
 io/forja/components/FxIconButton$Builder.class

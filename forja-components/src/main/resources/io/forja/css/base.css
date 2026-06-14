@@ -472,3 +472,15 @@
 .forja-chip:warning .forja-chip-close { -fx-icon-color: -forja-warning; }
 .forja-chip:danger .forja-chip-close  { -fx-icon-color: -forja-danger; }
 .forja-chip:info .forja-chip-close    { -fx-icon-color: -forja-info; }
+
+.forja-status-dot {
+    -fx-fill: -forja-zinc-400;
+}
+
+.forja-status-dot:default { -fx-fill: -forja-zinc-400; }
+.forja-status-dot:muted   { -fx-fill: -forja-text-muted; }
+.forja-status-dot:accent  { -fx-fill: -forja-accent; }
+.forja-status-dot:success { -fx-fill: -forja-success; }
+.forja-status-dot:warning { -fx-fill: -forja-warning; }
+.forja-status-dot:danger  { -fx-fill: -forja-danger; }
+.forja-status-dot:info    { -fx-fill: -forja-info; }

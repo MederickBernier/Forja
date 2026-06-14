@@ -99,7 +99,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxText
 - ✅ FxBlockquote
 - ✅ FxKbd
-- ⏳ FxCode · P0
+- ✅ FxCode
 - ⏳ FxBulletList (ordered / unordered) · P2
 - ⏳ FxHeading · P3 — overlaps FxLabel(HEADING); may be dropped
 

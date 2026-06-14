@@ -4,6 +4,7 @@ import io.forja.Forja;
 import io.forja.components.ButtonVariant;
 import io.forja.components.FxBlockquote;
 import io.forja.components.FxButton;
+import io.forja.components.FxCode;
 import io.forja.components.FxIcon;
 import io.forja.components.FxKbd;
 import io.forja.components.FxIconButton;
@@ -256,6 +257,33 @@ public class DemoApp extends Application {
         VBox kbds = new VBox(8);
         kbds.getChildren().addAll(shortcutSave, shortcutPalette, shortcutEscape);
 
+        FxLabel codeSectionLabel = FxLabel.builder()
+                .text("Inline Code")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        HBox codeRow1 = new HBox(6);
+        codeRow1.setAlignment(Pos.CENTER_LEFT);
+        codeRow1.getChildren().addAll(
+                FxLabel.builder().text("Install Forja with").variant(LabelVariant.BODY).build(),
+                FxCode.builder().text("Forja.install(scene)").build(),
+                FxLabel.builder().text("before showing the stage.").variant(LabelVariant.BODY).build()
+        );
+
+        HBox codeRow2 = new HBox(6);
+        codeRow2.setAlignment(Pos.CENTER_LEFT);
+        codeRow2.getChildren().addAll(
+                FxLabel.builder().text("Set").variant(LabelVariant.BODY).build(),
+                FxCode.builder().text("variant").build(),
+                FxLabel.builder().text("to").variant(LabelVariant.BODY).build(),
+                FxCode.builder().text("ButtonVariant.PRIMARY").build(),
+                FxLabel.builder().text("for the main action.").variant(LabelVariant.BODY).build()
+        );
+
+        VBox codes = new VBox(6);
+        codes.getChildren().addAll(codeRow1, codeRow2);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -266,10 +294,11 @@ public class DemoApp extends Application {
                 linksSectionLabel, links,
                 paragraphsSectionLabel, paragraphs,
                 blockquotesSectionLabel, blockquotes,
-                kbdSectionLabel, kbds
+                kbdSectionLabel, kbds,
+                codeSectionLabel, codes
         );
 
-        Scene scene = new Scene(root, 900, 1640);
+        Scene scene = new Scene(root, 900, 1760);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

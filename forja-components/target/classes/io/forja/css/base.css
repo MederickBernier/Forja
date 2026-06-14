@@ -344,3 +344,16 @@
     -fx-text-fill: -forja-text-disabled;
     -fx-border-color: -forja-border-default;
 }
+
+.forja-code {
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 12px;
+    -fx-text-fill: -forja-accent-active;
+    -fx-background-color: -forja-accent-tint;
+    -fx-background-radius: 3px;
+    -fx-padding: 1px 5px 1px 5px;
+}
+
+.forja-code:disabled {
+    -fx-text-fill: -forja-text-disabled;
+}

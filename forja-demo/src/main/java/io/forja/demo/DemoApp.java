@@ -4,8 +4,10 @@ import io.forja.Forja;
 import io.forja.components.ButtonVariant;
 import io.forja.components.FxButton;
 import io.forja.components.FxIcon;
+import io.forja.components.FxIconButton;
 import io.forja.components.FxLabel;
 import io.forja.components.FxSeparator;
+import io.forja.components.IconPosition;
 import io.forja.components.IconVariant;
 import io.forja.components.LabelVariant;
 import io.forja.components.SeparatorVariant;
@@ -126,15 +128,47 @@ public class DemoApp extends Application {
         VBox icons = new VBox(16);
         icons.getChildren().addAll(iconVariants, iconSizes);
 
+        FxLabel iconButtonsSectionLabel = FxLabel.builder()
+                .text("Icon Buttons")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        HBox iconButtonsLeft = new HBox(8);
+        iconButtonsLeft.getChildren().addAll(
+                FxIconButton.builder().text("Save").icon("fth-save").variant(ButtonVariant.PRIMARY).build(),
+                FxIconButton.builder().text("Edit").icon("fth-edit").variant(ButtonVariant.SECONDARY).build(),
+                FxIconButton.builder().text("Share").icon("fth-share-2").variant(ButtonVariant.GHOST).build(),
+                FxIconButton.builder().text("Delete").icon("fth-trash-2").variant(ButtonVariant.DANGER).build()
+        );
+
+        HBox iconButtonsRight = new HBox(8);
+        iconButtonsRight.getChildren().addAll(
+                FxIconButton.builder().text("Next").icon("fth-arrow-right").iconPosition(IconPosition.RIGHT).variant(ButtonVariant.PRIMARY).build(),
+                FxIconButton.builder().text("Download").icon("fth-download").iconPosition(IconPosition.RIGHT).variant(ButtonVariant.SECONDARY).build()
+        );
+
+        HBox iconButtonsOnly = new HBox(8);
+        iconButtonsOnly.getChildren().addAll(
+                FxIconButton.builder().icon("fth-settings").iconPosition(IconPosition.ONLY).variant(ButtonVariant.PRIMARY).build(),
+                FxIconButton.builder().icon("fth-bell").iconPosition(IconPosition.ONLY).variant(ButtonVariant.SECONDARY).build(),
+                FxIconButton.builder().icon("fth-search").iconPosition(IconPosition.ONLY).variant(ButtonVariant.GHOST).build(),
+                FxIconButton.builder().icon("fth-x").iconPosition(IconPosition.ONLY).variant(ButtonVariant.DANGER).build()
+        );
+
+        VBox iconButtons = new VBox(12);
+        iconButtons.getChildren().addAll(iconButtonsLeft, iconButtonsRight, iconButtonsOnly);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
                 typographySectionLabel, typography,
                 primitivesSectionLabel, primitives,
-                iconsSectionLabel, icons
+                iconsSectionLabel, icons,
+                iconButtonsSectionLabel, iconButtons
         );
 
-        Scene scene = new Scene(root, 900, 900);
+        Scene scene = new Scene(root, 900, 1050);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

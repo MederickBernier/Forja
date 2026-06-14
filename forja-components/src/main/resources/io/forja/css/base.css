@@ -203,3 +203,24 @@
 .forja-icon:warning  { -fx-icon-color: -forja-warning; }
 .forja-icon:danger   { -fx-icon-color: -forja-danger; }
 .forja-icon:info     { -fx-icon-color: -forja-info; }
+
+.forja-icon-button {
+    -fx-graphic-text-gap: 8px;
+}
+
+.forja-icon-button:icon-only {
+    -fx-padding: 0;
+    -fx-min-width: 36px;
+    -fx-max-width: 36px;
+    -fx-graphic-text-gap: 0;
+}
+
+.forja-icon-button:primary .forja-icon,
+.forja-icon-button:danger .forja-icon {
+    -fx-icon-color: white;
+}
+
+.forja-icon-button:secondary .forja-icon,
+.forja-icon-button:ghost .forja-icon {
+    -fx-icon-color: -forja-zinc-900;
+}

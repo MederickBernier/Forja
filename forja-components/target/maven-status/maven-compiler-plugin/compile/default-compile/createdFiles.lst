@@ -16,11 +16,17 @@ io/forja/components/FxButton.class
 io/forja/components/FxIcon.class
 io/forja/skin/FxButtonSkin$1.class
 io/forja/builder/FxComponentBuilder.class
+io/forja/skin/FxIconButtonSkin$1.class
+io/forja/skin/FxIconButtonSkin.class
 io/forja/Forja$1.class
 io/forja/components/FxSeparator$Builder.class
+io/forja/components/FxIconButton.class
 io/forja/skin/FxLabelSkin.class
 io/forja/skin/FxSeparatorSkin$1.class
 io/forja/components/FxLabel.class
+io/forja/components/IconPosition.class
+io/forja/components/FxIconButton$Builder.class
 io/forja/components/FxButton$Builder.class
 io/forja/skin/FxButtonSkin.class
 io/forja/styling/FxStyle.class
+io/forja/components/FxIconButton$1.class

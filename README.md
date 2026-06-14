@@ -87,7 +87,7 @@ Legend: ✅ available · 🔨 in progress · ⏳ planned
 
 #### Buttons & Actions
 - ✅ FxButton
-- ⏳ FxIconButton
+- ✅ FxIconButton
 - ⏳ FxToggleButton
 - ⏳ FxSplitButton
 - ⏳ FxButtonGroup (segmented)

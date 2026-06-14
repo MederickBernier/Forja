@@ -96,7 +96,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 #### Typography
 - ✅ FxLabel
 - ✅ FxLink
-- ⏳ FxText · P0
+- ✅ FxText
 - ⏳ FxBlockquote · P0
 - ⏳ FxKbd · P0
 - ⏳ FxCode · P0

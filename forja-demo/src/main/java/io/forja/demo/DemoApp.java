@@ -8,6 +8,8 @@ import io.forja.components.FxIconButton;
 import io.forja.components.FxLabel;
 import io.forja.components.FxLink;
 import io.forja.components.FxSeparator;
+import io.forja.components.FxText;
+import io.forja.components.TextVariant;
 import io.forja.components.IconPosition;
 import io.forja.components.IconVariant;
 import io.forja.components.LabelVariant;
@@ -174,6 +176,32 @@ public class DemoApp extends Application {
                 FxLink.builder().text("External docs").variant(LinkVariant.EXTERNAL).build()
         );
 
+        FxLabel paragraphsSectionLabel = FxLabel.builder()
+                .text("Paragraphs")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        VBox paragraphs = new VBox(12);
+        paragraphs.getChildren().addAll(
+                FxText.builder()
+                        .text("Forja sits on top of JavaFX — not around it. It leverages the existing scene graph, CSS engine, skin architecture, and property binding system.")
+                        .variant(TextVariant.LEAD)
+                        .maxWidth(640)
+                        .build(),
+                FxText.builder()
+                        .text("Every component is a real JavaFX control. FXML, SceneBuilder, accessibility tools, existing code — all compatible, no escape hatches needed. The library adds a design system, a fluent API, and components that look like they were made in this decade.")
+                        .variant(TextVariant.BODY)
+                        .maxWidth(640)
+                        .build(),
+                FxText.builder()
+                        .text("Early development — not yet published to Maven Central.")
+                        .variant(TextVariant.BODY)
+                        .muted(true)
+                        .maxWidth(640)
+                        .build()
+        );
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -181,10 +209,11 @@ public class DemoApp extends Application {
                 primitivesSectionLabel, primitives,
                 iconsSectionLabel, icons,
                 iconButtonsSectionLabel, iconButtons,
-                linksSectionLabel, links
+                linksSectionLabel, links,
+                paragraphsSectionLabel, paragraphs
         );
 
-        Scene scene = new Scene(root, 900, 1130);
+        Scene scene = new Scene(root, 900, 1320);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

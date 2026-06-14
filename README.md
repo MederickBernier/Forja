@@ -98,7 +98,7 @@ Component packages:
 ```
 typography/        fxLabel · fxText · fxLink · fxBlockquote · fxKbd · fxCode
 buttonsAndActions/ fxButton · fxIconButton
-layout/            fxSeparator · fxSpacer · fxStack · fxRow · fxContainer · fxSection
+layout/            fxSeparator · fxSpacer · fxStack · fxRow · fxContainer · fxSection · fxCard
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot
 dataDisplay/       fxAvatar · fxAvatarGroup
 utilities/         fxIcon
@@ -191,7 +191,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxRow (horizontal flow)
 - ✅ FxContainer (max-width centered)
 - ✅ FxSection
-- ⏳ FxCard · P1
+- ✅ FxCard
 - ⏳ FxGrid · P2
 - ⏳ FxFlex · P2
 - ⏳ FxAspectRatio · P2

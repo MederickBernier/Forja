@@ -533,3 +533,30 @@
 .forja-section-title {
     -fx-padding: 0 0 4px 0;
 }
+
+.forja-card {
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 16px;
+    -fx-background-color: -forja-bg-card;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+}
+
+.forja-card:default {
+    -fx-background-color: -forja-bg-card;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+}
+
+.forja-card:outlined {
+    -fx-background-color: transparent;
+    -fx-border-color: -forja-border-strong;
+    -fx-border-width: 1px;
+}
+
+.forja-card:elevated {
+    -fx-background-color: -forja-bg-card;
+    -fx-border-color: -forja-border-strong -forja-border-default -forja-border-default -forja-border-default;
+    -fx-border-width: 1.5px 0.5px 0.5px 0.5px;
+}

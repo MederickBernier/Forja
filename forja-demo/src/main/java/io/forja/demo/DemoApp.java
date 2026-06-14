@@ -8,6 +8,8 @@ import io.forja.components.dataDisplay.fxAvatar.FxAvatar;
 import io.forja.components.dataDisplay.fxAvatarGroup.FxAvatarGroup;
 import io.forja.components.feedbackAndStatus.fxBadge.FxBadge;
 import io.forja.components.typography.fxBlockquote.FxBlockquote;
+import io.forja.components.layout.fxCard.CardVariant;
+import io.forja.components.layout.fxCard.FxCard;
 import io.forja.components.layout.fxContainer.ContainerWidth;
 import io.forja.components.feedbackAndStatus.fxChip.FxChip;
 import io.forja.components.layout.fxContainer.FxContainer;
@@ -556,6 +558,52 @@ public class DemoApp extends Application {
                 )
                 .build();
 
+        FxLabel cardsSectionLabel = FxLabel.builder()
+                .text("Cards")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        FxCard cardDefault = FxCard.builder()
+                .variant(CardVariant.DEFAULT)
+                .header(FxLabel.builder().text("Default").variant(LabelVariant.SUBHEADING).build())
+                .body(FxText.builder()
+                        .text("Subtle border, card background. The standard surface.")
+                        .variant(TextVariant.BODY)
+                        .build())
+                .footer(FxRow.builder()
+                        .gap(SpacingSize.SM)
+                        .children(
+                                FxButton.builder().text("Cancel").variant(ButtonVariant.GHOST).build(),
+                                FxButton.builder().text("Save").variant(ButtonVariant.PRIMARY).build()
+                        )
+                        .build())
+                .build();
+
+        FxCard cardOutlined = FxCard.builder()
+                .variant(CardVariant.OUTLINED)
+                .header(FxLabel.builder().text("Outlined").variant(LabelVariant.SUBHEADING).build())
+                .body(FxText.builder()
+                        .text("Prominent border, transparent background. Use to emphasize boundaries.")
+                        .variant(TextVariant.BODY)
+                        .build())
+                .build();
+
+        FxCard cardElevated = FxCard.builder()
+                .variant(CardVariant.ELEVATED)
+                .header(FxLabel.builder().text("Elevated").variant(LabelVariant.SUBHEADING).build())
+                .body(FxText.builder()
+                        .text("Stronger top edge signals elevation without resorting to drop shadows.")
+                        .variant(TextVariant.BODY)
+                        .build())
+                .build();
+
+        HBox cards = new HBox(16, cardDefault, cardOutlined, cardElevated);
+        cards.setAlignment(Pos.TOP_LEFT);
+        cardDefault.setPrefWidth(220);
+        cardOutlined.setPrefWidth(220);
+        cardElevated.setPrefWidth(220);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -577,10 +625,11 @@ public class DemoApp extends Application {
                 stacksSectionLabel, stacks,
                 rowsSectionLabel, rows,
                 containerSectionLabel, containerWrapper,
-                sectionsExample
+                sectionsExample,
+                cardsSectionLabel, cards
         );
 
-        Scene scene = new Scene(root, 900, 3100);
+        Scene scene = new Scene(root, 900, 3320);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

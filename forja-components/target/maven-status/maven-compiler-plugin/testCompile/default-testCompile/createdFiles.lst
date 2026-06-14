@@ -17,3 +17,4 @@ io/forja/components/FxAvatarTest.class
 io/forja/components/FxStatusDotTest.class
 io/forja/components/FxIconTest.class
 io/forja/components/FxContainerTest.class
+io/forja/components/FxSectionTest.class

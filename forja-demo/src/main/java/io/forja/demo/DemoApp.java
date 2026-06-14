@@ -24,6 +24,7 @@ import io.forja.components.FxLink;
 import io.forja.components.FxSeparator;
 import io.forja.components.FxSpacer;
 import io.forja.components.FxRow;
+import io.forja.components.FxSection;
 import io.forja.components.FxStack;
 import io.forja.components.SpacingSize;
 import io.forja.components.FxText;
@@ -537,6 +538,27 @@ public class DemoApp extends Application {
         VBox containerWrapper = new VBox(container);
         containerWrapper.setAlignment(Pos.CENTER);
 
+        FxSection sectionsExample = FxSection.builder()
+                .title("Sections")
+                .separator(true)
+                .gap(SpacingSize.MD)
+                .content(
+                        FxText.builder()
+                                .text("FxSection composes a title, optional leading separator, and content children into a single VBox. Use it to give visual structure to grouped content.")
+                                .variant(TextVariant.BODY)
+                                .maxWidth(640)
+                                .build(),
+                        FxRow.builder()
+                                .gap(SpacingSize.SM)
+                                .children(
+                                        FxBadge.builder().text("ALPHA").variant(BadgeVariant.ACCENT).build(),
+                                        FxBadge.builder().text("BETA").variant(BadgeVariant.SUCCESS).build(),
+                                        FxBadge.builder().text("RC").variant(BadgeVariant.WARNING).build()
+                                )
+                                .build()
+                )
+                .build();
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -557,10 +579,11 @@ public class DemoApp extends Application {
                 avatarGroupsSectionLabel, avatarGroups,
                 stacksSectionLabel, stacks,
                 rowsSectionLabel, rows,
-                containerSectionLabel, containerWrapper
+                containerSectionLabel, containerWrapper,
+                sectionsExample
         );
 
-        Scene scene = new Scene(root, 900, 2950);
+        Scene scene = new Scene(root, 900, 3100);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

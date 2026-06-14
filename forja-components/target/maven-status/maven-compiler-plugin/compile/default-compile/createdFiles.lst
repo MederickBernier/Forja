@@ -4,6 +4,7 @@ io/forja/components/LabelVariant.class
 io/forja/components/FxKbd$Builder.class
 io/forja/components/FxIcon$Builder.class
 io/forja/components/SpacingSize.class
+io/forja/components/FxSection.class
 io/forja/FxTheme.class
 io/forja/components/FxStatusDot$1.class
 io/forja/components/FxCode.class
@@ -56,6 +57,7 @@ io/forja/skin/FxBadgeSkin$1.class
 io/forja/components/SeparatorVariant.class
 io/forja/skin/FxLabelSkin$1.class
 io/forja/components/TextVariant.class
+io/forja/components/FxSection$Builder.class
 io/forja/components/FxBlockquote.class
 io/forja/components/StatusDotVariant.class
 io/forja/styling/FxStyleBuilder.class

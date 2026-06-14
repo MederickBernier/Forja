@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: io.forja.components.FxBadgeTest
+Test set: io.forja.components.FxSectionTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.028 s -- in io.forja.components.FxBadgeTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.422 s -- in io.forja.components.FxSectionTest

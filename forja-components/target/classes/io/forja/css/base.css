@@ -525,3 +525,11 @@
 .forja-avatar-overflow .forja-avatar-initials {
     -fx-text-fill: -forja-text-secondary;
 }
+
+.forja-section {
+    -fx-padding: 0;
+}
+
+.forja-section-title {
+    -fx-padding: 0 0 4px 0;
+}

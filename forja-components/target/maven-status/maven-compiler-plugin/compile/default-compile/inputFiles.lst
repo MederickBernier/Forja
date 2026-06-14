@@ -2,6 +2,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/IconVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/skin/FxIconButtonSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/FxAvatarGroup.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/FxContainer.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/IconPosition.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/FxCode.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/StatusDotVariant.java
@@ -36,6 +37,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/FxBlockquote.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/FxAvatar.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/FxLabel.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/ContainerWidth.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/styling/FxStyleBuilder.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/skin/FxLabelSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/LabelVariant.java

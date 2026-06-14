@@ -158,7 +158,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxSpacer
 - ✅ FxStack (vertical flow)
 - ✅ FxRow (horizontal flow)
-- ⏳ FxContainer (max-width centered) · P0
+- ✅ FxContainer (max-width centered)
 - ⏳ FxSection · P0
 - ⏳ FxCard · P1
 - ⏳ FxGrid · P2

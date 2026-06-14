@@ -20,6 +20,7 @@ io/forja/components/FxChip$Builder.class
 io/forja/util/ForjaStylesheets.class
 io/forja/skin/FxChipSkin.class
 io/forja/components/FxBadge$Builder.class
+io/forja/components/ContainerWidth.class
 io/forja/skin/FxTextSkin$1.class
 io/forja/builder/FxComponentBuilder.class
 io/forja/components/FxText$Builder.class
@@ -58,6 +59,7 @@ io/forja/components/TextVariant.class
 io/forja/components/FxBlockquote.class
 io/forja/components/StatusDotVariant.class
 io/forja/styling/FxStyleBuilder.class
+io/forja/components/FxContainer.class
 io/forja/components/FxKbd.class
 io/forja/components/FxStatusDot$Builder.class
 io/forja/components/FxLink$Builder.class
@@ -68,6 +70,7 @@ io/forja/skin/FxButtonSkin$1.class
 io/forja/components/FxAvatarGroup$Builder.class
 io/forja/components/FxRow$Builder.class
 io/forja/components/AvatarSize.class
+io/forja/components/FxContainer$Builder.class
 io/forja/components/FxAvatar.class
 io/forja/skin/FxSeparatorSkin$1.class
 io/forja/components/FxStatusDot.class

@@ -9,7 +9,9 @@ import io.forja.components.FxAvatar;
 import io.forja.components.FxAvatarGroup;
 import io.forja.components.FxBadge;
 import io.forja.components.FxBlockquote;
+import io.forja.components.ContainerWidth;
 import io.forja.components.FxChip;
+import io.forja.components.FxContainer;
 import io.forja.components.FxStatusDot;
 import io.forja.components.StatusDotVariant;
 import io.forja.components.FxButton;
@@ -511,6 +513,30 @@ public class DemoApp extends Application {
 
         VBox rows = new VBox(8, rowSm, rowLg, rowXl);
 
+        FxLabel containerSectionLabel = FxLabel.builder()
+                .text("Container (SM, padding XL)")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        FxContainer container = FxContainer.builder()
+                .width(ContainerWidth.SM)
+                .padding(SpacingSize.XL)
+                .child(
+                        new VBox(12,
+                                FxLabel.builder().text("Centered Content").variant(LabelVariant.HEADING).build(),
+                                FxText.builder()
+                                        .text("FxContainer caps width to its breakpoint and applies token-aligned padding. Place it inside a centering parent (VBox + Pos.CENTER, BorderPane center slot) to anchor the content horizontally.")
+                                        .variant(TextVariant.BODY)
+                                        .build()
+                        )
+                )
+                .build();
+
+        container.setStyle("-fx-background-color: -forja-bg-card; -fx-border-color: -forja-border-default; -fx-border-width: 0.5px; -fx-background-radius: 8px; -fx-border-radius: 8px;");
+        VBox containerWrapper = new VBox(container);
+        containerWrapper.setAlignment(Pos.CENTER);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -530,10 +556,11 @@ public class DemoApp extends Application {
                 avatarsSectionLabel, avatars,
                 avatarGroupsSectionLabel, avatarGroups,
                 stacksSectionLabel, stacks,
-                rowsSectionLabel, rows
+                rowsSectionLabel, rows,
+                containerSectionLabel, containerWrapper
         );
 
-        Scene scene = new Scene(root, 900, 2740);
+        Scene scene = new Scene(root, 900, 2950);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

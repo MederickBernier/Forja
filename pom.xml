@@ -30,6 +30,7 @@
         <maven.compiler.release>8</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javafx.version>17.0.10</javafx.version>
+        <ikonli.version>11.5.0</ikonli.version>
     </properties>
 
     <dependencyManagement>
@@ -45,6 +46,16 @@
                 <artifactId>javafx-fxml</artifactId>
                 <version>${javafx.version}</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.kordamp.ikonli</groupId>
+                <artifactId>ikonli-javafx</artifactId>
+                <version>${ikonli.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.kordamp.ikonli</groupId>
+                <artifactId>ikonli-feather-pack</artifactId>
+                <version>${ikonli.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.testfx</groupId>

@@ -190,3 +190,16 @@
 .forja-separator:strong:vertical > .line {
     -fx-border-width: 0 0 0 2;
 }
+
+.forja-icon {
+    -fx-icon-size: 16;
+    -fx-icon-color: -forja-text-primary;
+}
+
+.forja-icon:default  { -fx-icon-color: -forja-text-primary; }
+.forja-icon:muted    { -fx-icon-color: -forja-text-muted; }
+.forja-icon:accent   { -fx-icon-color: -forja-accent; }
+.forja-icon:success  { -fx-icon-color: -forja-success; }
+.forja-icon:warning  { -fx-icon-color: -forja-warning; }
+.forja-icon:danger   { -fx-icon-color: -forja-danger; }
+.forja-icon:info     { -fx-icon-color: -forja-info; }

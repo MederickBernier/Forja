@@ -3,13 +3,16 @@ package io.forja.demo;
 import io.forja.Forja;
 import io.forja.components.ButtonVariant;
 import io.forja.components.FxButton;
+import io.forja.components.FxIcon;
 import io.forja.components.FxLabel;
 import io.forja.components.FxSeparator;
+import io.forja.components.IconVariant;
 import io.forja.components.LabelVariant;
 import io.forja.components.SeparatorVariant;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -92,19 +95,61 @@ public class DemoApp extends Application {
         VBox primitives = new VBox(16);
         primitives.getChildren().addAll(separators, verticalSeparatorRow);
 
+        FxLabel iconsSectionLabel = FxLabel.builder()
+                .text("Icons")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        HBox iconVariants = new HBox(16);
+        iconVariants.setAlignment(Pos.CENTER_LEFT);
+        iconVariants.getChildren().addAll(
+                iconWithLabel("fth-check-circle", IconVariant.DEFAULT, "default"),
+                iconWithLabel("fth-circle",       IconVariant.MUTED,   "muted"),
+                iconWithLabel("fth-zap",          IconVariant.ACCENT,  "accent"),
+                iconWithLabel("fth-check",        IconVariant.SUCCESS, "success"),
+                iconWithLabel("fth-alert-triangle", IconVariant.WARNING, "warning"),
+                iconWithLabel("fth-x-octagon",    IconVariant.DANGER,  "danger"),
+                iconWithLabel("fth-info",         IconVariant.INFO,    "info")
+        );
+
+        HBox iconSizes = new HBox(16);
+        iconSizes.setAlignment(Pos.CENTER_LEFT);
+        iconSizes.getChildren().addAll(
+                FxIcon.builder().literal("fth-settings").size(12).build(),
+                FxIcon.builder().literal("fth-settings").size(16).build(),
+                FxIcon.builder().literal("fth-settings").size(24).build(),
+                FxIcon.builder().literal("fth-settings").size(32).build(),
+                FxIcon.builder().literal("fth-settings").size(48).build()
+        );
+
+        VBox icons = new VBox(16);
+        icons.getChildren().addAll(iconVariants, iconSizes);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
                 typographySectionLabel, typography,
-                primitivesSectionLabel, primitives
+                primitivesSectionLabel, primitives,
+                iconsSectionLabel, icons
         );
 
-        Scene scene = new Scene(root, 800, 800);
+        Scene scene = new Scene(root, 900, 900);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");
         stage.setScene(scene);
         stage.show();
+    }
+
+    private static VBox iconWithLabel(String literal, IconVariant variant, String label) {
+        VBox box = new VBox(4);
+        box.setAlignment(Pos.CENTER);
+        box.getChildren().addAll(
+                FxIcon.builder().literal(literal).size(24).variant(variant).build(),
+                FxLabel.builder().text(label).variant(LabelVariant.SMALL).muted(true).build()
+        );
+        return box;
     }
 
     public static void main(String[] args) {

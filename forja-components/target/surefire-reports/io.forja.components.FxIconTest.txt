@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: io.forja.components.FxSeparatorTest
+Test set: io.forja.components.FxIconTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.297 s -- in io.forja.components.FxSeparatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.195 s -- in io.forja.components.FxIconTest

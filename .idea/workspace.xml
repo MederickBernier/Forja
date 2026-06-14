@@ -5,31 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ada2d8-726f-4065-b80a-ec655913ac3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/builder/FxComponentBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/styling/FxStyle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/styling/FxStyleBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/util/ForjaStylesheets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxButton$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxButton$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/forja-components-0.1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/resources/io/forja/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/main/resources/io/forja/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/classes/io/forja/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/forja-components-0.1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/forja-components-0.1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-demo/target/forja-demo-0.1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-demo/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/forja/Forja.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/forja/FxTheme.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/forja/css/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/forja/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/forja/css/dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/forja/css/light.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/forja/fonts/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxButtonTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxButtonTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxLabelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxLabelTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxSeparatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxSeparatorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxButtonTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxButtonTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxLabelTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxLabelTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxSeparatorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxSeparatorTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-demo/src/main/java/io/forja/demo/DemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-demo/src/main/java/io/forja/demo/DemoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-demo/target/classes/io/forja/demo/DemoApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/forja-demo/target/classes/io/forja/demo/DemoApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +38,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="3Dh8jVMukDW41f9NYpWVkfWIfgl" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -58,17 +50,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="25ada2d8-726f-4065-b80a-ec655913ac3d" name="Changes" comment="" />

@@ -242,7 +242,7 @@ Legend: ✅ available · 🔨 in progress · ⏳ planned
 - ⏳ FxKeybindingHint
 - ⏳ FxSearchHighlight
 - ⏳ FxScrollSpy
-- ⏳ FxIcon (icon glyph wrapper)
+- ✅ FxIcon (icon glyph wrapper — bundles Feather pack)
 - ⏳ FxPortal (render-elsewhere helper)
 - ⏳ FxFocusTrap
 

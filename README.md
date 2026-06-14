@@ -214,7 +214,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ⏳ FxLightbox · P2
 
 #### Data Display
-- ⏳ FxAvatar · P0
+- ✅ FxAvatar
 - ⏳ FxAvatarGroup · P0
 - ⏳ FxList · P2
 - ⏳ FxTable · P2

@@ -33,8 +33,10 @@ io/forja/components/FxIconButton.class
 io/forja/skin/FxLabelSkin.class
 io/forja/components/FxLabel.class
 io/forja/components/FxBadge.class
+io/forja/components/FxAvatar$1.class
 io/forja/components/FxButton$Builder.class
 io/forja/skin/FxButtonSkin.class
+io/forja/components/FxAvatar$Builder.class
 io/forja/components/BadgeVariant.class
 io/forja/components/FxLink.class
 io/forja/components/FxSpacer.class
@@ -58,6 +60,8 @@ io/forja/components/FxLink$Builder.class
 io/forja/components/FxButton.class
 io/forja/components/FxIcon.class
 io/forja/skin/FxButtonSkin$1.class
+io/forja/components/AvatarSize.class
+io/forja/components/FxAvatar.class
 io/forja/skin/FxSeparatorSkin$1.class
 io/forja/components/FxStatusDot.class
 io/forja/components/IconPosition.class

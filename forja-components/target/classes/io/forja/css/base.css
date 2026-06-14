@@ -484,3 +484,26 @@
 .forja-status-dot:warning { -fx-fill: -forja-warning; }
 .forja-status-dot:danger  { -fx-fill: -forja-danger; }
 .forja-status-dot:info    { -fx-fill: -forja-info; }
+
+.forja-avatar {
+    -fx-background-color: -forja-accent-tint;
+    -fx-background-radius: 999px;
+    -fx-alignment: center;
+}
+
+.forja-avatar-initials {
+    -fx-text-fill: -forja-accent-active;
+    -fx-font-weight: bold;
+}
+
+.forja-avatar:compact .forja-avatar-initials {
+    -fx-font-size: 10px;
+}
+
+.forja-avatar:default .forja-avatar-initials {
+    -fx-font-size: 13px;
+}
+
+.forja-avatar:comfortable .forja-avatar-initials {
+    -fx-font-size: 16px;
+}

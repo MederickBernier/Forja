@@ -2,8 +2,10 @@ package io.forja.demo;
 
 import io.forja.Forja;
 import io.forja.components.ButtonVariant;
+import io.forja.components.AvatarSize;
 import io.forja.components.BadgeVariant;
 import io.forja.components.ChipVariant;
+import io.forja.components.FxAvatar;
 import io.forja.components.FxBadge;
 import io.forja.components.FxBlockquote;
 import io.forja.components.FxChip;
@@ -387,6 +389,23 @@ public class DemoApp extends Application {
         VBox spacers = new VBox(8);
         spacers.getChildren().addAll(spacerFlex, spacerFixed);
 
+        FxLabel avatarsSectionLabel = FxLabel.builder()
+                .text("Avatars")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        HBox avatars = new HBox(12);
+        avatars.setAlignment(Pos.CENTER_LEFT);
+        avatars.getChildren().addAll(
+                FxAvatar.builder().initials("MB").size(AvatarSize.COMPACT).build(),
+                FxAvatar.builder().initials("MB").size(AvatarSize.DEFAULT).build(),
+                FxAvatar.builder().initials("MB").size(AvatarSize.COMFORTABLE).build(),
+                FxAvatar.builder().initials("AK").size(AvatarSize.DEFAULT).build(),
+                FxAvatar.builder().initials("RS").size(AvatarSize.DEFAULT).build(),
+                FxAvatar.builder().initials("JD").size(AvatarSize.DEFAULT).build()
+        );
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -402,10 +421,11 @@ public class DemoApp extends Application {
                 badgesSectionLabel, badges,
                 chipsSectionLabel, chips,
                 statusDotsSectionLabel, statusDots,
-                spacersSectionLabel, spacers
+                spacersSectionLabel, spacers,
+                avatarsSectionLabel, avatars
         );
 
-        Scene scene = new Scene(root, 900, 2200);
+        Scene scene = new Scene(root, 900, 2300);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

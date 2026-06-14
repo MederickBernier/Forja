@@ -7,6 +7,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSection/FxSection.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSeparator/FxSeparatorSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxButton/FxButton.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxTextArea/FxTextArea.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxText/TextVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSeparator/SeparatorVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/builder/FxNodeBuilder.java
@@ -22,6 +23,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxBlockquote/FxBlockquote.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/styling/FxStyleBuilder.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxLabel/LabelVariant.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxTextArea/TextAreaVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxStatusDot/FxStatusDot.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxContainer/ContainerWidth.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxLink/FxLink.java

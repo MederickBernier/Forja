@@ -21,3 +21,4 @@ io/forja/components/FxIconTest.class
 io/forja/components/FxContainerTest.class
 io/forja/components/FxSectionTest.class
 io/forja/components/FxTextFieldTest.class
+io/forja/components/FxTextAreaTest.class

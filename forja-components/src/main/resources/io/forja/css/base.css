@@ -639,3 +639,55 @@
 .forja-text-field:disabled .forja-text-field-row {
     -fx-opacity: 0.5;
 }
+
+.forja-text-area {
+    -fx-spacing: 4px;
+}
+
+.forja-text-area-inner {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 0;
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: -forja-text-muted;
+}
+
+.forja-text-area-inner .content {
+    -fx-background-color: transparent;
+    -fx-padding: 8px 10px 8px 10px;
+}
+
+.forja-text-area-inner:hover {
+    -fx-background-color: -forja-input-bg-hover;
+}
+
+.forja-text-area:focused .forja-text-area-inner {
+    -fx-border-color: -forja-accent-focus;
+    -fx-border-width: 1px;
+}
+
+.forja-text-area:error .forja-text-area-inner {
+    -fx-border-color: -forja-danger;
+    -fx-border-width: 1px;
+}
+
+.forja-text-area:success .forja-text-area-inner {
+    -fx-border-color: -forja-success;
+    -fx-border-width: 1px;
+}
+
+.forja-text-area-helper {
+    -fx-padding: 0 0 0 10px;
+}
+
+.forja-text-area-error {
+    -fx-text-fill: -forja-danger;
+}
+
+.forja-text-area:disabled .forja-text-area-inner {
+    -fx-opacity: 0.5;
+}

@@ -8,6 +8,8 @@ import io.forja.components.dataDisplay.fxAvatar.FxAvatar;
 import io.forja.components.dataDisplay.fxAvatarGroup.FxAvatarGroup;
 import io.forja.components.feedbackAndStatus.fxBadge.FxBadge;
 import io.forja.components.typography.fxBlockquote.FxBlockquote;
+import io.forja.components.inputs.fxTextArea.FxTextArea;
+import io.forja.components.inputs.fxTextArea.TextAreaVariant;
 import io.forja.components.inputs.fxTextField.FxTextField;
 import io.forja.components.inputs.fxTextField.TextFieldVariant;
 import io.forja.components.layout.fxCard.CardVariant;
@@ -650,6 +652,38 @@ public class DemoApp extends Application {
 
         VBox textFields = new VBox(12, tfPlain, tfWithIcon, tfSearch, tfError, tfSuccess);
 
+        FxLabel textAreasSectionLabel = FxLabel.builder()
+                .text("Text Areas")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        FxTextArea taPlain = FxTextArea.builder()
+                .promptText("Tell us about yourself...")
+                .rows(3)
+                .helperText("Max 500 characters.")
+                .build();
+
+        FxTextArea taAuto = FxTextArea.builder()
+                .text("Line one\nLine two\nLine three\nLine four")
+                .rows(2)
+                .maxRows(8)
+                .autoResize(true)
+                .helperText("Auto-resizes between 2 and 8 rows.")
+                .build();
+
+        FxTextArea taError = FxTextArea.builder()
+                .text("oops")
+                .rows(2)
+                .errorText("Description is required.")
+                .build();
+
+        taPlain.setMaxWidth(320);
+        taAuto.setMaxWidth(320);
+        taError.setMaxWidth(320);
+
+        VBox textAreas = new VBox(12, taPlain, taAuto, taError);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -673,10 +707,11 @@ public class DemoApp extends Application {
                 containerSectionLabel, containerWrapper,
                 sectionsExample,
                 cardsSectionLabel, cards,
-                textFieldsSectionLabel, textFields
+                textFieldsSectionLabel, textFields,
+                textAreasSectionLabel, textAreas
         );
 
-        Scene scene = new Scene(root, 900, 3540);
+        Scene scene = new Scene(root, 900, 3820);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

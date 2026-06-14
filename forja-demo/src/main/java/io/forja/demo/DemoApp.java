@@ -5,6 +5,7 @@ import io.forja.components.ButtonVariant;
 import io.forja.components.FxBlockquote;
 import io.forja.components.FxButton;
 import io.forja.components.FxIcon;
+import io.forja.components.FxKbd;
 import io.forja.components.FxIconButton;
 import io.forja.components.FxLabel;
 import io.forja.components.FxLink;
@@ -222,6 +223,39 @@ public class DemoApp extends Application {
                         .build()
         );
 
+        FxLabel kbdSectionLabel = FxLabel.builder()
+                .text("Keyboard Shortcuts")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        HBox shortcutSave = new HBox(4);
+        shortcutSave.setAlignment(Pos.CENTER_LEFT);
+        shortcutSave.getChildren().addAll(
+                FxLabel.builder().text("Save:").variant(LabelVariant.BODY).build(),
+                FxKbd.builder().text("⌘").build(),
+                FxKbd.builder().text("S").build()
+        );
+
+        HBox shortcutPalette = new HBox(4);
+        shortcutPalette.setAlignment(Pos.CENTER_LEFT);
+        shortcutPalette.getChildren().addAll(
+                FxLabel.builder().text("Command palette:").variant(LabelVariant.BODY).build(),
+                FxKbd.builder().text("Ctrl").build(),
+                FxKbd.builder().text("Shift").build(),
+                FxKbd.builder().text("P").build()
+        );
+
+        HBox shortcutEscape = new HBox(4);
+        shortcutEscape.setAlignment(Pos.CENTER_LEFT);
+        shortcutEscape.getChildren().addAll(
+                FxLabel.builder().text("Close dialog:").variant(LabelVariant.BODY).build(),
+                FxKbd.builder().text("Esc").build()
+        );
+
+        VBox kbds = new VBox(8);
+        kbds.getChildren().addAll(shortcutSave, shortcutPalette, shortcutEscape);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -231,10 +265,11 @@ public class DemoApp extends Application {
                 iconButtonsSectionLabel, iconButtons,
                 linksSectionLabel, links,
                 paragraphsSectionLabel, paragraphs,
-                blockquotesSectionLabel, blockquotes
+                blockquotesSectionLabel, blockquotes,
+                kbdSectionLabel, kbds
         );
 
-        Scene scene = new Scene(root, 900, 1500);
+        Scene scene = new Scene(root, 900, 1640);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

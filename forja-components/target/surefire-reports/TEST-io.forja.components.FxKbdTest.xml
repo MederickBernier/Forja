@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxButtonTest" time="0.333" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxKbdTest" time="1.407" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="javafx.runtime.version" value="12.0.1+2"/>
@@ -61,10 +61,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="loadingDisablesButtonAndSetsPseudoClass" classname="io.forja.components.FxButtonTest" time="0.437"/>
-  <testcase name="skinAttachesViaSceneRendering" classname="io.forja.components.FxButtonTest" time="0.345"/>
-  <testcase name="constructorVariants" classname="io.forja.components.FxButtonTest" time="-1.556"/>
-  <testcase name="builderSetsAllProperties" classname="io.forja.components.FxButtonTest" time="0.385"/>
-  <testcase name="builderDefaults" classname="io.forja.components.FxButtonTest" time="0.329"/>
-  <testcase name="variantPseudoClassUpdates" classname="io.forja.components.FxButtonTest" time="0.388"/>
+  <testcase name="builderSetsText" classname="io.forja.components.FxKbdTest" time="0.328"/>
+  <testcase name="builderAppliesInheritedBaseProperties" classname="io.forja.components.FxKbdTest" time="0.365"/>
+  <testcase name="constructorVariants" classname="io.forja.components.FxKbdTest" time="0.384"/>
+  <testcase name="builderDefaults" classname="io.forja.components.FxKbdTest" time="0.328"/>
 </testsuite>

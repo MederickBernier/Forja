@@ -327,3 +327,20 @@
 .forja-blockquote-cite {
     -fx-text-fill: -forja-text-muted;
 }
+
+.forja-kbd {
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 11px;
+    -fx-text-fill: -forja-text-primary;
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 1px 6px 2px 6px;
+}
+
+.forja-kbd:disabled {
+    -fx-text-fill: -forja-text-disabled;
+    -fx-border-color: -forja-border-default;
+}

@@ -21,6 +21,8 @@ import io.forja.components.FxLabel;
 import io.forja.components.FxLink;
 import io.forja.components.FxSeparator;
 import io.forja.components.FxSpacer;
+import io.forja.components.FxStack;
+import io.forja.components.SpacingSize;
 import io.forja.components.FxText;
 import io.forja.components.TextVariant;
 import io.forja.components.IconPosition;
@@ -444,6 +446,38 @@ public class DemoApp extends Application {
         VBox avatarGroups = new VBox(12);
         avatarGroups.getChildren().addAll(smallGroup, overflowGroup, comfortableGroup);
 
+        FxLabel stacksSectionLabel = FxLabel.builder()
+                .text("Stacks")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        FxStack stackSm = FxStack.builder()
+                .gap(SpacingSize.SM)
+                .children(
+                        FxBadge.builder().text("ITEM A").variant(BadgeVariant.ACCENT).build(),
+                        FxBadge.builder().text("ITEM B").variant(BadgeVariant.ACCENT).build(),
+                        FxBadge.builder().text("ITEM C").variant(BadgeVariant.ACCENT).build()
+                ).build();
+
+        FxStack stackLg = FxStack.builder()
+                .gap(SpacingSize.LG)
+                .children(
+                        FxBadge.builder().text("ITEM A").variant(BadgeVariant.SUCCESS).build(),
+                        FxBadge.builder().text("ITEM B").variant(BadgeVariant.SUCCESS).build(),
+                        FxBadge.builder().text("ITEM C").variant(BadgeVariant.SUCCESS).build()
+                ).build();
+
+        FxStack stackXl = FxStack.builder()
+                .gap(SpacingSize.XL)
+                .children(
+                        FxBadge.builder().text("ITEM A").variant(BadgeVariant.WARNING).build(),
+                        FxBadge.builder().text("ITEM B").variant(BadgeVariant.WARNING).build(),
+                        FxBadge.builder().text("ITEM C").variant(BadgeVariant.WARNING).build()
+                ).build();
+
+        HBox stacks = new HBox(32, stackSm, stackLg, stackXl);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -461,10 +495,11 @@ public class DemoApp extends Application {
                 statusDotsSectionLabel, statusDots,
                 spacersSectionLabel, spacers,
                 avatarsSectionLabel, avatars,
-                avatarGroupsSectionLabel, avatarGroups
+                avatarGroupsSectionLabel, avatarGroups,
+                stacksSectionLabel, stacks
         );
 
-        Scene scene = new Scene(root, 900, 2440);
+        Scene scene = new Scene(root, 900, 2600);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

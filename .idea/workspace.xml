@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ada2d8-726f-4065-b80a-ec655913ac3d" name="Changes" comment="" />
+    <list default="true" id="25ada2d8-726f-4065-b80a-ec655913ac3d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/BadgeVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/ChipVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxBadge$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxBadge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxBlockquote$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxBlockquote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxChip$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxChip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxIcon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxIcon$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxIcon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxKbd$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxKbd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxLabel$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxLabel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxLink$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/LabelVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxBadgeSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxBadgeSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxButtonSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxButtonSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxChipSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxChipSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxLabelSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxLabelSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxLinkSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxLinkSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxSeparatorSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxSeparatorSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

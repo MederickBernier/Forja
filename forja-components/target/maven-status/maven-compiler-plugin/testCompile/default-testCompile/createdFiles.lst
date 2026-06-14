@@ -2,6 +2,7 @@ io/forja/components/FxKbdTest.class
 io/forja/components/FxSeparatorTest.class
 io/forja/components/FxIconButtonTest.class
 io/forja/components/FxTextTest.class
+io/forja/components/FxStackTest.class
 io/forja/components/FxCodeTest.class
 io/forja/components/FxBadgeTest.class
 io/forja/components/FxButtonTest.class

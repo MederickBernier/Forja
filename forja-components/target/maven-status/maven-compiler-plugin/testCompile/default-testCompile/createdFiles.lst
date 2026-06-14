@@ -9,6 +9,7 @@ io/forja/components/FxLabelTest.class
 io/forja/components/FxBlockquoteTest.class
 io/forja/components/FxLinkTest.class
 io/forja/components/FxSpacerTest.class
+io/forja/components/FxAvatarGroupTest.class
 io/forja/components/FxChipTest.class
 io/forja/components/FxAvatarTest.class
 io/forja/components/FxStatusDotTest.class

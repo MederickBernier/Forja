@@ -6,6 +6,7 @@ import io.forja.components.AvatarSize;
 import io.forja.components.BadgeVariant;
 import io.forja.components.ChipVariant;
 import io.forja.components.FxAvatar;
+import io.forja.components.FxAvatarGroup;
 import io.forja.components.FxBadge;
 import io.forja.components.FxBlockquote;
 import io.forja.components.FxChip;
@@ -406,6 +407,43 @@ public class DemoApp extends Application {
                 FxAvatar.builder().initials("JD").size(AvatarSize.DEFAULT).build()
         );
 
+        FxLabel avatarGroupsSectionLabel = FxLabel.builder()
+                .text("Avatar Groups")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        FxAvatarGroup smallGroup = FxAvatarGroup.builder()
+                .avatar("MB")
+                .avatar("AK")
+                .avatar("RS")
+                .size(AvatarSize.DEFAULT)
+                .build();
+
+        FxAvatarGroup overflowGroup = FxAvatarGroup.builder()
+                .avatar("MB")
+                .avatar("AK")
+                .avatar("RS")
+                .avatar("JD")
+                .avatar("LP")
+                .avatar("ER")
+                .avatar("TS")
+                .max(3)
+                .size(AvatarSize.DEFAULT)
+                .build();
+
+        FxAvatarGroup comfortableGroup = FxAvatarGroup.builder()
+                .avatar("MB")
+                .avatar("AK")
+                .avatar("RS")
+                .avatar("JD")
+                .max(2)
+                .size(AvatarSize.COMFORTABLE)
+                .build();
+
+        VBox avatarGroups = new VBox(12);
+        avatarGroups.getChildren().addAll(smallGroup, overflowGroup, comfortableGroup);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -422,10 +460,11 @@ public class DemoApp extends Application {
                 chipsSectionLabel, chips,
                 statusDotsSectionLabel, statusDots,
                 spacersSectionLabel, spacers,
-                avatarsSectionLabel, avatars
+                avatarsSectionLabel, avatars,
+                avatarGroupsSectionLabel, avatarGroups
         );
 
-        Scene scene = new Scene(root, 900, 2300);
+        Scene scene = new Scene(root, 900, 2440);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

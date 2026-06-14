@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxLabelTest" time="2.724" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxAvatarGroupTest" time="2.505" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="javafx.runtime.version" value="12.0.1+2"/>
@@ -61,11 +61,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="allVariantsHaveCorrespondingPseudoClass" classname="io.forja.components.FxLabelTest" time="0.572"/>
-  <testcase name="mutedPseudoClassToggles" classname="io.forja.components.FxLabelTest" time="0.417"/>
-  <testcase name="skinAttachesViaSceneRendering" classname="io.forja.components.FxLabelTest" time="0.324"/>
-  <testcase name="constructorVariants" classname="io.forja.components.FxLabelTest" time="0.417"/>
-  <testcase name="builderSetsAllProperties" classname="io.forja.components.FxLabelTest" time="0.312"/>
-  <testcase name="builderDefaults" classname="io.forja.components.FxLabelTest" time="0.312"/>
-  <testcase name="variantPseudoClassUpdates" classname="io.forja.components.FxLabelTest" time="0.366"/>
+  <testcase name="mutatingListTriggersRebuild" classname="io.forja.components.FxAvatarGroupTest" time="0.469"/>
+  <testcase name="overflowShowsBadgeWithCount" classname="io.forja.components.FxAvatarGroupTest" time="0.312"/>
+  <testcase name="noOverflowWhenSizeEqualsMax" classname="io.forja.components.FxAvatarGroupTest" time="0.312"/>
+  <testcase name="changingMaxRebuilds" classname="io.forja.components.FxAvatarGroupTest" time="0.418"/>
+  <testcase name="sizePropagatesToMembers" classname="io.forja.components.FxAvatarGroupTest" time="0.366"/>
+  <testcase name="builderDefaults" classname="io.forja.components.FxAvatarGroupTest" time="0.313"/>
+  <testcase name="builderAddsAvatarsFromInitials" classname="io.forja.components.FxAvatarGroupTest" time="0.312"/>
 </testsuite>

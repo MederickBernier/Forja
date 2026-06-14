@@ -507,3 +507,21 @@
 .forja-avatar:comfortable .forja-avatar-initials {
     -fx-font-size: 16px;
 }
+
+.forja-avatar-group {
+    -fx-padding: 0;
+}
+
+.forja-avatar-group-member {
+    -fx-border-color: -forja-bg-page;
+    -fx-border-width: 2px;
+    -fx-border-radius: 999px;
+}
+
+.forja-avatar-overflow {
+    -fx-background-color: -forja-zinc-200;
+}
+
+.forja-avatar-overflow .forja-avatar-initials {
+    -fx-text-fill: -forja-text-secondary;
+}

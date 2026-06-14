@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: io.forja.components.FxLabelTest
+Test set: io.forja.components.FxSpacerTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.844 s -- in io.forja.components.FxLabelTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.100 s -- in io.forja.components.FxSpacerTest

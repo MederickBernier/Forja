@@ -37,6 +37,8 @@ io/forja/components/FxButton$Builder.class
 io/forja/skin/FxButtonSkin.class
 io/forja/components/BadgeVariant.class
 io/forja/components/FxLink.class
+io/forja/components/FxSpacer.class
+io/forja/components/FxSpacer$Builder.class
 io/forja/components/LinkVariant.class
 io/forja/styling/FxStyle.class
 io/forja/components/FxIconButton$1.class

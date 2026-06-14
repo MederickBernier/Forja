@@ -155,7 +155,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 
 #### Layout
 - ✅ FxSeparator
-- ⏳ FxSpacer · P0
+- ✅ FxSpacer
 - ⏳ FxStack (vertical flow) · P0
 - ⏳ FxRow (horizontal flow) · P0
 - ⏳ FxContainer (max-width centered) · P0

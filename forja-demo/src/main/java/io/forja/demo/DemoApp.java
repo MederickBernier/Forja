@@ -17,6 +17,7 @@ import io.forja.components.FxIconButton;
 import io.forja.components.FxLabel;
 import io.forja.components.FxLink;
 import io.forja.components.FxSeparator;
+import io.forja.components.FxSpacer;
 import io.forja.components.FxText;
 import io.forja.components.TextVariant;
 import io.forja.components.IconPosition;
@@ -356,6 +357,36 @@ public class DemoApp extends Application {
                 dotWithLabel(StatusDotVariant.INFO, "syncing")
         );
 
+        FxLabel spacersSectionLabel = FxLabel.builder()
+                .text("Spacers")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        HBox spacerFlex = new HBox(0);
+        spacerFlex.setAlignment(Pos.CENTER_LEFT);
+        spacerFlex.setPrefWidth(640);
+        spacerFlex.getChildren().addAll(
+                FxButton.builder().text("Back").variant(ButtonVariant.GHOST).build(),
+                FxSpacer.builder().build(),
+                FxButton.builder().text("Cancel").variant(ButtonVariant.SECONDARY).build(),
+                FxSpacer.builder().size(8, Orientation.HORIZONTAL).build(),
+                FxButton.builder().text("Save").variant(ButtonVariant.PRIMARY).build()
+        );
+
+        HBox spacerFixed = new HBox(0);
+        spacerFixed.setAlignment(Pos.CENTER_LEFT);
+        spacerFixed.getChildren().addAll(
+                FxBadge.builder().text("A").variant(BadgeVariant.ACCENT).build(),
+                FxSpacer.builder().size(48, Orientation.HORIZONTAL).build(),
+                FxBadge.builder().text("B").variant(BadgeVariant.SUCCESS).build(),
+                FxSpacer.builder().size(24, Orientation.HORIZONTAL).build(),
+                FxBadge.builder().text("C").variant(BadgeVariant.WARNING).build()
+        );
+
+        VBox spacers = new VBox(8);
+        spacers.getChildren().addAll(spacerFlex, spacerFixed);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -370,10 +401,11 @@ public class DemoApp extends Application {
                 codeSectionLabel, codes,
                 badgesSectionLabel, badges,
                 chipsSectionLabel, chips,
-                statusDotsSectionLabel, statusDots
+                statusDotsSectionLabel, statusDots,
+                spacersSectionLabel, spacers
         );
 
-        Scene scene = new Scene(root, 900, 2080);
+        Scene scene = new Scene(root, 900, 2200);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

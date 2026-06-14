@@ -1,6 +1,10 @@
 package io.forja.components;
 
-import io.forja.skin.FxTextSkin;
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.typography.fxText.TextVariant;
+import io.forja.components.typography.fxText.FxText;
+
+import io.forja.components.typography.fxText.FxTextSkin;
 import javafx.css.PseudoClass;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
@@ -110,29 +114,5 @@ class FxTextTest {
             });
             assertHasPseudoClass(text, variant.name().toLowerCase());
         }
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxText text, String name) {
-        assertTrue(
-                text.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + text
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxText text, String name) {
-        assertFalse(
-                text.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + text
-        );
     }
 }

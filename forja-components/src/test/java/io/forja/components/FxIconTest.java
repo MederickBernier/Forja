@@ -1,5 +1,9 @@
 package io.forja.components;
 
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.utilities.fxIcon.FxIcon;
+import io.forja.tokens.SemanticVariant;
+
 import javafx.css.PseudoClass;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
@@ -25,7 +29,7 @@ class FxIconTest {
     void builderDefaults() {
         FxIcon icon = onFx(() -> FxIcon.builder().build());
 
-        assertEquals(IconVariant.DEFAULT, icon.getVariant());
+        assertEquals(SemanticVariant.DEFAULT, icon.getVariant());
         assertTrue(icon.isVisible());
         assertTrue(icon.getStyleClass().contains("forja-icon"));
     }
@@ -35,7 +39,7 @@ class FxIconTest {
         FxIcon icon = onFx(() -> FxIcon.builder()
                 .literal("fth-save")
                 .size(24)
-                .variant(IconVariant.ACCENT)
+                .variant(SemanticVariant.ACCENT)
                 .id("save-icon")
                 .styleClass("custom-icon")
                 .userData("payload")
@@ -43,7 +47,7 @@ class FxIconTest {
 
         assertEquals("fth-save", icon.getIconLiteral());
         assertEquals(24, icon.getIconSize());
-        assertEquals(IconVariant.ACCENT, icon.getVariant());
+        assertEquals(SemanticVariant.ACCENT, icon.getVariant());
         assertEquals("save-icon", icon.getId());
         assertTrue(icon.getStyleClass().contains("custom-icon"));
         assertEquals("payload", icon.getUserData());
@@ -60,25 +64,25 @@ class FxIconTest {
     void constructorVariants() {
         FxIcon empty = onFx(() -> new FxIcon());
         FxIcon withLiteral = onFx(() -> new FxIcon("fth-save"));
-        FxIcon withVariant = onFx(() -> new FxIcon("fth-save", IconVariant.DANGER));
+        FxIcon withVariant = onFx(() -> new FxIcon("fth-save", SemanticVariant.DANGER));
 
-        assertEquals(IconVariant.DEFAULT, empty.getVariant());
+        assertEquals(SemanticVariant.DEFAULT, empty.getVariant());
         assertEquals("fth-save", withLiteral.getIconLiteral());
-        assertEquals(IconVariant.DEFAULT, withLiteral.getVariant());
+        assertEquals(SemanticVariant.DEFAULT, withLiteral.getVariant());
         assertEquals("fth-save", withVariant.getIconLiteral());
-        assertEquals(IconVariant.DANGER, withVariant.getVariant());
+        assertEquals(SemanticVariant.DANGER, withVariant.getVariant());
     }
 
     @Test
     void variantPseudoClassUpdates() {
-        FxIcon icon = onFx(() -> FxIcon.builder().literal("fth-save").variant(IconVariant.ACCENT).build());
+        FxIcon icon = onFx(() -> FxIcon.builder().literal("fth-save").variant(SemanticVariant.ACCENT).build());
 
         assertHasPseudoClass(icon, "accent");
         assertLacksPseudoClass(icon, "default");
         assertLacksPseudoClass(icon, "danger");
 
         onFx(() -> {
-            icon.setVariant(IconVariant.DANGER);
+            icon.setVariant(SemanticVariant.DANGER);
             return null;
         });
 
@@ -88,7 +92,7 @@ class FxIconTest {
 
     @Test
     void allVariantsHaveCorrespondingPseudoClass() {
-        for (IconVariant variant : IconVariant.values()) {
+        for (SemanticVariant variant : SemanticVariant.values()) {
             FxIcon icon = onFx(() -> FxIcon.builder().literal("fth-save").variant(variant).build());
 
             assertHasPseudoClass(icon, variant.name().toLowerCase());
@@ -109,29 +113,5 @@ class FxIconTest {
         assertEquals("fth-save", icon.getIconLiteral());
         assertNotNull(icon.getText(), "Expected the icon glyph text to be set by Ikonli");
         assertFalse(icon.getText().isEmpty(), "Expected the icon glyph text to be non-empty");
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxIcon icon, String name) {
-        assertTrue(
-                icon.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + icon
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxIcon icon, String name) {
-        assertFalse(
-                icon.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + icon
-        );
     }
 }

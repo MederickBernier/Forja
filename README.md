@@ -69,17 +69,48 @@ Early development. Not yet published to Maven Central.
 | Token layer (palette, typography, spacing, radii, semantic colors) | ✅ |
 | Theme system (light / dark / system) | ✅ |
 | `Forja` installer | ✅ |
-| `FxComponentBuilder` base builder | ✅ |
+| `FxComponentBuilder` base (for Controls) | ✅ |
+| `FxNodeBuilder` base (for non-Control Nodes) | ✅ |
 | `FxStyle` / `FxStyleBuilder` per-instance overrides | ✅ |
 | `ForjaStylesheets` scoped stylesheet registry | ✅ |
+| `SemanticVariant` shared token enum (default/muted/accent/success/warning/danger/info) | ✅ |
+| `ForjaTestSupport` headless TestFX helpers | ✅ |
 | Bundled fonts (Inter, JetBrains Mono) | ⏳ |
 | Javadoc site & Maven Central release | ⏳ |
+
+### Package layout
+
+```
+io.forja.builder        — FxComponentBuilder (for Controls),
+                          FxNodeBuilder (for non-Control Nodes)
+io.forja.styling        — FxStyle, FxStyleBuilder
+io.forja.util           — ForjaStylesheets
+io.forja.tokens         — SemanticVariant, SpacingSize
+                          (cross-cutting token enums)
+io.forja.components.<category>.<fxComponent>/
+                        — each component lives in its own subpackage
+                          containing the component class, its Skin (if any),
+                          and any component-local enums.
+```
+
+Component packages:
+
+```
+typography/        fxLabel · fxText · fxLink · fxBlockquote · fxKbd · fxCode
+buttonsAndActions/ fxButton · fxIconButton
+layout/            fxSeparator · fxSpacer · fxStack · fxRow · fxContainer · fxSection
+feedbackAndStatus/ fxBadge · fxChip · fxStatusDot
+dataDisplay/       fxAvatar · fxAvatarGroup
+utilities/         fxIcon
+```
+
+Empty category folders held for future work: `charts`, `dateAndTime`, `fileAndMediaInput`, `inputs`, `media`, `navigation`, `overlays`, `selection`, `validation`.
 
 ### Build roadmap
 
 Build order across the roster. Each tier ships as a milestone.
 
-**v0.2-alpha — P0 (trivial wrappers, high-usage)**
+**v0.2-alpha — P0 (trivial wrappers, high-usage) ✅ shipped**
 FxLink · FxText · FxBlockquote · FxKbd · FxCode · FxBadge · FxChip · FxStatusDot · FxSpacer · FxAvatar · FxAvatarGroup · FxStack · FxRow · FxContainer · FxSection
 
 **v0.2 — P1 (form basics + feedback)**

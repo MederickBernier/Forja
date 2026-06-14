@@ -1,5 +1,9 @@
 package io.forja.components;
 
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.layout.fxStack.FxStack;
+import io.forja.tokens.SpacingSize;
+
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -93,15 +97,5 @@ class FxStackTest {
 
         assertEquals(2, stack.getChildren().size());
         assertEquals(a, stack.getChildren().get(0));
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
     }
 }

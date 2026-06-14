@@ -1,6 +1,10 @@
 package io.forja.components;
 
-import io.forja.skin.FxBadgeSkin;
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.feedbackAndStatus.fxBadge.FxBadge;
+import io.forja.tokens.SemanticVariant;
+
+import io.forja.components.feedbackAndStatus.fxBadge.FxBadgeSkin;
 import javafx.css.PseudoClass;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
@@ -26,7 +30,7 @@ class FxBadgeTest {
         FxBadge badge = onFx(() -> FxBadge.builder().build());
 
         assertEquals("", badge.getText());
-        assertEquals(BadgeVariant.DEFAULT, badge.getVariant());
+        assertEquals(SemanticVariant.DEFAULT, badge.getVariant());
         assertTrue(badge.getStyleClass().contains("forja-badge"));
     }
 
@@ -34,31 +38,31 @@ class FxBadgeTest {
     void builderSetsAllProperties() {
         FxBadge badge = onFx(() -> FxBadge.builder()
                 .text("Active")
-                .variant(BadgeVariant.SUCCESS)
+                .variant(SemanticVariant.SUCCESS)
                 .build());
 
         assertEquals("Active", badge.getText());
-        assertEquals(BadgeVariant.SUCCESS, badge.getVariant());
+        assertEquals(SemanticVariant.SUCCESS, badge.getVariant());
     }
 
     @Test
     void constructorVariants() {
         FxBadge empty = onFx(() -> new FxBadge());
         FxBadge withText = onFx(() -> new FxBadge("Beta"));
-        FxBadge withVariant = onFx(() -> new FxBadge("Pro", BadgeVariant.ACCENT));
+        FxBadge withVariant = onFx(() -> new FxBadge("Pro", SemanticVariant.ACCENT));
 
         assertEquals("", empty.getText());
-        assertEquals(BadgeVariant.DEFAULT, empty.getVariant());
+        assertEquals(SemanticVariant.DEFAULT, empty.getVariant());
         assertEquals("Beta", withText.getText());
-        assertEquals(BadgeVariant.DEFAULT, withText.getVariant());
+        assertEquals(SemanticVariant.DEFAULT, withText.getVariant());
         assertEquals("Pro", withVariant.getText());
-        assertEquals(BadgeVariant.ACCENT, withVariant.getVariant());
+        assertEquals(SemanticVariant.ACCENT, withVariant.getVariant());
     }
 
     @Test
     void variantPseudoClassUpdates() {
         FxBadge badge = onFx(() -> {
-            FxBadge b = FxBadge.builder().variant(BadgeVariant.WARNING).build();
+            FxBadge b = FxBadge.builder().variant(SemanticVariant.WARNING).build();
             b.setSkin(new FxBadgeSkin(b));
             return b;
         });
@@ -67,7 +71,7 @@ class FxBadgeTest {
         assertLacksPseudoClass(badge, "default");
         assertLacksPseudoClass(badge, "success");
 
-        onFx(() -> { badge.setVariant(BadgeVariant.DANGER); return null; });
+        onFx(() -> { badge.setVariant(SemanticVariant.DANGER); return null; });
 
         assertHasPseudoClass(badge, "danger");
         assertLacksPseudoClass(badge, "warning");
@@ -75,7 +79,7 @@ class FxBadgeTest {
 
     @Test
     void allVariantsHaveCorrespondingPseudoClass() {
-        for (BadgeVariant variant : BadgeVariant.values()) {
+        for (SemanticVariant variant : SemanticVariant.values()) {
             FxBadge badge = onFx(() -> {
                 FxBadge b = FxBadge.builder().variant(variant).build();
                 b.setSkin(new FxBadgeSkin(b));
@@ -83,29 +87,5 @@ class FxBadgeTest {
             });
             assertHasPseudoClass(badge, variant.name().toLowerCase());
         }
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxBadge badge, String name) {
-        assertTrue(
-                badge.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + badge
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxBadge badge, String name) {
-        assertFalse(
-                badge.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + badge
-        );
     }
 }

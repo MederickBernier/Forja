@@ -1,6 +1,10 @@
 package io.forja.components;
 
-import io.forja.skin.FxLabelSkin;
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.typography.fxLabel.LabelVariant;
+import io.forja.components.typography.fxLabel.FxLabel;
+
+import io.forja.components.typography.fxLabel.FxLabelSkin;
 import javafx.css.PseudoClass;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
@@ -132,29 +136,5 @@ class FxLabelTest {
 
         assertHasPseudoClass(label, "subheading");
         assertHasPseudoClass(label, "muted");
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxLabel label, String name) {
-        assertTrue(
-                label.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + label
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxLabel label, String name) {
-        assertFalse(
-                label.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + label
-        );
     }
 }

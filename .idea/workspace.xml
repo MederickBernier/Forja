@@ -4,7 +4,226 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ada2d8-726f-4065-b80a-ec655913ac3d" name="Changes" comment="" />
+    <list default="true" id="25ada2d8-726f-4065-b80a-ec655913ac3d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/builder/FxNodeBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/tokens/SemanticVariant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/testsupport/ForjaTestSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/Forja.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/Forja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/builder/FxComponentBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/builder/FxComponentBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/AvatarSize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/BadgeVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/ButtonVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/ChipVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/ContainerWidth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxAvatar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxAvatarGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxBadge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxBlockquote.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxChip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxIcon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxIconButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxKbd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxLink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxSection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxSeparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxSpacer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxStatusDot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/FxText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/IconPosition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/IconVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/LabelVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/LinkVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/SeparatorVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/SpacingSize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/StatusDotVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/components/TextVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/skin/FxBadgeSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/skin/FxButtonSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/skin/FxChipSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/skin/FxIconButtonSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/skin/FxLabelSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/skin/FxLinkSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/skin/FxSeparatorSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/skin/FxTextSkin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/styling/FxStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/styling/FxStyle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/styling/FxStyleBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/main/java/io/forja/styling/FxStyleBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxAvatarGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxAvatarGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxAvatarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxAvatarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxBadgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxBadgeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxBlockquoteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxBlockquoteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxButtonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxChipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxChipTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxContainerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxIconButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxIconButtonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxIconTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxIconTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxKbdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxKbdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxLabelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxLabelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxLinkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxLinkTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxRowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxRowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxSectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxSectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxSeparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxSeparatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxSpacerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxSpacerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxStatusDotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxStatusDotTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxTextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/test/java/io/forja/components/FxTextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/Forja$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/Forja.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/FxTheme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/builder/FxComponentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/AvatarSize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/BadgeVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/ButtonVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/ChipVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/ContainerWidth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxAvatar$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxAvatar$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxAvatar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxAvatarGroup$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxAvatarGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxBadge$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxBadge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxBlockquote$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxBlockquote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxButton$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxChip$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxChip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxCode$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxContainer$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxIcon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxIcon$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxIcon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxIconButton$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxIconButton$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxIconButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxKbd$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxKbd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxLabel$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxLabel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxLink$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxRow$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxRow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxSection$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxSection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxSeparator$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxSeparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxSpacer$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxSpacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxStack$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxStatusDot$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxStatusDot$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxStatusDot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxText$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/FxText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/IconPosition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/IconVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/LabelVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/LinkVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/SeparatorVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/SpacingSize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/StatusDotVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/components/TextVariant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxBadgeSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxBadgeSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxButtonSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxButtonSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxChipSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxChipSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxIconButtonSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxIconButtonSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxLabelSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxLabelSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxLinkSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxLinkSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxSeparatorSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxSeparatorSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxTextSkin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/skin/FxTextSkin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/styling/FxStyle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/styling/FxStyleBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/util/ForjaStylesheets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/forja-components-0.1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxAvatarGroupTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxAvatarTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxBadgeTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxBlockquoteTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxButtonTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxChipTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxCodeTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxContainerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxIconButtonTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxIconTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxKbdTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxLabelTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxLinkTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxRowTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxSectionTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxSeparatorTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxSpacerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxStackTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxStatusDotTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxTextTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxAvatarGroupTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxAvatarTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxBadgeTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxBlockquoteTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxButtonTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxChipTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxCodeTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxContainerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxIconButtonTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxIconTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxKbdTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxLabelTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxLinkTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxRowTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxSectionTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxSeparatorTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxSpacerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxStackTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxStatusDotTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxTextTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxAvatarGroupTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxAvatarTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxBadgeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxBlockquoteTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxButtonTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxChipTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxCodeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxContainerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxIconButtonTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxIconTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxKbdTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxLabelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxLinkTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxRowTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxSectionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxSeparatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxSpacerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxStackTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxStatusDotTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/target/test-classes/io/forja/components/FxTextTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-demo/src/main/java/io/forja/demo/DemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-demo/src/main/java/io/forja/demo/DemoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-demo/target/classes/io/forja/demo/DemoApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/forja-demo/target/classes/io/forja/demo/DemoApp.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

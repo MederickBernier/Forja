@@ -1,5 +1,9 @@
 package io.forja.components;
 
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.dataDisplay.fxAvatar.FxAvatar;
+import io.forja.components.dataDisplay.fxAvatar.AvatarSize;
+
 import javafx.css.PseudoClass;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
@@ -120,29 +124,5 @@ class FxAvatarTest {
 
         onFx(() -> { avatar.setSource(null); return null; });
         assertFalse(avatar.getImageView().isVisible());
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxAvatar avatar, String name) {
-        assertTrue(
-                avatar.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + avatar
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxAvatar avatar, String name) {
-        assertFalse(
-                avatar.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + avatar
-        );
     }
 }

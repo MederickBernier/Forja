@@ -1,6 +1,10 @@
 package io.forja.components;
 
-import io.forja.skin.FxSeparatorSkin;
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.layout.fxSeparator.FxSeparator;
+import io.forja.components.layout.fxSeparator.SeparatorVariant;
+
+import io.forja.components.layout.fxSeparator.FxSeparatorSkin;
 import javafx.css.PseudoClass;
 import javafx.geometry.Orientation;
 import javafx.scene.Scene;
@@ -105,29 +109,5 @@ class FxSeparatorTest {
         });
 
         assertHasPseudoClass(separator, "strong");
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxSeparator separator, String name) {
-        assertTrue(
-                separator.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + separator
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxSeparator separator, String name) {
-        assertFalse(
-                separator.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + separator
-        );
     }
 }

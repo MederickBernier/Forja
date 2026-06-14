@@ -1,5 +1,8 @@
 package io.forja.components;
 
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.layout.fxSpacer.FxSpacer;
+
 import javafx.geometry.Orientation;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
@@ -92,15 +95,5 @@ class FxSpacerTest {
         assertTrue(spacer.getStyleClass().contains("custom"));
         assertEquals("payload", spacer.getUserData());
         assertEquals(false, spacer.isVisible());
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
     }
 }

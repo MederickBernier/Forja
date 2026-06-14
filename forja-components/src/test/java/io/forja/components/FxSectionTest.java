@@ -1,5 +1,10 @@
 package io.forja.components;
 
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.layout.fxSection.FxSection;
+import io.forja.tokens.SpacingSize;
+import io.forja.components.typography.fxLabel.LabelVariant;
+
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
@@ -138,15 +143,5 @@ class FxSectionTest {
         assertEquals("Hi", withContent.getTitle());
         assertEquals(1, withContent.getContent().size());
         assertEquals(a, withContent.getContent().get(0));
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
     }
 }

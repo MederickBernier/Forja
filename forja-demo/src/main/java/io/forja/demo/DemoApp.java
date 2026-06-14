@@ -1,39 +1,36 @@
 package io.forja.demo;
 
 import io.forja.Forja;
-import io.forja.components.ButtonVariant;
-import io.forja.components.AvatarSize;
-import io.forja.components.BadgeVariant;
-import io.forja.components.ChipVariant;
-import io.forja.components.FxAvatar;
-import io.forja.components.FxAvatarGroup;
-import io.forja.components.FxBadge;
-import io.forja.components.FxBlockquote;
-import io.forja.components.ContainerWidth;
-import io.forja.components.FxChip;
-import io.forja.components.FxContainer;
-import io.forja.components.FxStatusDot;
-import io.forja.components.StatusDotVariant;
-import io.forja.components.FxButton;
-import io.forja.components.FxCode;
-import io.forja.components.FxIcon;
-import io.forja.components.FxKbd;
-import io.forja.components.FxIconButton;
-import io.forja.components.FxLabel;
-import io.forja.components.FxLink;
-import io.forja.components.FxSeparator;
-import io.forja.components.FxSpacer;
-import io.forja.components.FxRow;
-import io.forja.components.FxSection;
-import io.forja.components.FxStack;
-import io.forja.components.SpacingSize;
-import io.forja.components.FxText;
-import io.forja.components.TextVariant;
-import io.forja.components.IconPosition;
-import io.forja.components.IconVariant;
-import io.forja.components.LabelVariant;
-import io.forja.components.LinkVariant;
-import io.forja.components.SeparatorVariant;
+import io.forja.components.buttonsAndActions.fxButton.ButtonVariant;
+import io.forja.components.dataDisplay.fxAvatar.AvatarSize;
+import io.forja.tokens.SemanticVariant;
+import io.forja.components.dataDisplay.fxAvatar.FxAvatar;
+import io.forja.components.dataDisplay.fxAvatarGroup.FxAvatarGroup;
+import io.forja.components.feedbackAndStatus.fxBadge.FxBadge;
+import io.forja.components.typography.fxBlockquote.FxBlockquote;
+import io.forja.components.layout.fxContainer.ContainerWidth;
+import io.forja.components.feedbackAndStatus.fxChip.FxChip;
+import io.forja.components.layout.fxContainer.FxContainer;
+import io.forja.components.feedbackAndStatus.fxStatusDot.FxStatusDot;
+import io.forja.components.buttonsAndActions.fxButton.FxButton;
+import io.forja.components.typography.fxCode.FxCode;
+import io.forja.components.utilities.fxIcon.FxIcon;
+import io.forja.components.typography.fxKbd.FxKbd;
+import io.forja.components.buttonsAndActions.fxIconButton.FxIconButton;
+import io.forja.components.typography.fxLabel.FxLabel;
+import io.forja.components.typography.fxLink.FxLink;
+import io.forja.components.layout.fxSeparator.FxSeparator;
+import io.forja.components.layout.fxSpacer.FxSpacer;
+import io.forja.components.layout.fxRow.FxRow;
+import io.forja.components.layout.fxSection.FxSection;
+import io.forja.components.layout.fxStack.FxStack;
+import io.forja.tokens.SpacingSize;
+import io.forja.components.typography.fxText.FxText;
+import io.forja.components.typography.fxText.TextVariant;
+import io.forja.components.buttonsAndActions.fxIconButton.IconPosition;
+import io.forja.components.typography.fxLabel.LabelVariant;
+import io.forja.components.typography.fxLink.LinkVariant;
+import io.forja.components.layout.fxSeparator.SeparatorVariant;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
@@ -129,13 +126,13 @@ public class DemoApp extends Application {
         HBox iconVariants = new HBox(16);
         iconVariants.setAlignment(Pos.CENTER_LEFT);
         iconVariants.getChildren().addAll(
-                iconWithLabel("fth-check-circle", IconVariant.DEFAULT, "default"),
-                iconWithLabel("fth-circle",       IconVariant.MUTED,   "muted"),
-                iconWithLabel("fth-zap",          IconVariant.ACCENT,  "accent"),
-                iconWithLabel("fth-check",        IconVariant.SUCCESS, "success"),
-                iconWithLabel("fth-alert-triangle", IconVariant.WARNING, "warning"),
-                iconWithLabel("fth-x-octagon",    IconVariant.DANGER,  "danger"),
-                iconWithLabel("fth-info",         IconVariant.INFO,    "info")
+                iconWithLabel("fth-check-circle", SemanticVariant.DEFAULT, "default"),
+                iconWithLabel("fth-circle",       SemanticVariant.MUTED,   "muted"),
+                iconWithLabel("fth-zap",          SemanticVariant.ACCENT,  "accent"),
+                iconWithLabel("fth-check",        SemanticVariant.SUCCESS, "success"),
+                iconWithLabel("fth-alert-triangle", SemanticVariant.WARNING, "warning"),
+                iconWithLabel("fth-x-octagon",    SemanticVariant.DANGER,  "danger"),
+                iconWithLabel("fth-info",         SemanticVariant.INFO,    "info")
         );
 
         HBox iconSizes = new HBox(16);
@@ -309,13 +306,13 @@ public class DemoApp extends Application {
         HBox badges = new HBox(8);
         badges.setAlignment(Pos.CENTER_LEFT);
         badges.getChildren().addAll(
-                FxBadge.builder().text("DEFAULT").variant(BadgeVariant.DEFAULT).build(),
-                FxBadge.builder().text("MUTED").variant(BadgeVariant.MUTED).build(),
-                FxBadge.builder().text("ACCENT").variant(BadgeVariant.ACCENT).build(),
-                FxBadge.builder().text("SUCCESS").variant(BadgeVariant.SUCCESS).build(),
-                FxBadge.builder().text("WARNING").variant(BadgeVariant.WARNING).build(),
-                FxBadge.builder().text("DANGER").variant(BadgeVariant.DANGER).build(),
-                FxBadge.builder().text("INFO").variant(BadgeVariant.INFO).build()
+                FxBadge.builder().text("DEFAULT").variant(SemanticVariant.DEFAULT).build(),
+                FxBadge.builder().text("MUTED").variant(SemanticVariant.MUTED).build(),
+                FxBadge.builder().text("ACCENT").variant(SemanticVariant.ACCENT).build(),
+                FxBadge.builder().text("SUCCESS").variant(SemanticVariant.SUCCESS).build(),
+                FxBadge.builder().text("WARNING").variant(SemanticVariant.WARNING).build(),
+                FxBadge.builder().text("DANGER").variant(SemanticVariant.DANGER).build(),
+                FxBadge.builder().text("INFO").variant(SemanticVariant.INFO).build()
         );
 
         FxLabel chipsSectionLabel = FxLabel.builder()
@@ -327,22 +324,22 @@ public class DemoApp extends Application {
         HBox chipVariants = new HBox(8);
         chipVariants.setAlignment(Pos.CENTER_LEFT);
         chipVariants.getChildren().addAll(
-                FxChip.builder().text("default").variant(ChipVariant.DEFAULT).build(),
-                FxChip.builder().text("muted").variant(ChipVariant.MUTED).build(),
-                FxChip.builder().text("accent").variant(ChipVariant.ACCENT).build(),
-                FxChip.builder().text("success").variant(ChipVariant.SUCCESS).build(),
-                FxChip.builder().text("warning").variant(ChipVariant.WARNING).build(),
-                FxChip.builder().text("danger").variant(ChipVariant.DANGER).build(),
-                FxChip.builder().text("info").variant(ChipVariant.INFO).build()
+                FxChip.builder().text("default").variant(SemanticVariant.DEFAULT).build(),
+                FxChip.builder().text("muted").variant(SemanticVariant.MUTED).build(),
+                FxChip.builder().text("accent").variant(SemanticVariant.ACCENT).build(),
+                FxChip.builder().text("success").variant(SemanticVariant.SUCCESS).build(),
+                FxChip.builder().text("warning").variant(SemanticVariant.WARNING).build(),
+                FxChip.builder().text("danger").variant(SemanticVariant.DANGER).build(),
+                FxChip.builder().text("info").variant(SemanticVariant.INFO).build()
         );
 
         HBox chipRemovable = new HBox(8);
         chipRemovable.setAlignment(Pos.CENTER_LEFT);
         chipRemovable.getChildren().addAll(
-                FxChip.builder().text("javafx").variant(ChipVariant.ACCENT).removable(true).build(),
-                FxChip.builder().text("ui-toolkit").variant(ChipVariant.ACCENT).removable(true).build(),
-                FxChip.builder().text("design-system").variant(ChipVariant.SUCCESS).removable(true).build(),
-                FxChip.builder().text("draft").variant(ChipVariant.WARNING).removable(true).build()
+                FxChip.builder().text("javafx").variant(SemanticVariant.ACCENT).removable(true).build(),
+                FxChip.builder().text("ui-toolkit").variant(SemanticVariant.ACCENT).removable(true).build(),
+                FxChip.builder().text("design-system").variant(SemanticVariant.SUCCESS).removable(true).build(),
+                FxChip.builder().text("draft").variant(SemanticVariant.WARNING).removable(true).build()
         );
 
         VBox chips = new VBox(8);
@@ -357,13 +354,13 @@ public class DemoApp extends Application {
         HBox statusDots = new HBox(16);
         statusDots.setAlignment(Pos.CENTER_LEFT);
         statusDots.getChildren().addAll(
-                dotWithLabel(StatusDotVariant.DEFAULT, "idle"),
-                dotWithLabel(StatusDotVariant.MUTED, "draft"),
-                dotWithLabel(StatusDotVariant.ACCENT, "active"),
-                dotWithLabel(StatusDotVariant.SUCCESS, "online"),
-                dotWithLabel(StatusDotVariant.WARNING, "degraded"),
-                dotWithLabel(StatusDotVariant.DANGER, "offline"),
-                dotWithLabel(StatusDotVariant.INFO, "syncing")
+                dotWithLabel(SemanticVariant.DEFAULT, "idle"),
+                dotWithLabel(SemanticVariant.MUTED, "draft"),
+                dotWithLabel(SemanticVariant.ACCENT, "active"),
+                dotWithLabel(SemanticVariant.SUCCESS, "online"),
+                dotWithLabel(SemanticVariant.WARNING, "degraded"),
+                dotWithLabel(SemanticVariant.DANGER, "offline"),
+                dotWithLabel(SemanticVariant.INFO, "syncing")
         );
 
         FxLabel spacersSectionLabel = FxLabel.builder()
@@ -386,11 +383,11 @@ public class DemoApp extends Application {
         HBox spacerFixed = new HBox(0);
         spacerFixed.setAlignment(Pos.CENTER_LEFT);
         spacerFixed.getChildren().addAll(
-                FxBadge.builder().text("A").variant(BadgeVariant.ACCENT).build(),
+                FxBadge.builder().text("A").variant(SemanticVariant.ACCENT).build(),
                 FxSpacer.builder().size(48, Orientation.HORIZONTAL).build(),
-                FxBadge.builder().text("B").variant(BadgeVariant.SUCCESS).build(),
+                FxBadge.builder().text("B").variant(SemanticVariant.SUCCESS).build(),
                 FxSpacer.builder().size(24, Orientation.HORIZONTAL).build(),
-                FxBadge.builder().text("C").variant(BadgeVariant.WARNING).build()
+                FxBadge.builder().text("C").variant(SemanticVariant.WARNING).build()
         );
 
         VBox spacers = new VBox(8);
@@ -459,25 +456,25 @@ public class DemoApp extends Application {
         FxStack stackSm = FxStack.builder()
                 .gap(SpacingSize.SM)
                 .children(
-                        FxBadge.builder().text("ITEM A").variant(BadgeVariant.ACCENT).build(),
-                        FxBadge.builder().text("ITEM B").variant(BadgeVariant.ACCENT).build(),
-                        FxBadge.builder().text("ITEM C").variant(BadgeVariant.ACCENT).build()
+                        FxBadge.builder().text("ITEM A").variant(SemanticVariant.ACCENT).build(),
+                        FxBadge.builder().text("ITEM B").variant(SemanticVariant.ACCENT).build(),
+                        FxBadge.builder().text("ITEM C").variant(SemanticVariant.ACCENT).build()
                 ).build();
 
         FxStack stackLg = FxStack.builder()
                 .gap(SpacingSize.LG)
                 .children(
-                        FxBadge.builder().text("ITEM A").variant(BadgeVariant.SUCCESS).build(),
-                        FxBadge.builder().text("ITEM B").variant(BadgeVariant.SUCCESS).build(),
-                        FxBadge.builder().text("ITEM C").variant(BadgeVariant.SUCCESS).build()
+                        FxBadge.builder().text("ITEM A").variant(SemanticVariant.SUCCESS).build(),
+                        FxBadge.builder().text("ITEM B").variant(SemanticVariant.SUCCESS).build(),
+                        FxBadge.builder().text("ITEM C").variant(SemanticVariant.SUCCESS).build()
                 ).build();
 
         FxStack stackXl = FxStack.builder()
                 .gap(SpacingSize.XL)
                 .children(
-                        FxBadge.builder().text("ITEM A").variant(BadgeVariant.WARNING).build(),
-                        FxBadge.builder().text("ITEM B").variant(BadgeVariant.WARNING).build(),
-                        FxBadge.builder().text("ITEM C").variant(BadgeVariant.WARNING).build()
+                        FxBadge.builder().text("ITEM A").variant(SemanticVariant.WARNING).build(),
+                        FxBadge.builder().text("ITEM B").variant(SemanticVariant.WARNING).build(),
+                        FxBadge.builder().text("ITEM C").variant(SemanticVariant.WARNING).build()
                 ).build();
 
         HBox stacks = new HBox(32, stackSm, stackLg, stackXl);
@@ -491,25 +488,25 @@ public class DemoApp extends Application {
         FxRow rowSm = FxRow.builder()
                 .gap(SpacingSize.SM)
                 .children(
-                        FxBadge.builder().text("A").variant(BadgeVariant.ACCENT).build(),
-                        FxBadge.builder().text("B").variant(BadgeVariant.ACCENT).build(),
-                        FxBadge.builder().text("C").variant(BadgeVariant.ACCENT).build()
+                        FxBadge.builder().text("A").variant(SemanticVariant.ACCENT).build(),
+                        FxBadge.builder().text("B").variant(SemanticVariant.ACCENT).build(),
+                        FxBadge.builder().text("C").variant(SemanticVariant.ACCENT).build()
                 ).build();
 
         FxRow rowLg = FxRow.builder()
                 .gap(SpacingSize.LG)
                 .children(
-                        FxBadge.builder().text("A").variant(BadgeVariant.SUCCESS).build(),
-                        FxBadge.builder().text("B").variant(BadgeVariant.SUCCESS).build(),
-                        FxBadge.builder().text("C").variant(BadgeVariant.SUCCESS).build()
+                        FxBadge.builder().text("A").variant(SemanticVariant.SUCCESS).build(),
+                        FxBadge.builder().text("B").variant(SemanticVariant.SUCCESS).build(),
+                        FxBadge.builder().text("C").variant(SemanticVariant.SUCCESS).build()
                 ).build();
 
         FxRow rowXl = FxRow.builder()
                 .gap(SpacingSize.XL)
                 .children(
-                        FxBadge.builder().text("A").variant(BadgeVariant.WARNING).build(),
-                        FxBadge.builder().text("B").variant(BadgeVariant.WARNING).build(),
-                        FxBadge.builder().text("C").variant(BadgeVariant.WARNING).build()
+                        FxBadge.builder().text("A").variant(SemanticVariant.WARNING).build(),
+                        FxBadge.builder().text("B").variant(SemanticVariant.WARNING).build(),
+                        FxBadge.builder().text("C").variant(SemanticVariant.WARNING).build()
                 ).build();
 
         VBox rows = new VBox(8, rowSm, rowLg, rowXl);
@@ -551,9 +548,9 @@ public class DemoApp extends Application {
                         FxRow.builder()
                                 .gap(SpacingSize.SM)
                                 .children(
-                                        FxBadge.builder().text("ALPHA").variant(BadgeVariant.ACCENT).build(),
-                                        FxBadge.builder().text("BETA").variant(BadgeVariant.SUCCESS).build(),
-                                        FxBadge.builder().text("RC").variant(BadgeVariant.WARNING).build()
+                                        FxBadge.builder().text("ALPHA").variant(SemanticVariant.ACCENT).build(),
+                                        FxBadge.builder().text("BETA").variant(SemanticVariant.SUCCESS).build(),
+                                        FxBadge.builder().text("RC").variant(SemanticVariant.WARNING).build()
                                 )
                                 .build()
                 )
@@ -591,7 +588,7 @@ public class DemoApp extends Application {
         stage.show();
     }
 
-    private static HBox dotWithLabel(StatusDotVariant variant, String label) {
+    private static HBox dotWithLabel(SemanticVariant variant, String label) {
         HBox box = new HBox(6);
         box.setAlignment(Pos.CENTER_LEFT);
         box.getChildren().addAll(
@@ -601,7 +598,7 @@ public class DemoApp extends Application {
         return box;
     }
 
-    private static VBox iconWithLabel(String literal, IconVariant variant, String label) {
+    private static VBox iconWithLabel(String literal, SemanticVariant variant, String label) {
         VBox box = new VBox(4);
         box.setAlignment(Pos.CENTER);
         box.getChildren().addAll(

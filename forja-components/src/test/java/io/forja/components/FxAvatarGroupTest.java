@@ -1,5 +1,10 @@
 package io.forja.components;
 
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.dataDisplay.fxAvatar.FxAvatar;
+import io.forja.components.dataDisplay.fxAvatarGroup.FxAvatarGroup;
+import io.forja.components.dataDisplay.fxAvatar.AvatarSize;
+
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -135,16 +140,6 @@ class FxAvatarGroupTest {
 
         for (javafx.scene.Node child : group.getChildren()) {
             assertEquals(AvatarSize.COMFORTABLE, ((FxAvatar) child).getSize());
-        }
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
         }
     }
 }

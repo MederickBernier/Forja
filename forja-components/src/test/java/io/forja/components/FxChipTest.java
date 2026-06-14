@@ -1,6 +1,10 @@
 package io.forja.components;
 
-import io.forja.skin.FxChipSkin;
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.tokens.SemanticVariant;
+import io.forja.components.feedbackAndStatus.fxChip.FxChip;
+
+import io.forja.components.feedbackAndStatus.fxChip.FxChipSkin;
 import javafx.css.PseudoClass;
 import javafx.event.ActionEvent;
 import javafx.scene.input.MouseButton;
@@ -34,7 +38,7 @@ class FxChipTest {
         FxChip chip = onFx(() -> FxChip.builder().build());
 
         assertEquals("", chip.getText());
-        assertEquals(ChipVariant.DEFAULT, chip.getVariant());
+        assertEquals(SemanticVariant.DEFAULT, chip.getVariant());
         assertFalse(chip.isRemovable());
         assertNull(chip.getOnClose());
         assertNull(chip.getGraphic());
@@ -46,13 +50,13 @@ class FxChipTest {
         AtomicBoolean fired = new AtomicBoolean(false);
         FxChip chip = onFx(() -> FxChip.builder()
                 .text("javafx")
-                .variant(ChipVariant.ACCENT)
+                .variant(SemanticVariant.ACCENT)
                 .removable(true)
                 .onClose(e -> fired.set(true))
                 .build());
 
         assertEquals("javafx", chip.getText());
-        assertEquals(ChipVariant.ACCENT, chip.getVariant());
+        assertEquals(SemanticVariant.ACCENT, chip.getVariant());
         assertTrue(chip.isRemovable());
         assertNotNull(chip.getOnClose());
         assertNotNull(chip.getGraphic(), "Removable chip should have a close-icon graphic");
@@ -68,19 +72,19 @@ class FxChipTest {
     void constructorVariants() {
         FxChip empty = onFx(() -> new FxChip());
         FxChip withText = onFx(() -> new FxChip("tag"));
-        FxChip withVariant = onFx(() -> new FxChip("tag", ChipVariant.DANGER));
+        FxChip withVariant = onFx(() -> new FxChip("tag", SemanticVariant.DANGER));
 
         assertEquals("", empty.getText());
-        assertEquals(ChipVariant.DEFAULT, empty.getVariant());
+        assertEquals(SemanticVariant.DEFAULT, empty.getVariant());
         assertEquals("tag", withText.getText());
         assertEquals("tag", withVariant.getText());
-        assertEquals(ChipVariant.DANGER, withVariant.getVariant());
+        assertEquals(SemanticVariant.DANGER, withVariant.getVariant());
     }
 
     @Test
     void variantPseudoClassUpdates() {
         FxChip chip = onFx(() -> {
-            FxChip c = FxChip.builder().variant(ChipVariant.SUCCESS).build();
+            FxChip c = FxChip.builder().variant(SemanticVariant.SUCCESS).build();
             c.setSkin(new FxChipSkin(c));
             return c;
         });
@@ -88,7 +92,7 @@ class FxChipTest {
         assertHasPseudoClass(chip, "success");
         assertLacksPseudoClass(chip, "default");
 
-        onFx(() -> { chip.setVariant(ChipVariant.INFO); return null; });
+        onFx(() -> { chip.setVariant(SemanticVariant.INFO); return null; });
 
         assertHasPseudoClass(chip, "info");
         assertLacksPseudoClass(chip, "success");
@@ -96,7 +100,7 @@ class FxChipTest {
 
     @Test
     void allVariantsHaveCorrespondingPseudoClass() {
-        for (ChipVariant variant : ChipVariant.values()) {
+        for (SemanticVariant variant : SemanticVariant.values()) {
             FxChip chip = onFx(() -> {
                 FxChip c = FxChip.builder().variant(variant).build();
                 c.setSkin(new FxChipSkin(c));
@@ -146,29 +150,5 @@ class FxChipTest {
         });
 
         assertEquals(chip, capturedSource.get());
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxChip chip, String name) {
-        assertTrue(
-                chip.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + chip
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxChip chip, String name) {
-        assertFalse(
-                chip.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + chip
-        );
     }
 }

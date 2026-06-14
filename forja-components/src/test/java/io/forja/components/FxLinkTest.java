@@ -1,6 +1,11 @@
 package io.forja.components;
 
-import io.forja.skin.FxLinkSkin;
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.typography.fxLink.LinkVariant;
+import io.forja.components.utilities.fxIcon.FxIcon;
+import io.forja.components.typography.fxLink.FxLink;
+
+import io.forja.components.typography.fxLink.FxLinkSkin;
 import javafx.css.PseudoClass;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -173,29 +178,5 @@ class FxLinkTest {
         assertTrue(link.getGraphic() instanceof FxIcon);
         assertEquals("fth-external-link", ((FxIcon) link.getGraphic()).getIconLiteral());
         assertFalse(link.getGraphic() == customGraphic, "EXTERNAL should swap to managed icon");
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxLink link, String name) {
-        assertTrue(
-                link.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + link
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxLink link, String name) {
-        assertFalse(
-                link.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + link
-        );
     }
 }

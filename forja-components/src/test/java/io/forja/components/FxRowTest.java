@@ -1,5 +1,9 @@
 package io.forja.components;
 
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.layout.fxRow.FxRow;
+import io.forja.tokens.SpacingSize;
+
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -82,16 +86,6 @@ class FxRowTest {
         for (SpacingSize size : SpacingSize.values()) {
             FxRow row = onFx(() -> FxRow.builder().gap(size).build());
             assertEquals(size.pixels(), row.getSpacing(), "gap " + size + " should map to its pixel value");
-        }
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
         }
     }
 }

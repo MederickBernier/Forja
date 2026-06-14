@@ -37,7 +37,7 @@ import java.util.List;
  * @param <T> the type of component this builder produces
  * @param <B> the concrete builder subclass type
  *
- * @see io.forja.components.FxButton.Builder
+ * @see io.forja.components.buttonsAndActions.FxButton.Builder
  */
 public abstract class FxComponentBuilder<T extends Control, B extends FxComponentBuilder<T, B>> {
 

@@ -1,6 +1,10 @@
 package io.forja.components;
 
-import io.forja.skin.FxButtonSkin;
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.buttonsAndActions.fxButton.ButtonVariant;
+import io.forja.components.buttonsAndActions.fxButton.FxButton;
+
+import io.forja.components.buttonsAndActions.fxButton.FxButtonSkin;
 import javafx.css.PseudoClass;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -136,29 +140,5 @@ class FxButtonTest {
         });
 
         assertHasPseudoClass(button, "ghost");
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxButton button, String name) {
-        assertTrue(
-                button.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + button
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxButton button, String name) {
-        assertFalse(
-                button.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + button
-        );
     }
 }

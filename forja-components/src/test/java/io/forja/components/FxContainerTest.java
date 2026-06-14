@@ -1,5 +1,10 @@
 package io.forja.components;
 
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.layout.fxContainer.ContainerWidth;
+import io.forja.components.layout.fxContainer.FxContainer;
+import io.forja.tokens.SpacingSize;
+
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
@@ -100,15 +105,5 @@ class FxContainerTest {
         assertEquals(768.0, withWidth.getMaxWidth());
         assertEquals(ContainerWidth.SM, withChildren.getContainerWidth());
         assertEquals(2, withChildren.getChildren().size());
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
     }
 }

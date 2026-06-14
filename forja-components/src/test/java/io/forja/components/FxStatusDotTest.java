@@ -1,5 +1,9 @@
 package io.forja.components;
 
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.tokens.SemanticVariant;
+import io.forja.components.feedbackAndStatus.fxStatusDot.FxStatusDot;
+
 import javafx.css.PseudoClass;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
@@ -24,7 +28,7 @@ class FxStatusDotTest {
     void builderDefaults() {
         FxStatusDot dot = onFx(() -> FxStatusDot.builder().build());
 
-        assertEquals(StatusDotVariant.DEFAULT, dot.getVariant());
+        assertEquals(SemanticVariant.DEFAULT, dot.getVariant());
         assertEquals(5.0, dot.getRadius());
         assertTrue(dot.getStyleClass().contains("forja-status-dot"));
     }
@@ -32,14 +36,14 @@ class FxStatusDotTest {
     @Test
     void builderSetsAllProperties() {
         FxStatusDot dot = onFx(() -> FxStatusDot.builder()
-                .variant(StatusDotVariant.SUCCESS)
+                .variant(SemanticVariant.SUCCESS)
                 .radius(8)
                 .id("status")
                 .styleClass("custom")
                 .userData("payload")
                 .build());
 
-        assertEquals(StatusDotVariant.SUCCESS, dot.getVariant());
+        assertEquals(SemanticVariant.SUCCESS, dot.getVariant());
         assertEquals(8, dot.getRadius());
         assertEquals("status", dot.getId());
         assertTrue(dot.getStyleClass().contains("custom"));
@@ -49,24 +53,24 @@ class FxStatusDotTest {
     @Test
     void constructorVariants() {
         FxStatusDot empty = onFx(() -> new FxStatusDot());
-        FxStatusDot withVariant = onFx(() -> new FxStatusDot(StatusDotVariant.WARNING));
-        FxStatusDot withRadius = onFx(() -> new FxStatusDot(7, StatusDotVariant.DANGER));
+        FxStatusDot withVariant = onFx(() -> new FxStatusDot(SemanticVariant.WARNING));
+        FxStatusDot withRadius = onFx(() -> new FxStatusDot(7, SemanticVariant.DANGER));
 
-        assertEquals(StatusDotVariant.DEFAULT, empty.getVariant());
+        assertEquals(SemanticVariant.DEFAULT, empty.getVariant());
         assertEquals(5.0, empty.getRadius());
-        assertEquals(StatusDotVariant.WARNING, withVariant.getVariant());
+        assertEquals(SemanticVariant.WARNING, withVariant.getVariant());
         assertEquals(7.0, withRadius.getRadius());
-        assertEquals(StatusDotVariant.DANGER, withRadius.getVariant());
+        assertEquals(SemanticVariant.DANGER, withRadius.getVariant());
     }
 
     @Test
     void variantPseudoClassUpdates() {
-        FxStatusDot dot = onFx(() -> FxStatusDot.builder().variant(StatusDotVariant.ACCENT).build());
+        FxStatusDot dot = onFx(() -> FxStatusDot.builder().variant(SemanticVariant.ACCENT).build());
 
         assertHasPseudoClass(dot, "accent");
         assertLacksPseudoClass(dot, "default");
 
-        onFx(() -> { dot.setVariant(StatusDotVariant.SUCCESS); return null; });
+        onFx(() -> { dot.setVariant(SemanticVariant.SUCCESS); return null; });
 
         assertHasPseudoClass(dot, "success");
         assertLacksPseudoClass(dot, "accent");
@@ -74,7 +78,7 @@ class FxStatusDotTest {
 
     @Test
     void allVariantsHaveCorrespondingPseudoClass() {
-        for (StatusDotVariant variant : StatusDotVariant.values()) {
+        for (SemanticVariant variant : SemanticVariant.values()) {
             FxStatusDot dot = onFx(() -> FxStatusDot.builder().variant(variant).build());
             assertHasPseudoClass(dot, variant.name().toLowerCase());
         }
@@ -85,29 +89,5 @@ class FxStatusDotTest {
         FxStatusDot dot = onFx(() -> new FxStatusDot());
 
         assertHasPseudoClass(dot, "default");
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxStatusDot dot, String name) {
-        assertTrue(
-                dot.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + dot
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxStatusDot dot, String name) {
-        assertFalse(
-                dot.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + dot
-        );
     }
 }

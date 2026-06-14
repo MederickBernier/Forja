@@ -1,5 +1,8 @@
 package io.forja.components;
 
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.typography.fxKbd.FxKbd;
+
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -59,15 +62,5 @@ class FxKbdTest {
         assertTrue(empty.getStyleClass().contains("forja-kbd"));
         assertEquals("Esc", withText.getText());
         assertTrue(withText.getStyleClass().contains("forja-kbd"));
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
     }
 }

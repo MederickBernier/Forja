@@ -1,6 +1,12 @@
 package io.forja.components;
 
-import io.forja.skin.FxIconButtonSkin;
+import static io.forja.testsupport.ForjaTestSupport.*;
+import io.forja.components.utilities.fxIcon.FxIcon;
+import io.forja.components.buttonsAndActions.fxIconButton.IconPosition;
+import io.forja.components.buttonsAndActions.fxIconButton.FxIconButton;
+import io.forja.components.buttonsAndActions.fxButton.ButtonVariant;
+
+import io.forja.components.buttonsAndActions.fxIconButton.FxIconButtonSkin;
 import javafx.css.PseudoClass;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -167,29 +173,5 @@ class FxIconButtonTest {
 
         onFx(() -> { button.setIconLiteral(null); return null; });
         assertNull(button.getGraphic());
-    }
-
-    private static <T> T onFx(java.util.concurrent.Callable<T> body) {
-        try {
-            T result = WaitForAsyncUtils.asyncFx(body).get();
-            WaitForAsyncUtils.waitForFxEvents();
-            return result;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private static void assertHasPseudoClass(FxIconButton button, String name) {
-        assertTrue(
-                button.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Expected pseudo-class :" + name + " on " + button
-        );
-    }
-
-    private static void assertLacksPseudoClass(FxIconButton button, String name) {
-        assertFalse(
-                button.getPseudoClassStates().contains(PseudoClass.getPseudoClass(name)),
-                "Did not expect pseudo-class :" + name + " on " + button
-        );
     }
 }

@@ -5,6 +5,7 @@ io/forja/components/FxTextTest.class
 io/forja/components/FxStackTest.class
 io/forja/components/FxCodeTest.class
 io/forja/components/FxRowTest.class
+io/forja/testsupport/ForjaTestSupport.class
 io/forja/components/FxBadgeTest.class
 io/forja/components/FxButtonTest.class
 io/forja/components/FxLabelTest.class

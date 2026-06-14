@@ -3,8 +3,10 @@ package io.forja.demo;
 import io.forja.Forja;
 import io.forja.components.ButtonVariant;
 import io.forja.components.BadgeVariant;
+import io.forja.components.ChipVariant;
 import io.forja.components.FxBadge;
 import io.forja.components.FxBlockquote;
+import io.forja.components.FxChip;
 import io.forja.components.FxButton;
 import io.forja.components.FxCode;
 import io.forja.components.FxIcon;
@@ -304,6 +306,36 @@ public class DemoApp extends Application {
                 FxBadge.builder().text("INFO").variant(BadgeVariant.INFO).build()
         );
 
+        FxLabel chipsSectionLabel = FxLabel.builder()
+                .text("Chips")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        HBox chipVariants = new HBox(8);
+        chipVariants.setAlignment(Pos.CENTER_LEFT);
+        chipVariants.getChildren().addAll(
+                FxChip.builder().text("default").variant(ChipVariant.DEFAULT).build(),
+                FxChip.builder().text("muted").variant(ChipVariant.MUTED).build(),
+                FxChip.builder().text("accent").variant(ChipVariant.ACCENT).build(),
+                FxChip.builder().text("success").variant(ChipVariant.SUCCESS).build(),
+                FxChip.builder().text("warning").variant(ChipVariant.WARNING).build(),
+                FxChip.builder().text("danger").variant(ChipVariant.DANGER).build(),
+                FxChip.builder().text("info").variant(ChipVariant.INFO).build()
+        );
+
+        HBox chipRemovable = new HBox(8);
+        chipRemovable.setAlignment(Pos.CENTER_LEFT);
+        chipRemovable.getChildren().addAll(
+                FxChip.builder().text("javafx").variant(ChipVariant.ACCENT).removable(true).build(),
+                FxChip.builder().text("ui-toolkit").variant(ChipVariant.ACCENT).removable(true).build(),
+                FxChip.builder().text("design-system").variant(ChipVariant.SUCCESS).removable(true).build(),
+                FxChip.builder().text("draft").variant(ChipVariant.WARNING).removable(true).build()
+        );
+
+        VBox chips = new VBox(8);
+        chips.getChildren().addAll(chipVariants, chipRemovable);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -316,10 +348,11 @@ public class DemoApp extends Application {
                 blockquotesSectionLabel, blockquotes,
                 kbdSectionLabel, kbds,
                 codeSectionLabel, codes,
-                badgesSectionLabel, badges
+                badgesSectionLabel, badges,
+                chipsSectionLabel, chips
         );
 
-        Scene scene = new Scene(root, 900, 1860);
+        Scene scene = new Scene(root, 900, 1980);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

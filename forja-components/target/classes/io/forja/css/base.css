@@ -404,3 +404,71 @@
 .forja-badge:disabled {
     -fx-opacity: 0.5;
 }
+
+.forja-chip {
+    -fx-font-size: 11px;
+    -fx-padding: 2px 8px 2px 10px;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-graphic-text-gap: 4px;
+}
+
+.forja-chip:removable {
+    -fx-padding: 2px 4px 2px 10px;
+}
+
+.forja-chip:default {
+    -fx-background-color: -forja-zinc-100;
+    -fx-text-fill: -forja-zinc-700;
+}
+
+.forja-chip:muted {
+    -fx-background-color: -forja-zinc-100;
+    -fx-text-fill: -forja-text-muted;
+}
+
+.forja-chip:accent {
+    -fx-background-color: -forja-accent-tint;
+    -fx-text-fill: -forja-accent-active;
+}
+
+.forja-chip:success {
+    -fx-background-color: -forja-success-tint;
+    -fx-text-fill: -forja-success;
+}
+
+.forja-chip:warning {
+    -fx-background-color: -forja-warning-tint;
+    -fx-text-fill: -forja-warning;
+}
+
+.forja-chip:danger {
+    -fx-background-color: -forja-danger-tint;
+    -fx-text-fill: -forja-danger;
+}
+
+.forja-chip:info {
+    -fx-background-color: -forja-info-tint;
+    -fx-text-fill: -forja-info;
+}
+
+.forja-chip:disabled {
+    -fx-opacity: 0.5;
+}
+
+.forja-chip-close {
+    -fx-cursor: hand;
+    -fx-icon-color: -forja-text-muted;
+}
+
+.forja-chip-close:hover {
+    -fx-icon-color: -forja-text-primary;
+}
+
+.forja-chip:default .forja-chip-close,
+.forja-chip:muted .forja-chip-close   { -fx-icon-color: -forja-zinc-500; }
+.forja-chip:accent .forja-chip-close  { -fx-icon-color: -forja-accent-active; }
+.forja-chip:success .forja-chip-close { -fx-icon-color: -forja-success; }
+.forja-chip:warning .forja-chip-close { -fx-icon-color: -forja-warning; }
+.forja-chip:danger .forja-chip-close  { -fx-icon-color: -forja-danger; }
+.forja-chip:info .forja-chip-close    { -fx-icon-color: -forja-info; }

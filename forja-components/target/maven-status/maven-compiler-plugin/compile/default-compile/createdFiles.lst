@@ -13,15 +13,19 @@ io/forja/skin/FxSeparatorSkin.class
 io/forja/skin/FxLinkSkin$1.class
 io/forja/components/FxIcon$1.class
 io/forja/components/FxCode$Builder.class
+io/forja/components/FxChip$Builder.class
 io/forja/util/ForjaStylesheets.class
+io/forja/skin/FxChipSkin.class
 io/forja/components/FxBadge$Builder.class
 io/forja/skin/FxTextSkin$1.class
 io/forja/builder/FxComponentBuilder.class
 io/forja/components/FxText$Builder.class
 io/forja/skin/FxIconButtonSkin$1.class
+io/forja/components/ChipVariant.class
 io/forja/skin/FxBadgeSkin.class
 io/forja/skin/FxIconButtonSkin.class
 io/forja/Forja$1.class
+io/forja/skin/FxChipSkin$1.class
 io/forja/skin/FxTextSkin.class
 io/forja/components/FxSeparator$Builder.class
 io/forja/components/FxIconButton.class
@@ -37,6 +41,7 @@ io/forja/styling/FxStyle.class
 io/forja/components/FxIconButton$1.class
 io/forja/components/IconVariant.class
 io/forja/skin/FxLinkSkin.class
+io/forja/components/FxChip.class
 io/forja/skin/FxBadgeSkin$1.class
 io/forja/components/SeparatorVariant.class
 io/forja/skin/FxLabelSkin$1.class

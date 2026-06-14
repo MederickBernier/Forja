@@ -8,6 +8,8 @@ import io.forja.components.dataDisplay.fxAvatar.FxAvatar;
 import io.forja.components.dataDisplay.fxAvatarGroup.FxAvatarGroup;
 import io.forja.components.feedbackAndStatus.fxBadge.FxBadge;
 import io.forja.components.typography.fxBlockquote.FxBlockquote;
+import io.forja.components.inputs.fxTextField.FxTextField;
+import io.forja.components.inputs.fxTextField.TextFieldVariant;
 import io.forja.components.layout.fxCard.CardVariant;
 import io.forja.components.layout.fxCard.FxCard;
 import io.forja.components.layout.fxContainer.ContainerWidth;
@@ -604,6 +606,50 @@ public class DemoApp extends Application {
         cardOutlined.setPrefWidth(220);
         cardElevated.setPrefWidth(220);
 
+        FxLabel textFieldsSectionLabel = FxLabel.builder()
+                .text("Text Fields")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        FxTextField tfPlain = FxTextField.builder()
+                .promptText("Plain field")
+                .build();
+
+        FxTextField tfWithIcon = FxTextField.builder()
+                .promptText("name@example.com")
+                .leadingIcon("fth-mail")
+                .helperText("We'll never share your email.")
+                .build();
+
+        FxTextField tfSearch = FxTextField.builder()
+                .promptText("Search...")
+                .leadingIcon("fth-search")
+                .trailingIcon("fth-x")
+                .build();
+
+        FxTextField tfError = FxTextField.builder()
+                .text("nope")
+                .leadingIcon("fth-user")
+                .errorText("Username already taken.")
+                .build();
+
+        FxTextField tfSuccess = FxTextField.builder()
+                .text("mederick")
+                .leadingIcon("fth-user")
+                .trailingIcon("fth-check")
+                .variant(TextFieldVariant.SUCCESS)
+                .helperText("Looks good.")
+                .build();
+
+        tfPlain.setMaxWidth(320);
+        tfWithIcon.setMaxWidth(320);
+        tfSearch.setMaxWidth(320);
+        tfError.setMaxWidth(320);
+        tfSuccess.setMaxWidth(320);
+
+        VBox textFields = new VBox(12, tfPlain, tfWithIcon, tfSearch, tfError, tfSuccess);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -626,10 +672,11 @@ public class DemoApp extends Application {
                 rowsSectionLabel, rows,
                 containerSectionLabel, containerWrapper,
                 sectionsExample,
-                cardsSectionLabel, cards
+                cardsSectionLabel, cards,
+                textFieldsSectionLabel, textFields
         );
 
-        Scene scene = new Scene(root, 900, 3320);
+        Scene scene = new Scene(root, 900, 3540);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

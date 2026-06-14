@@ -102,9 +102,10 @@ layout/            fxSeparator · fxSpacer · fxStack · fxRow · fxContainer ·
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot
 dataDisplay/       fxAvatar · fxAvatarGroup
 utilities/         fxIcon
+inputs/            fxTextField
 ```
 
-Empty category folders held for future work: `charts`, `dateAndTime`, `fileAndMediaInput`, `inputs`, `media`, `navigation`, `overlays`, `selection`, `validation`.
+Empty category folders held for future work: `charts`, `dateAndTime`, `fileAndMediaInput`, `media`, `navigation`, `overlays`, `selection`, `validation`.
 
 ### Build roadmap
 
@@ -144,7 +145,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ⏳ FxMenuButton · P2
 
 #### Inputs
-- ⏳ FxTextField · P1
+- ✅ FxTextField
 - ⏳ FxTextArea · P1
 - ⏳ FxPasswordField · P1
 - ⏳ FxNumberField · P1

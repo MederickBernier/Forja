@@ -8,10 +8,10 @@ import io.forja.components.dataDisplay.fxAvatar.FxAvatar;
 import io.forja.components.dataDisplay.fxAvatarGroup.FxAvatarGroup;
 import io.forja.components.feedbackAndStatus.fxBadge.FxBadge;
 import io.forja.components.typography.fxBlockquote.FxBlockquote;
+import io.forja.components.inputs.fxPasswordField.FxPasswordField;
 import io.forja.components.inputs.fxTextArea.FxTextArea;
-import io.forja.components.inputs.fxTextArea.TextAreaVariant;
+import io.forja.components.inputs.InputVariant;
 import io.forja.components.inputs.fxTextField.FxTextField;
-import io.forja.components.inputs.fxTextField.TextFieldVariant;
 import io.forja.components.layout.fxCard.CardVariant;
 import io.forja.components.layout.fxCard.FxCard;
 import io.forja.components.layout.fxContainer.ContainerWidth;
@@ -640,7 +640,7 @@ public class DemoApp extends Application {
                 .text("mederick")
                 .leadingIcon("fth-user")
                 .trailingIcon("fth-check")
-                .variant(TextFieldVariant.SUCCESS)
+                .variant(InputVariant.SUCCESS)
                 .helperText("Looks good.")
                 .build();
 
@@ -684,6 +684,37 @@ public class DemoApp extends Application {
 
         VBox textAreas = new VBox(12, taPlain, taAuto, taError);
 
+        FxLabel passwordFieldsSectionLabel = FxLabel.builder()
+                .text("Password Fields")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        FxPasswordField pwPlain = FxPasswordField.builder()
+                .promptText("Password")
+                .leadingIcon("fth-lock")
+                .build();
+
+        FxPasswordField pwReveal = FxPasswordField.builder()
+                .text("hunter2")
+                .leadingIcon("fth-lock")
+                .revealable(true)
+                .helperText("Click the eye to reveal.")
+                .build();
+
+        FxPasswordField pwError = FxPasswordField.builder()
+                .text("123")
+                .leadingIcon("fth-lock")
+                .revealable(true)
+                .errorText("Password must be at least 8 characters.")
+                .build();
+
+        pwPlain.setMaxWidth(320);
+        pwReveal.setMaxWidth(320);
+        pwError.setMaxWidth(320);
+
+        VBox passwordFields = new VBox(12, pwPlain, pwReveal, pwError);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -708,10 +739,11 @@ public class DemoApp extends Application {
                 sectionsExample,
                 cardsSectionLabel, cards,
                 textFieldsSectionLabel, textFields,
-                textAreasSectionLabel, textAreas
+                textAreasSectionLabel, textAreas,
+                passwordFieldsSectionLabel, passwordFields
         );
 
-        Scene scene = new Scene(root, 900, 3820);
+        Scene scene = new Scene(root, 900, 4020);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

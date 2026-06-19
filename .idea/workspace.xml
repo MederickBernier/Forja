@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ada2d8-726f-4065-b80a-ec655913ac3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/src/main/resources/io/forja/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/src/main/resources/io/forja/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/classes/io/forja/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/classes/io/forja/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxChipTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxChipTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxCodeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxCodeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxContainerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxContainerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxLinkTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/TEST-io.forja.components.FxLinkTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxChipTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxChipTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxCodeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxCodeTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxContainerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxContainerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxLinkTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/target/surefire-reports/io.forja.components.FxLinkTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forja-demo/src/main/java/io/forja/demo/DemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/forja-demo/src/main/java/io/forja/demo/DemoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

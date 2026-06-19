@@ -1,5 +1,7 @@
 package io.forja.components.inputs.fxTextField;
 
+import io.forja.components.inputs.InputVariant;
+
 import io.forja.builder.FxNodeBuilder;
 import io.forja.components.typography.fxLabel.FxLabel;
 import io.forja.components.typography.fxLabel.LabelVariant;
@@ -35,7 +37,7 @@ import javafx.scene.layout.VBox;
  * properties on {@code FxTextField} delegate directly to the inner field.
  *
  * <p>Setting {@link #setErrorText} to a non-empty value automatically flips
- * the variant to {@link TextFieldVariant#ERROR}; clearing it does NOT auto-
+ * the variant to {@link InputVariant#ERROR}; clearing it does NOT auto-
  * revert (callers should reset the variant explicitly if needed).
  *
  * <p>The preferred way to construct an {@code FxTextField} is via the builder:</p>
@@ -49,7 +51,7 @@ import javafx.scene.layout.VBox;
  *     }
  * </pre>
  *
- * @see TextFieldVariant
+ * @see InputVariant
  * @see Builder
  */
 public class FxTextField extends VBox {
@@ -63,7 +65,7 @@ public class FxTextField extends VBox {
     private final HBox fieldRow = new HBox();
     private final FxLabel helperLabel = new FxLabel("", LabelVariant.SMALL);
 
-    private final ObjectProperty<TextFieldVariant> variant = new SimpleObjectProperty<>(this, "variant", TextFieldVariant.DEFAULT);
+    private final ObjectProperty<InputVariant> variant = new SimpleObjectProperty<>(this, "variant", InputVariant.DEFAULT);
     private final ObjectProperty<Node> leadingIcon = new SimpleObjectProperty<>(this, "leadingIcon");
     private final ObjectProperty<Node> trailingIcon = new SimpleObjectProperty<>(this, "trailingIcon");
     private final StringProperty helperText = new SimpleStringProperty(this, "helperText", "");
@@ -99,7 +101,7 @@ public class FxTextField extends VBox {
         errorText.addListener((obs, old, val) -> {
             String e = val == null ? "" : val;
             if (!e.isEmpty()) {
-                setVariant(TextFieldVariant.ERROR);
+                setVariant(InputVariant.ERROR);
             }
             refreshHelper();
         });
@@ -194,13 +196,13 @@ public class FxTextField extends VBox {
     public void setPromptText(String v) { textField.setPromptText(v); }
 
     /** Returns the variant property. */
-    public ObjectProperty<TextFieldVariant> variantProperty() { return variant; }
+    public ObjectProperty<InputVariant> variantProperty() { return variant; }
 
     /** Returns the current variant. */
-    public TextFieldVariant getVariant() { return variant.get(); }
+    public InputVariant getVariant() { return variant.get(); }
 
     /** Sets the variant. */
-    public void setVariant(TextFieldVariant v) { variant.set(v); }
+    public void setVariant(InputVariant v) { variant.set(v); }
 
     /** Returns the leading-icon slot property. */
     public ObjectProperty<Node> leadingIconProperty() { return leadingIcon; }
@@ -237,7 +239,7 @@ public class FxTextField extends VBox {
 
     /**
      * Sets the error text. Setting a non-empty value automatically flips the
-     * variant to {@link TextFieldVariant#ERROR} so the visual matches the
+     * variant to {@link InputVariant#ERROR} so the visual matches the
      * message; clearing it does not auto-revert.
      */
     public void setErrorText(String v) { errorText.set(v == null ? "" : v); }
@@ -259,7 +261,7 @@ public class FxTextField extends VBox {
      * <ul>
      *   <li>text — empty</li>
      *   <li>promptText — empty</li>
-     *   <li>variant — {@link TextFieldVariant#DEFAULT}</li>
+     *   <li>variant — {@link InputVariant#DEFAULT}</li>
      *   <li>leadingIcon / trailingIcon — none</li>
      *   <li>helperText / errorText — empty (line hidden)</li>
      * </ul>
@@ -268,7 +270,7 @@ public class FxTextField extends VBox {
 
         private String text = "";
         private String promptText = "";
-        private TextFieldVariant variant = TextFieldVariant.DEFAULT;
+        private InputVariant variant = InputVariant.DEFAULT;
         private Node leadingIcon;
         private Node trailingIcon;
         private String helperText = "";
@@ -285,7 +287,7 @@ public class FxTextField extends VBox {
             return this;
         }
 
-        public Builder variant(TextFieldVariant variant) {
+        public Builder variant(InputVariant variant) {
             this.variant = variant;
             return this;
         }

@@ -1,7 +1,7 @@
 package io.forja.components;
 
 import io.forja.components.inputs.fxTextArea.FxTextArea;
-import io.forja.components.inputs.fxTextArea.TextAreaVariant;
+import io.forja.components.inputs.InputVariant;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -28,7 +28,7 @@ class FxTextAreaTest {
 
         assertEquals("", area.getText());
         assertEquals("", area.getPromptText());
-        assertEquals(TextAreaVariant.DEFAULT, area.getVariant());
+        assertEquals(InputVariant.DEFAULT, area.getVariant());
         assertEquals(4, area.getRows());
         assertEquals(12, area.getMaxRows());
         assertFalse(area.isAutoResize());
@@ -57,12 +57,12 @@ class FxTextAreaTest {
 
     @Test
     void variantPseudoClassUpdates() {
-        FxTextArea area = onFx(() -> FxTextArea.builder().variant(TextAreaVariant.SUCCESS).build());
+        FxTextArea area = onFx(() -> FxTextArea.builder().variant(InputVariant.SUCCESS).build());
 
         assertHasPseudoClass(area, "success");
         assertLacksPseudoClass(area, "default");
 
-        onFx(() -> { area.setVariant(TextAreaVariant.ERROR); return null; });
+        onFx(() -> { area.setVariant(InputVariant.ERROR); return null; });
 
         assertHasPseudoClass(area, "error");
         assertLacksPseudoClass(area, "success");
@@ -70,7 +70,7 @@ class FxTextAreaTest {
 
     @Test
     void allVariantsHaveCorrespondingPseudoClass() {
-        for (TextAreaVariant variant : TextAreaVariant.values()) {
+        for (InputVariant variant : InputVariant.values()) {
             FxTextArea area = onFx(() -> FxTextArea.builder().variant(variant).build());
             assertHasPseudoClass(area, variant.name().toLowerCase());
         }
@@ -95,7 +95,7 @@ class FxTextAreaTest {
 
         onFx(() -> { area.setErrorText("Required"); return null; });
 
-        assertEquals(TextAreaVariant.ERROR, area.getVariant());
+        assertEquals(InputVariant.ERROR, area.getVariant());
         assertTrue(area.isShowingError());
         assertEquals("Required", area.getHelperLabel().getText());
     }
@@ -109,7 +109,7 @@ class FxTextAreaTest {
 
         assertTrue(area.isShowingError());
         assertEquals("Boom", area.getHelperLabel().getText());
-        assertEquals(TextAreaVariant.ERROR, area.getVariant());
+        assertEquals(InputVariant.ERROR, area.getVariant());
     }
 
     @Test
@@ -123,7 +123,7 @@ class FxTextAreaTest {
 
         assertFalse(area.isShowingError());
         assertEquals("Helper", area.getHelperLabel().getText());
-        assertEquals(TextAreaVariant.ERROR, area.getVariant());
+        assertEquals(InputVariant.ERROR, area.getVariant());
     }
 
     @Test

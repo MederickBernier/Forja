@@ -2,7 +2,6 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxBadge/FxBadge.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSeparator/FxSeparator.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxIconButton/IconPosition.java
-/home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxTextField/TextFieldVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxKbd/FxKbd.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSection/FxSection.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSeparator/FxSeparatorSkin.java
@@ -16,14 +15,15 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxButton/ButtonVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxLink/LinkVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/tokens/SpacingSize.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/InputVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxLabel/FxLabelSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxChip/FxChip.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxIcon/FxIcon.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/styling/FxStyle.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxBlockquote/FxBlockquote.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/styling/FxStyleBuilder.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxPasswordField/FxPasswordField.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxLabel/LabelVariant.java
-/home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxTextArea/TextAreaVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxStatusDot/FxStatusDot.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxContainer/ContainerWidth.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxLink/FxLink.java

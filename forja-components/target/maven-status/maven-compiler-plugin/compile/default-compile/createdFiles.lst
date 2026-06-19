@@ -1,5 +1,4 @@
 io/forja/components/dataDisplay/fxAvatar/AvatarSize.class
-io/forja/components/inputs/fxTextArea/TextAreaVariant.class
 io/forja/components/feedbackAndStatus/fxChip/FxChip$Builder.class
 io/forja/components/feedbackAndStatus/fxBadge/FxBadge.class
 io/forja/components/typography/fxCode/FxCode$Builder.class
@@ -11,6 +10,7 @@ io/forja/Forja.class
 io/forja/components/buttonsAndActions/fxIconButton/FxIconButton.class
 io/forja/components/dataDisplay/fxAvatar/FxAvatar$1.class
 io/forja/components/feedbackAndStatus/fxChip/FxChip.class
+io/forja/components/inputs/fxPasswordField/FxPasswordField$1.class
 io/forja/components/typography/fxLink/FxLink.class
 io/forja/components/layout/fxRow/FxRow.class
 io/forja/components/dataDisplay/fxAvatar/FxAvatar$Builder.class
@@ -32,10 +32,12 @@ io/forja/Forja$1.class
 io/forja/components/typography/fxCode/FxCode.class
 io/forja/components/layout/fxSection/FxSection$Builder.class
 io/forja/components/typography/fxLink/FxLinkSkin.class
+io/forja/components/inputs/fxPasswordField/FxPasswordField.class
 io/forja/components/typography/fxText/FxText$Builder.class
 io/forja/components/layout/fxSeparator/FxSeparator$Builder.class
 io/forja/components/dataDisplay/fxAvatarGroup/FxAvatarGroup.class
 io/forja/components/inputs/fxTextField/FxTextField$1.class
+io/forja/components/inputs/fxPasswordField/FxPasswordField$Builder.class
 io/forja/components/inputs/fxTextArea/FxTextArea.class
 io/forja/components/buttonsAndActions/fxButton/FxButton$Builder.class
 io/forja/components/layout/fxCard/FxCard$Builder.class
@@ -69,11 +71,11 @@ io/forja/components/layout/fxSeparator/FxSeparatorSkin.class
 io/forja/components/buttonsAndActions/fxButton/ButtonVariant.class
 io/forja/components/inputs/fxTextArea/FxTextArea$1.class
 io/forja/components/layout/fxCard/CardVariant.class
+io/forja/components/inputs/InputVariant.class
 io/forja/components/feedbackAndStatus/fxBadge/FxBadgeSkin.class
 io/forja/components/typography/fxLabel/FxLabelSkin.class
 io/forja/components/feedbackAndStatus/fxStatusDot/FxStatusDot.class
 io/forja/components/layout/fxContainer/FxContainer$Builder.class
-io/forja/components/inputs/fxTextField/TextFieldVariant.class
 io/forja/components/buttonsAndActions/fxIconButton/FxIconButton$Builder.class
 io/forja/components/inputs/fxTextField/FxTextField.class
 io/forja/components/layout/fxSection/FxSection.class

@@ -1,7 +1,7 @@
 package io.forja.components;
 
 import io.forja.components.inputs.fxTextField.FxTextField;
-import io.forja.components.inputs.fxTextField.TextFieldVariant;
+import io.forja.components.inputs.InputVariant;
 import io.forja.components.utilities.fxIcon.FxIcon;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
@@ -30,7 +30,7 @@ class FxTextFieldTest {
 
         assertEquals("", field.getText());
         assertEquals("", field.getPromptText());
-        assertEquals(TextFieldVariant.DEFAULT, field.getVariant());
+        assertEquals(InputVariant.DEFAULT, field.getVariant());
         assertNull(field.getLeadingIcon());
         assertNull(field.getTrailingIcon());
         assertEquals("", field.getHelperText());
@@ -86,13 +86,13 @@ class FxTextFieldTest {
 
     @Test
     void variantPseudoClassUpdates() {
-        FxTextField field = onFx(() -> FxTextField.builder().variant(TextFieldVariant.SUCCESS).build());
+        FxTextField field = onFx(() -> FxTextField.builder().variant(InputVariant.SUCCESS).build());
 
         assertHasPseudoClass(field, "success");
         assertLacksPseudoClass(field, "default");
         assertLacksPseudoClass(field, "error");
 
-        onFx(() -> { field.setVariant(TextFieldVariant.ERROR); return null; });
+        onFx(() -> { field.setVariant(InputVariant.ERROR); return null; });
 
         assertHasPseudoClass(field, "error");
         assertLacksPseudoClass(field, "success");
@@ -100,7 +100,7 @@ class FxTextFieldTest {
 
     @Test
     void allVariantsHaveCorrespondingPseudoClass() {
-        for (TextFieldVariant variant : TextFieldVariant.values()) {
+        for (InputVariant variant : InputVariant.values()) {
             FxTextField field = onFx(() -> FxTextField.builder().variant(variant).build());
             assertHasPseudoClass(field, variant.name().toLowerCase());
         }
@@ -127,11 +127,11 @@ class FxTextFieldTest {
                 .helperText("Optional")
                 .build());
 
-        assertEquals(TextFieldVariant.DEFAULT, field.getVariant());
+        assertEquals(InputVariant.DEFAULT, field.getVariant());
 
         onFx(() -> { field.setErrorText("Required"); return null; });
 
-        assertEquals(TextFieldVariant.ERROR, field.getVariant());
+        assertEquals(InputVariant.ERROR, field.getVariant());
         assertTrue(field.isShowingError());
         assertEquals("Required", field.getHelperLabel().getText());
     }
@@ -154,14 +154,14 @@ class FxTextFieldTest {
                 .errorText("Boom")
                 .build());
 
-        assertEquals(TextFieldVariant.ERROR, field.getVariant());
+        assertEquals(InputVariant.ERROR, field.getVariant());
 
         onFx(() -> { field.setErrorText(""); return null; });
 
         assertFalse(field.isShowingError());
         assertEquals("Helper", field.getHelperLabel().getText());
         // Variant intentionally NOT auto-reverted
-        assertEquals(TextFieldVariant.ERROR, field.getVariant());
+        assertEquals(InputVariant.ERROR, field.getVariant());
     }
 
     @Test

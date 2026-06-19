@@ -1,5 +1,7 @@
 package io.forja.components.inputs.fxTextArea;
 
+import io.forja.components.inputs.InputVariant;
+
 import io.forja.builder.FxNodeBuilder;
 import io.forja.components.typography.fxLabel.FxLabel;
 import io.forja.components.typography.fxLabel.LabelVariant;
@@ -46,7 +48,7 @@ import javafx.scene.layout.VBox;
  *     }
  * </pre>
  *
- * @see TextAreaVariant
+ * @see InputVariant
  * @see Builder
  */
 public class FxTextArea extends VBox {
@@ -59,7 +61,7 @@ public class FxTextArea extends VBox {
     private final TextArea textArea = new TextArea();
     private final FxLabel helperLabel = new FxLabel("", LabelVariant.SMALL);
 
-    private final ObjectProperty<TextAreaVariant> variant = new SimpleObjectProperty<>(this, "variant", TextAreaVariant.DEFAULT);
+    private final ObjectProperty<InputVariant> variant = new SimpleObjectProperty<>(this, "variant", InputVariant.DEFAULT);
     private final StringProperty helperText = new SimpleStringProperty(this, "helperText", "");
     private final StringProperty errorText = new SimpleStringProperty(this, "errorText", "");
     private final BooleanProperty autoResize = new SimpleBooleanProperty(this, "autoResize", false);
@@ -89,7 +91,7 @@ public class FxTextArea extends VBox {
         helperText.addListener((obs, old, val) -> refreshHelper());
         errorText.addListener((obs, old, val) -> {
             String e = val == null ? "" : val;
-            if (!e.isEmpty()) setVariant(TextAreaVariant.ERROR);
+            if (!e.isEmpty()) setVariant(InputVariant.ERROR);
             refreshHelper();
         });
         autoResize.addListener((obs, old, val) -> {
@@ -194,13 +196,13 @@ public class FxTextArea extends VBox {
     public void setPromptText(String v) { textArea.setPromptText(v); }
 
     /** Returns the variant property. */
-    public ObjectProperty<TextAreaVariant> variantProperty() { return variant; }
+    public ObjectProperty<InputVariant> variantProperty() { return variant; }
 
     /** Returns the current variant. */
-    public TextAreaVariant getVariant() { return variant.get(); }
+    public InputVariant getVariant() { return variant.get(); }
 
     /** Sets the variant. */
-    public void setVariant(TextAreaVariant v) { variant.set(v); }
+    public void setVariant(InputVariant v) { variant.set(v); }
 
     /** Returns the helper-text property. */
     public StringProperty helperTextProperty() { return helperText; }
@@ -219,7 +221,7 @@ public class FxTextArea extends VBox {
 
     /**
      * Sets the error text. Non-empty value auto-flips the variant to
-     * {@link TextAreaVariant#ERROR}; clearing it does not auto-revert.
+     * {@link InputVariant#ERROR}; clearing it does not auto-revert.
      */
     public void setErrorText(String v) { errorText.set(v == null ? "" : v); }
 
@@ -270,7 +272,7 @@ public class FxTextArea extends VBox {
      * <ul>
      *   <li>text — empty</li>
      *   <li>promptText — empty</li>
-     *   <li>variant — {@link TextAreaVariant#DEFAULT}</li>
+     *   <li>variant — {@link InputVariant#DEFAULT}</li>
      *   <li>rows / maxRows — 4 / 12</li>
      *   <li>autoResize — {@code false}</li>
      *   <li>helperText / errorText — empty (line hidden)</li>
@@ -281,7 +283,7 @@ public class FxTextArea extends VBox {
 
         private String text = "";
         private String promptText = "";
-        private TextAreaVariant variant = TextAreaVariant.DEFAULT;
+        private InputVariant variant = InputVariant.DEFAULT;
         private String helperText = "";
         private String errorText = "";
         private boolean autoResize = false;
@@ -300,7 +302,7 @@ public class FxTextArea extends VBox {
             return this;
         }
 
-        public Builder variant(TextAreaVariant variant) {
+        public Builder variant(InputVariant variant) {
             this.variant = variant;
             return this;
         }

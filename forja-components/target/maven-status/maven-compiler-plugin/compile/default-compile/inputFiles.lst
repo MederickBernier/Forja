@@ -60,10 +60,12 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSeparator/FxSeparatorSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxFocusTrap/FxFocusTrap.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSeparator/SeparatorVariant.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/dateAndTime/fxCalendar/FxCalendar.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxCheckBox/FxCheckBox.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxComboBox/FxComboBox.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxOTPInput/FxOTPInput.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxCard/CardVariant.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/dateAndTime/fxMiniCalendar/FxMiniCalendar.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxButton/ButtonVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxTooltip/FxTooltip.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxLink/LinkVariant.java
@@ -71,6 +73,8 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxIcon/FxIcon.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxRating/FxRating.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxDialog/FxDialog.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/dateAndTime/fxDateRangePicker/FxDateRangePicker.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/dateAndTime/fxDateTimePicker/FxDateTimePicker.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxCheckGroup/FxCheckGroup.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxTable/FxTable.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxColorPicker/FxColorPicker.java

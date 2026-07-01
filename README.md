@@ -104,7 +104,7 @@ dataDisplay/       fxAvatar · fxAvatarGroup
 utilities/         fxIcon
 inputs/            fxTextField · fxTextArea · fxPasswordField · fxNumberField · fxSearchField · fxAutocomplete · fxTagInput · fxOTPInput · fxMaskedInput
                    (+ shared InputVariant)
-dateAndTime/       fxDatePicker · fxTimePicker
+dateAndTime/       fxDatePicker · fxTimePicker · fxDateTimePicker · fxDateRangePicker · fxCalendar · fxMiniCalendar
 selection/         fxCheckBox · fxCheckGroup · fxRadioGroup · fxSwitch · fxSlider · fxComboBox · fxMultiSelect · fxRangeSlider · fxRating · fxColorPicker
 buttonsAndActions/ fxButton · fxIconButton · fxToggleButton · fxButtonGroup · fxCopyButton
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot · fxProgressBar · fxProgressCircle · fxSkeleton · fxAlert · fxBanner · fxToast
@@ -184,10 +184,10 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 #### Date & Time
 - ✅ FxDatePicker
 - ✅ FxTimePicker
-- ⏳ FxDateTimePicker · P2
-- ⏳ FxDateRangePicker · P2
-- ⏳ FxCalendar · P2
-- ⏳ FxMiniCalendar · P2
+- ✅ FxDateTimePicker
+- ✅ FxDateRangePicker
+- ✅ FxCalendar
+- ✅ FxMiniCalendar
 
 #### Files & Media Input
 - ⏳ FxFileChooser · P2

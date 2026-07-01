@@ -16,6 +16,7 @@ io/forja/components/layout/fxRow/FxRow.class
 io/forja/components/dataDisplay/fxAvatar/FxAvatar$Builder.class
 io/forja/components/layout/fxSeparator/SeparatorVariant.class
 io/forja/components/layout/fxStack/FxStack$Builder.class
+io/forja/components/inputs/fxNumberField/FxNumberField$Builder.class
 io/forja/components/typography/fxLabel/FxLabelSkin$1.class
 io/forja/components/typography/fxLabel/FxLabel$Builder.class
 io/forja/components/typography/fxKbd/FxKbd.class
@@ -29,6 +30,7 @@ io/forja/components/layout/fxSeparator/FxSeparator.class
 io/forja/components/buttonsAndActions/fxIconButton/FxIconButtonSkin.class
 io/forja/components/typography/fxText/FxText.class
 io/forja/Forja$1.class
+io/forja/components/inputs/fxNumberField/FxNumberField.class
 io/forja/components/typography/fxCode/FxCode.class
 io/forja/components/layout/fxSection/FxSection$Builder.class
 io/forja/components/typography/fxLink/FxLinkSkin.class
@@ -66,6 +68,7 @@ io/forja/tokens/SpacingSize.class
 io/forja/components/inputs/fxTextArea/FxTextArea$Builder.class
 io/forja/components/buttonsAndActions/fxButton/FxButton.class
 io/forja/components/typography/fxText/FxTextSkin$1.class
+io/forja/components/inputs/fxNumberField/FxNumberField$1.class
 io/forja/components/typography/fxText/TextVariant.class
 io/forja/components/layout/fxSeparator/FxSeparatorSkin.class
 io/forja/components/buttonsAndActions/fxButton/ButtonVariant.class

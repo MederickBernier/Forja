@@ -778,3 +778,101 @@
 .forja-password-field:disabled .forja-password-field-row {
     -fx-opacity: 0.5;
 }
+
+.forja-number-field {
+    -fx-spacing: 4px;
+}
+
+.forja-number-field-row {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 0 6px 0 10px;
+    -fx-min-height: 36px;
+    -fx-max-height: 36px;
+}
+
+.forja-number-field-row:hover {
+    -fx-background-color: -forja-input-bg-hover;
+}
+
+.forja-number-field:focused .forja-number-field-row {
+    -fx-border-color: -forja-accent-focus;
+    -fx-border-width: 1px;
+    -fx-padding: 0 5.5px 0 9.5px;
+}
+
+.forja-number-field:error .forja-number-field-row {
+    -fx-border-color: -forja-danger;
+    -fx-border-width: 1px;
+    -fx-padding: 0 5.5px 0 9.5px;
+}
+
+.forja-number-field:success .forja-number-field-row {
+    -fx-border-color: -forja-success;
+    -fx-border-width: 1px;
+    -fx-padding: 0 5.5px 0 9.5px;
+}
+
+.forja-number-field-inner {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: -forja-text-muted;
+}
+
+.forja-number-field-inner:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.forja-number-field-affix {
+    -fx-text-fill: -forja-text-muted;
+}
+
+.forja-number-field-helper {
+    -fx-padding: 0 0 0 10px;
+}
+
+.forja-number-field-error {
+    -fx-text-fill: -forja-danger;
+}
+
+.forja-number-field-row .forja-icon {
+    -fx-icon-color: -forja-text-muted;
+}
+
+.forja-number-field:focused .forja-number-field-row .forja-icon {
+    -fx-icon-color: -forja-accent;
+}
+
+.forja-number-field:error .forja-number-field-row .forja-icon {
+    -fx-icon-color: -forja-danger;
+}
+
+.forja-number-field:success .forja-number-field-row .forja-icon {
+    -fx-icon-color: -forja-success;
+}
+
+.forja-number-field-steppers {
+    -fx-spacing: 0;
+    -fx-padding: 0 0 0 4px;
+}
+
+.forja-number-field-stepper {
+    -fx-cursor: hand;
+    -fx-icon-size: 12;
+    -fx-padding: 1px 2px;
+}
+
+.forja-number-field-stepper:hover {
+    -fx-icon-color: -forja-text-primary;
+}
+
+.forja-number-field:disabled .forja-number-field-row {
+    -fx-opacity: 0.5;
+}

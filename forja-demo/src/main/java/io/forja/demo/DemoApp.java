@@ -8,6 +8,7 @@ import io.forja.components.dataDisplay.fxAvatar.FxAvatar;
 import io.forja.components.dataDisplay.fxAvatarGroup.FxAvatarGroup;
 import io.forja.components.feedbackAndStatus.fxBadge.FxBadge;
 import io.forja.components.typography.fxBlockquote.FxBlockquote;
+import io.forja.components.inputs.fxNumberField.FxNumberField;
 import io.forja.components.inputs.fxPasswordField.FxPasswordField;
 import io.forja.components.inputs.fxTextArea.FxTextArea;
 import io.forja.components.inputs.InputVariant;
@@ -715,6 +716,51 @@ public class DemoApp extends Application {
 
         VBox passwordFields = new VBox(12, pwPlain, pwReveal, pwError);
 
+        FxLabel numberFieldsSectionLabel = FxLabel.builder()
+                .text("Number Fields")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        FxNumberField nfPlain = FxNumberField.builder()
+                .promptText("Quantity")
+                .value(1.0)
+                .min(0.0)
+                .showSteppers(true)
+                .build();
+
+        FxNumberField nfPrice = FxNumberField.builder()
+                .value(9.99)
+                .min(0.0)
+                .max(1000.0)
+                .step(0.25)
+                .decimals(2)
+                .prefix("$")
+                .showSteppers(true)
+                .helperText("Retail price, taxes excluded.")
+                .build();
+
+        FxNumberField nfWeight = FxNumberField.builder()
+                .value(75.0)
+                .min(0.0)
+                .step(0.5)
+                .decimals(1)
+                .suffix("kg")
+                .leadingIcon("fth-activity")
+                .build();
+
+        FxNumberField nfError = FxNumberField.builder()
+                .value(-3.0)
+                .errorText("Value must be at least 0.")
+                .build();
+
+        nfPlain.setMaxWidth(320);
+        nfPrice.setMaxWidth(320);
+        nfWeight.setMaxWidth(320);
+        nfError.setMaxWidth(320);
+
+        VBox numberFields = new VBox(12, nfPlain, nfPrice, nfWeight, nfError);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -740,10 +786,11 @@ public class DemoApp extends Application {
                 cardsSectionLabel, cards,
                 textFieldsSectionLabel, textFields,
                 textAreasSectionLabel, textAreas,
-                passwordFieldsSectionLabel, passwordFields
+                passwordFieldsSectionLabel, passwordFields,
+                numberFieldsSectionLabel, numberFields
         );
 
-        Scene scene = new Scene(root, 900, 4020);
+        Scene scene = new Scene(root, 900, 4320);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

@@ -9,6 +9,7 @@ io/forja/components/FxChipTest.class
 io/forja/components/FxAvatarTest.class
 io/forja/components/FxStatusDotTest.class
 io/forja/components/FxIconTest.class
+io/forja/components/FxNumberFieldTest.class
 io/forja/components/FxTextFieldTest.class
 io/forja/components/FxTextAreaTest.class
 io/forja/components/FxCardTest.class

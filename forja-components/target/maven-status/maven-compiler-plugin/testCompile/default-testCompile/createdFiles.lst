@@ -21,6 +21,7 @@ io/forja/components/FxCodeTest.class
 io/forja/testsupport/ForjaTestSupport.class
 io/forja/components/FxLabelTest.class
 io/forja/components/FxBlockquoteTest.class
+io/forja/components/FxDatePickerTest.class
 io/forja/components/FxAvatarGroupTest.class
 io/forja/components/FxContainerTest.class
 io/forja/components/FxSectionTest.class

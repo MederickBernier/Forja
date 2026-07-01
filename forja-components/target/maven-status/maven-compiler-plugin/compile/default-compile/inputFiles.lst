@@ -47,6 +47,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxIconButton/FxIconButtonSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxButton/FxButtonSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxStack/FxStack.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/dateAndTime/fxDatePicker/FxDatePicker.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxCard/FxCard.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxAvatar/AvatarSize.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/builder/FxComponentBuilder.java

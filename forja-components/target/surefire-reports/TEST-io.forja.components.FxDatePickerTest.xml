@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxContainerTest" time="2.988" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxDatePickerTest" time="6.484" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="javafx.runtime.version" value="12.0.1+2"/>
@@ -61,14 +61,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="changingPropertiesReappliesValues" classname="io.forja.components.FxContainerTest" time="0.67">
-    <system-err><![CDATA[Jun 30, 2026 8:41:28 PM com.sun.javafx.application.PlatformImpl startup
-WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @719cd484'
-]]></system-err>
-  </testcase>
-  <testcase name="allPaddingTokensMapToInsets" classname="io.forja.components.FxContainerTest" time="0.672"/>
-  <testcase name="allWidthsMapToCorrectMaxWidth" classname="io.forja.components.FxContainerTest" time="0.519"/>
-  <testcase name="constructorVariants" classname="io.forja.components.FxContainerTest" time="0.472"/>
-  <testcase name="builderSetsAllProperties" classname="io.forja.components.FxContainerTest" time="0.314"/>
-  <testcase name="builderDefaults" classname="io.forja.components.FxContainerTest" time="0.311"/>
+  <testcase name="setValueClampsToBounds" classname="io.forja.components.FxDatePickerTest" time="0.421"/>
+  <testcase name="innerPickerValueSyncsBackToField" classname="io.forja.components.FxDatePickerTest" time="1.561"/>
+  <testcase name="allVariantsHaveCorrespondingPseudoClass" classname="io.forja.components.FxDatePickerTest" time="0.414"/>
+  <testcase name="helperTextTogglesHelperLabelVisibility" classname="io.forja.components.FxDatePickerTest" time="0.412"/>
+  <testcase name="leadingIconLiteralSugarCreatesFxIcon" classname="io.forja.components.FxDatePickerTest" time="0.31"/>
+  <testcase name="mutatingLeadingIconRebuildsRow" classname="io.forja.components.FxDatePickerTest" time="0.466"/>
+  <testcase name="changingFormatPatternRebuildsConverter" classname="io.forja.components.FxDatePickerTest" time="0.465"/>
+  <testcase name="formatPatternAffectsConverterToString" classname="io.forja.components.FxDatePickerTest" time="0.362"/>
+  <testcase name="errorTakesPrecedenceOverHelperText" classname="io.forja.components.FxDatePickerTest" time="0.31"/>
+  <testcase name="errorTextAutoFlipsVariantAndShowsError" classname="io.forja.components.FxDatePickerTest" time="0.361"/>
+  <testcase name="valueSyncsToInnerPicker" classname="io.forja.components.FxDatePickerTest" time="0.361"/>
+  <testcase name="leadingIconInserted" classname="io.forja.components.FxDatePickerTest" time="0.361"/>
+  <testcase name="builderDefaults" classname="io.forja.components.FxDatePickerTest" time="0.31"/>
+  <testcase name="variantPseudoClassUpdates" classname="io.forja.components.FxDatePickerTest" time="0.361"/>
 </testsuite>

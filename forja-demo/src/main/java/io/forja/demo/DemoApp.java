@@ -8,6 +8,7 @@ import io.forja.components.dataDisplay.fxAvatar.FxAvatar;
 import io.forja.components.dataDisplay.fxAvatarGroup.FxAvatarGroup;
 import io.forja.components.feedbackAndStatus.fxBadge.FxBadge;
 import io.forja.components.typography.fxBlockquote.FxBlockquote;
+import io.forja.components.dateAndTime.fxDatePicker.FxDatePicker;
 import io.forja.components.inputs.fxNumberField.FxNumberField;
 import io.forja.components.inputs.fxPasswordField.FxPasswordField;
 import io.forja.components.inputs.fxTextArea.FxTextArea;
@@ -46,6 +47,8 @@ import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.time.LocalDate;
 
 public class DemoApp extends Application {
 
@@ -761,6 +764,45 @@ public class DemoApp extends Application {
 
         VBox numberFields = new VBox(12, nfPlain, nfPrice, nfWeight, nfError);
 
+        FxLabel datePickersSectionLabel = FxLabel.builder()
+                .text("Date Pickers")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        LocalDate today = LocalDate.of(2026, 6, 30);
+
+        FxDatePicker dpPlain = FxDatePicker.builder()
+                .promptText("Pick a date")
+                .leadingIcon("fth-calendar")
+                .build();
+
+        FxDatePicker dpToday = FxDatePicker.builder()
+                .value(today)
+                .leadingIcon("fth-calendar")
+                .helperText("Defaulted to today.")
+                .build();
+
+        FxDatePicker dpBounded = FxDatePicker.builder()
+                .value(today)
+                .min(today)
+                .max(today.plusDays(30))
+                .leadingIcon("fth-calendar")
+                .helperText("Next 30 days only.")
+                .build();
+
+        FxDatePicker dpError = FxDatePicker.builder()
+                .value(today.minusDays(5))
+                .errorText("Date must be in the future.")
+                .build();
+
+        dpPlain.setMaxWidth(320);
+        dpToday.setMaxWidth(320);
+        dpBounded.setMaxWidth(320);
+        dpError.setMaxWidth(320);
+
+        VBox datePickers = new VBox(12, dpPlain, dpToday, dpBounded, dpError);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -787,10 +829,11 @@ public class DemoApp extends Application {
                 textFieldsSectionLabel, textFields,
                 textAreasSectionLabel, textAreas,
                 passwordFieldsSectionLabel, passwordFields,
-                numberFieldsSectionLabel, numberFields
+                numberFieldsSectionLabel, numberFields,
+                datePickersSectionLabel, datePickers
         );
 
-        Scene scene = new Scene(root, 900, 4320);
+        Scene scene = new Scene(root, 900, 4620);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

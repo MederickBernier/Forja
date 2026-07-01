@@ -102,11 +102,16 @@ layout/            fxSeparator · fxSpacer · fxStack · fxRow · fxContainer ·
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot
 dataDisplay/       fxAvatar · fxAvatarGroup
 utilities/         fxIcon
-inputs/            fxTextField · fxTextArea · fxPasswordField
+inputs/            fxTextField · fxTextArea · fxPasswordField · fxNumberField · fxSearchField
                    (+ shared InputVariant)
+dateAndTime/       fxDatePicker · fxTimePicker
+selection/         fxCheckBox · fxCheckGroup · fxRadioGroup · fxSwitch · fxSlider · fxComboBox
+buttonsAndActions/ fxButton · fxIconButton · fxToggleButton · fxButtonGroup · fxCopyButton
+feedbackAndStatus/ fxBadge · fxChip · fxStatusDot · fxProgressBar · fxProgressCircle · fxSkeleton · fxAlert · fxBanner · fxToast
+overlays/          OverlayHost · fxTooltip · fxDialog · fxConfirmDialog
 ```
 
-Empty category folders held for future work: `charts`, `dateAndTime`, `fileAndMediaInput`, `media`, `navigation`, `overlays`, `selection`, `validation`.
+Empty category folders held for future work: `charts`, `fileAndMediaInput`, `media`, `navigation`, `validation`.
 
 ### Build roadmap
 
@@ -139,9 +144,9 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 #### Buttons & Actions
 - ✅ FxButton
 - ✅ FxIconButton
-- ⏳ FxToggleButton · P1
-- ⏳ FxCopyButton · P1
-- ⏳ FxButtonGroup / FxSegmentedControl · P1
+- ✅ FxToggleButton
+- ✅ FxCopyButton
+- ✅ FxButtonGroup / FxSegmentedControl
 - ⏳ FxSplitButton · P2
 - ⏳ FxMenuButton · P2
 
@@ -149,8 +154,8 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxTextField
 - ✅ FxTextArea
 - ✅ FxPasswordField
-- ⏳ FxNumberField · P1
-- ⏳ FxSearchField · P1
+- ✅ FxNumberField
+- ✅ FxSearchField
 - ⏳ FxAutocomplete · P2
 - ⏳ FxTagInput · P2
 - ⏳ FxOTPInput · P2
@@ -161,20 +166,20 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ⏳ FxJsonEditor · P3
 
 #### Selection
-- ⏳ FxCheckBox · P1
-- ⏳ FxCheckGroup · P1
-- ⏳ FxRadioGroup · P1
-- ⏳ FxSwitch · P1
-- ⏳ FxComboBox · P1
-- ⏳ FxSlider · P1
+- ✅ FxCheckBox
+- ✅ FxCheckGroup
+- ✅ FxRadioGroup
+- ✅ FxSwitch
+- ✅ FxComboBox
+- ✅ FxSlider
 - ⏳ FxMultiSelect · P2
 - ⏳ FxRangeSlider · P2
 - ⏳ FxRating · P2
 - ⏳ FxColorPicker · P2
 
 #### Date & Time
-- ⏳ FxDatePicker · P2
-- ⏳ FxTimePicker · P2
+- ✅ FxDatePicker
+- ✅ FxTimePicker
 - ⏳ FxDateTimePicker · P2
 - ⏳ FxDateRangePicker · P2
 - ⏳ FxCalendar · P2
@@ -224,21 +229,21 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxBadge
 - ✅ FxChip
 - ✅ FxStatusDot
-- ⏳ FxProgressBar · P1
-- ⏳ FxProgressCircle · P1
-- ⏳ FxAlert · P1
-- ⏳ FxBanner · P1
-- ⏳ FxToast · P1 (load-bearing: establishes overlay-host infra)
-- ⏳ FxSkeleton · P1
+- ✅ FxProgressBar
+- ✅ FxProgressCircle
+- ✅ FxAlert
+- ✅ FxBanner
+- ✅ FxToast (rides on OverlayHost)
+- ✅ FxSkeleton
 - ⏳ FxNotificationCenter · P2
 - ⏳ FxEmptyState · P2
 - ⏳ FxErrorState · P2
 - ⏳ FxResultPage (success / failure summary) · P2
 
 #### Overlays
-- ⏳ FxTooltip · P1
-- ⏳ FxDialog · P1
-- ⏳ FxConfirmDialog · P1
+- ✅ FxTooltip
+- ✅ FxDialog
+- ✅ FxConfirmDialog
 - ⏳ FxFormDialog · P2
 - ⏳ FxPopover · P2
 - ⏳ FxHoverCard · P2

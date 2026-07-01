@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: io.forja.components.FxSpacerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.958 s -- in io.forja.components.FxSpacerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.955 s -- in io.forja.components.FxSpacerTest

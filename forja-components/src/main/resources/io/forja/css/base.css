@@ -1095,3 +1095,497 @@
 .forja-time-picker:disabled .forja-time-picker-row {
     -fx-opacity: 0.5;
 }
+
+.forja-checkbox {
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 13px;
+    -fx-padding: 2px 0;
+    -fx-cursor: hand;
+}
+
+.forja-checkbox > .box {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 1px;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+    -fx-padding: 2px;
+    -fx-min-width: 16px;
+    -fx-min-height: 16px;
+    -fx-max-width: 16px;
+    -fx-max-height: 16px;
+}
+
+.forja-checkbox:hover > .box {
+    -fx-border-color: -forja-accent;
+}
+
+.forja-checkbox:focused > .box {
+    -fx-border-color: -forja-accent-focus;
+    -fx-border-width: 1.5px;
+}
+
+.forja-checkbox:selected > .box,
+.forja-checkbox:indeterminate > .box {
+    -fx-background-color: -forja-accent;
+    -fx-border-color: -forja-accent;
+}
+
+.forja-checkbox > .box > .mark {
+    -fx-background-color: transparent;
+    -fx-shape: "M0,3 L2,5 L6,0";
+    -fx-scale-shape: false;
+    -fx-min-width: 8px;
+    -fx-min-height: 6px;
+    -fx-max-width: 8px;
+    -fx-max-height: 6px;
+}
+
+.forja-checkbox:selected > .box > .mark {
+    -fx-background-color: white;
+}
+
+.forja-checkbox:indeterminate > .box > .mark {
+    -fx-background-color: white;
+    -fx-shape: "M0,0 H6 V1 H0 Z";
+}
+
+.forja-checkbox:disabled {
+    -fx-opacity: 0.5;
+}
+
+.forja-check-group,
+.forja-radio-group {
+    -fx-spacing: 6px;
+}
+
+.forja-check-group-heading,
+.forja-radio-group-heading {
+    -fx-padding: 0 0 2px 0;
+}
+
+.forja-radio {
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-padding: 2px 0;
+}
+
+.forja-radio > .radio {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 1px;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-min-width: 16px;
+    -fx-min-height: 16px;
+    -fx-max-width: 16px;
+    -fx-max-height: 16px;
+    -fx-padding: 3px;
+}
+
+.forja-radio:hover > .radio {
+    -fx-border-color: -forja-accent;
+}
+
+.forja-radio:selected > .radio {
+    -fx-border-color: -forja-accent;
+}
+
+.forja-radio > .radio > .dot {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+    -fx-min-width: 8px;
+    -fx-min-height: 8px;
+    -fx-max-width: 8px;
+    -fx-max-height: 8px;
+}
+
+.forja-radio:selected > .radio > .dot {
+    -fx-background-color: -forja-accent;
+}
+
+.forja-switch {
+    -fx-padding: 2px 0;
+    -fx-cursor: hand;
+}
+
+.forja-switch-track {
+    -fx-background-color: -forja-border-default;
+    -fx-background-radius: 999px;
+    -fx-min-width: 36px;
+    -fx-min-height: 18px;
+    -fx-max-width: 36px;
+    -fx-max-height: 18px;
+    -fx-padding: 2px;
+}
+
+.forja-switch:selected .forja-switch-track {
+    -fx-background-color: -forja-accent;
+}
+
+.forja-switch:focused .forja-switch-track {
+    -fx-border-color: -forja-accent-focus;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 999px;
+}
+
+.forja-switch-knob {
+    -fx-background-color: white;
+    -fx-background-radius: 999px;
+    -fx-min-width: 14px;
+    -fx-min-height: 14px;
+    -fx-max-width: 14px;
+    -fx-max-height: 14px;
+}
+
+.forja-switch-label {
+    -fx-text-fill: -forja-text-primary;
+}
+
+.forja-switch:disabled { -fx-opacity: 0.5; }
+
+.forja-slider {
+    -fx-spacing: 4px;
+}
+
+.forja-slider-row {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 8px;
+}
+
+.forja-slider-inner .track {
+    -fx-background-color: -forja-border-default;
+    -fx-background-radius: 999px;
+    -fx-pref-height: 4px;
+}
+
+.forja-slider-inner .thumb {
+    -fx-background-color: -forja-accent;
+    -fx-background-radius: 999px;
+    -fx-min-width: 14px;
+    -fx-min-height: 14px;
+    -fx-max-width: 14px;
+    -fx-max-height: 14px;
+}
+
+.forja-slider-inner:focused .thumb {
+    -fx-effect: dropshadow(three-pass-box, -forja-accent-focus, 4, 0, 0, 0);
+}
+
+.forja-slider-value {
+    -fx-text-fill: -forja-text-muted;
+    -fx-min-width: 40px;
+    -fx-alignment: center-right;
+}
+
+.forja-slider:disabled { -fx-opacity: 0.5; }
+
+.forja-combo-box {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 0 6px 0 10px;
+    -fx-min-height: 36px;
+    -fx-max-height: 36px;
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 13px;
+}
+
+.forja-combo-box:hover {
+    -fx-background-color: -forja-input-bg-hover;
+}
+
+.forja-combo-box:focused {
+    -fx-border-color: -forja-accent-focus;
+    -fx-border-width: 1px;
+    -fx-padding: 0 5.5px 0 9.5px;
+}
+
+.forja-combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -forja-text-primary;
+    -fx-padding: 0;
+}
+
+.forja-combo-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 4px;
+}
+
+.forja-combo-box .arrow-button .arrow {
+    -fx-background-color: -forja-text-muted;
+}
+
+.forja-combo-box:focused .arrow-button .arrow {
+    -fx-background-color: -forja-accent;
+}
+
+.forja-combo-box:disabled { -fx-opacity: 0.5; }
+
+.forja-search-field {
+    -fx-spacing: 0;
+}
+
+.forja-search-field-clear {
+    -fx-cursor: hand;
+}
+
+.forja-search-field-clear:hover {
+    -fx-icon-color: -forja-text-primary;
+}
+
+.forja-toggle-button {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 13px;
+    -fx-padding: 6px 12px;
+    -fx-cursor: hand;
+}
+
+.forja-toggle-button:hover {
+    -fx-background-color: -forja-input-bg-hover;
+}
+
+.forja-toggle-button:selected {
+    -fx-background-color: -forja-accent;
+    -fx-text-fill: white;
+    -fx-border-color: -forja-accent;
+}
+
+.forja-toggle-button:disabled { -fx-opacity: 0.5; }
+
+.forja-button-group {
+    -fx-spacing: 0;
+}
+
+.forja-button-group-item {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-width: 0.5px 0 0.5px 0.5px;
+}
+
+.forja-button-group-item:last-child {
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 0 6px 6px 0;
+    -fx-border-radius: 0 6px 6px 0;
+}
+
+.forja-button-group-item:first-child {
+    -fx-background-radius: 6px 0 0 6px;
+    -fx-border-radius: 6px 0 0 6px;
+}
+
+.forja-copy-button {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 13px;
+    -fx-padding: 6px 12px;
+    -fx-cursor: hand;
+}
+
+.forja-copy-button:hover {
+    -fx-background-color: -forja-input-bg-hover;
+}
+
+.forja-copy-button:confirming {
+    -fx-background-color: -forja-success;
+    -fx-text-fill: white;
+    -fx-border-color: -forja-success;
+}
+
+.forja-progress-bar {
+    -fx-pref-height: 6px;
+    -fx-accent: -forja-accent;
+}
+
+.forja-progress-bar:success { -fx-accent: -forja-success; }
+.forja-progress-bar:warning { -fx-accent: -forja-warning; }
+.forja-progress-bar:danger  { -fx-accent: -forja-danger; }
+.forja-progress-bar:info    { -fx-accent: -forja-info; }
+.forja-progress-bar:muted   { -fx-accent: -forja-text-muted; }
+
+.forja-progress-bar > .track {
+    -fx-background-color: -forja-border-default;
+    -fx-background-radius: 999px;
+}
+
+.forja-progress-bar > .bar {
+    -fx-background-radius: 999px;
+    -fx-background-insets: 0;
+}
+
+.forja-progress-circle {
+    -fx-progress-color: -forja-accent;
+}
+
+.forja-progress-circle:success { -fx-progress-color: -forja-success; }
+.forja-progress-circle:warning { -fx-progress-color: -forja-warning; }
+.forja-progress-circle:danger  { -fx-progress-color: -forja-danger; }
+.forja-progress-circle:info    { -fx-progress-color: -forja-info; }
+.forja-progress-circle:muted   { -fx-progress-color: -forja-text-muted; }
+
+.forja-skeleton {
+    -fx-background-color: -forja-border-default;
+}
+
+.forja-skeleton:rect {
+    -fx-background-radius: 4px;
+}
+
+.forja-skeleton:text {
+    -fx-background-radius: 999px;
+    -fx-min-height: 12px;
+    -fx-max-height: 12px;
+}
+
+.forja-skeleton:circle {
+    -fx-background-radius: 999px;
+}
+
+.forja-alert {
+    -fx-padding: 12px 14px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-width: 0.5px;
+    -fx-spacing: 10px;
+}
+
+.forja-alert:info    { -fx-background-color: -forja-info-tint;    -fx-border-color: -forja-info; }
+.forja-alert:success { -fx-background-color: -forja-success-tint; -fx-border-color: -forja-success; }
+.forja-alert:warning { -fx-background-color: -forja-warning-tint; -fx-border-color: -forja-warning; }
+.forja-alert:danger  { -fx-background-color: -forja-danger-tint;  -fx-border-color: -forja-danger; }
+.forja-alert:accent  { -fx-background-color: -forja-accent-tint;  -fx-border-color: -forja-accent; }
+.forja-alert:muted,
+.forja-alert:default { -fx-background-color: -forja-bg-surface;   -fx-border-color: -forja-border-default; }
+
+.forja-alert-icon { -fx-icon-size: 18; }
+.forja-alert:info    .forja-alert-icon { -fx-icon-color: -forja-info; }
+.forja-alert:success .forja-alert-icon { -fx-icon-color: -forja-success; }
+.forja-alert:warning .forja-alert-icon { -fx-icon-color: -forja-warning; }
+.forja-alert:danger  .forja-alert-icon { -fx-icon-color: -forja-danger; }
+.forja-alert:accent  .forja-alert-icon { -fx-icon-color: -forja-accent; }
+
+.forja-alert-title {
+    -fx-font-weight: bold;
+}
+
+.forja-alert-dismiss {
+    -fx-cursor: hand;
+    -fx-icon-color: -forja-text-muted;
+}
+
+.forja-alert-dismiss:hover {
+    -fx-icon-color: -forja-text-primary;
+}
+
+.forja-banner {
+    -fx-padding: 10px 16px;
+    -fx-border-width: 0 0 0.5px 0;
+    -fx-spacing: 10px;
+}
+
+.forja-banner:info    { -fx-background-color: -forja-info-tint;    -fx-border-color: -forja-info; }
+.forja-banner:success { -fx-background-color: -forja-success-tint; -fx-border-color: -forja-success; }
+.forja-banner:warning { -fx-background-color: -forja-warning-tint; -fx-border-color: -forja-warning; }
+.forja-banner:danger  { -fx-background-color: -forja-danger-tint;  -fx-border-color: -forja-danger; }
+.forja-banner:accent  { -fx-background-color: -forja-accent-tint;  -fx-border-color: -forja-accent; }
+.forja-banner:muted,
+.forja-banner:default { -fx-background-color: -forja-bg-surface;   -fx-border-color: -forja-border-default; }
+
+.forja-banner-icon { -fx-icon-size: 18; }
+.forja-banner:info    .forja-banner-icon { -fx-icon-color: -forja-info; }
+.forja-banner:success .forja-banner-icon { -fx-icon-color: -forja-success; }
+.forja-banner:warning .forja-banner-icon { -fx-icon-color: -forja-warning; }
+.forja-banner:danger  .forja-banner-icon { -fx-icon-color: -forja-danger; }
+.forja-banner:accent  .forja-banner-icon { -fx-icon-color: -forja-accent; }
+
+.forja-banner-dismiss {
+    -fx-cursor: hand;
+    -fx-icon-color: -forja-text-muted;
+}
+
+.forja-banner-dismiss:hover {
+    -fx-icon-color: -forja-text-primary;
+}
+
+.forja-toast {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px 14px;
+    -fx-spacing: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.14), 12, 0.05, 0, 4);
+}
+
+.forja-toast:info    { -fx-border-color: -forja-info; }
+.forja-toast:success { -fx-border-color: -forja-success; }
+.forja-toast:warning { -fx-border-color: -forja-warning; }
+.forja-toast:danger  { -fx-border-color: -forja-danger; }
+.forja-toast:accent  { -fx-border-color: -forja-accent; }
+
+.forja-toast-icon { -fx-icon-size: 16; }
+.forja-toast:info    .forja-toast-icon { -fx-icon-color: -forja-info; }
+.forja-toast:success .forja-toast-icon { -fx-icon-color: -forja-success; }
+.forja-toast:warning .forja-toast-icon { -fx-icon-color: -forja-warning; }
+.forja-toast:danger  .forja-toast-icon { -fx-icon-color: -forja-danger; }
+.forja-toast:accent  .forja-toast-icon { -fx-icon-color: -forja-accent; }
+
+.forja-overlay-layer {
+    -fx-background-color: transparent;
+}
+
+.forja-tooltip {
+    -fx-background-color: -forja-text-primary;
+    -fx-text-fill: -forja-bg-page;
+    -fx-font-size: 12px;
+    -fx-padding: 4px 8px;
+    -fx-background-radius: 4px;
+}
+
+.forja-dialog {
+    -fx-background-color: transparent;
+}
+
+.forja-dialog-scrim {
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+}
+
+.forja-dialog-panel {
+    -fx-background-color: -forja-bg-surface;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-min-width: 340px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.24), 20, 0.06, 0, 6);
+}
+
+.forja-dialog-title {
+    -fx-font-weight: bold;
+}
+
+.forja-dialog-close {
+    -fx-cursor: hand;
+    -fx-icon-color: -forja-text-muted;
+}
+
+.forja-dialog-close:hover {
+    -fx-icon-color: -forja-text-primary;
+}
+
+.forja-dialog-footer {
+    -fx-padding: 4px 0 0 0;
+}

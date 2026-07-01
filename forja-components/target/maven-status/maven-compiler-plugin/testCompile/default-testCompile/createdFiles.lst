@@ -34,6 +34,7 @@ io/forja/components/PhaseCSmokeTest.class
 io/forja/components/FxButtonGroupTest.class
 io/forja/components/FxComboBoxTest.class
 io/forja/components/FxToastTest.class
+io/forja/components/PhaseOSmokeTest.class
 io/forja/components/FxLinkTest.class
 io/forja/components/FxChipTest.class
 io/forja/components/FxAvatarTest.class

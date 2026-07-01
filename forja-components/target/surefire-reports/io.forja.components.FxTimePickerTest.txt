@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: io.forja.components.FxTimePickerTest
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.743 s -- in io.forja.components.FxTimePickerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.733 s -- in io.forja.components.FxTimePickerTest

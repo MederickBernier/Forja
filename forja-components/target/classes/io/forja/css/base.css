@@ -2456,3 +2456,25 @@
     -fx-cursor: hand;
 }
 .forja-carousel-dot:active { -fx-background-color: -forja-accent; }
+
+/* ─── Phase O: loose ends ─── */
+
+.forja-image-cropper {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.forja-command-palette { -fx-background-color: transparent; }
+.forja-command-palette-scrim { -fx-background-color: rgba(0, 0, 0, 0.5); }
+.forja-command-palette-panel {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.24), 20, 0.06, 0, 6);
+    -fx-padding: 8px;
+}

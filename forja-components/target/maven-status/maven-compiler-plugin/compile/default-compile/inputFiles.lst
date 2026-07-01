@@ -7,6 +7,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxNumberField/FxNumberField.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxFormDialog/FxFormDialog.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxKanbanBoard/FxKanbanBoard.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/fileAndMediaInput/fxImageCropper/FxImageCropper.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/charts/fxHeatmap/FxHeatmap.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxMasonry/FxMasonry.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dateAndTime/fxTimePicker/FxTimePicker.java
@@ -32,6 +33,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxToggleButton/FxToggleButton.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxMenuButton/FxMenuButton.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/styling/FxStyle.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/navigation/fxCommandPalette/FxCommandPalette.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxBlockquote/FxBlockquote.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxDescriptionList/FxDescriptionList.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/styling/FxStyleBuilder.java

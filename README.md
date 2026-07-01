@@ -127,11 +127,11 @@ validation/        fxValidator (+ Rule) · fxFormField · fxErrorSummary · fxFo
 ```
 
 ```
-navigation/        fxTabs · fxVerticalTabs · fxAppBar · fxSidebar · fxSidebarNav · fxBreadcrumbs · fxStepper · fxPagination · fxMenuBar · fxContextMenu · fxDropdownMenu · fxAnchorNav
+navigation/        fxTabs · fxVerticalTabs · fxAppBar · fxSidebar · fxSidebarNav · fxBreadcrumbs · fxStepper · fxPagination · fxMenuBar · fxContextMenu · fxDropdownMenu · fxAnchorNav · fxCommandPalette
 ```
 
 ```
-fileAndMediaInput/ fxFileChooser · fxFileDropzone · fxImagePicker
+fileAndMediaInput/ fxFileChooser · fxFileDropzone · fxImagePicker · fxImageCropper
 ```
 
 ### Build roadmap
@@ -209,7 +209,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxFileChooser
 - ✅ FxFileDropzone
 - ✅ FxImagePicker
-- ⏳ FxImageCropper · P3
+- ✅ FxImageCropper
 
 #### Layout
 - ✅ FxSeparator
@@ -242,7 +242,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxContextMenu
 - ✅ FxDropdownMenu
 - ✅ FxAnchorNav (in-page jumps)
-- ⏳ FxCommandPalette · P3
+- ✅ FxCommandPalette
 
 #### Feedback & Status
 - ✅ FxBadge

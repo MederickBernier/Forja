@@ -106,7 +106,7 @@ inputs/            fxTextField · fxTextArea · fxPasswordField · fxNumberField
                    (+ shared InputVariant)
 dateAndTime/       fxDatePicker · fxTimePicker · fxDateTimePicker · fxDateRangePicker · fxCalendar · fxMiniCalendar
 selection/         fxCheckBox · fxCheckGroup · fxRadioGroup · fxSwitch · fxSlider · fxComboBox · fxMultiSelect · fxRangeSlider · fxRating · fxColorPicker
-buttonsAndActions/ fxButton · fxIconButton · fxToggleButton · fxButtonGroup · fxCopyButton
+buttonsAndActions/ fxButton · fxIconButton · fxToggleButton · fxButtonGroup · fxCopyButton · fxSplitButton · fxMenuButton
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot · fxProgressBar · fxProgressCircle · fxSkeleton · fxAlert · fxBanner · fxToast · fxNotificationCenter · fxEmptyState · fxErrorState · fxResultPage
 overlays/          OverlayHost · fxTooltip · fxDialog · fxConfirmDialog · fxPopover · fxHoverCard · fxDrawer · fxBottomSheet · fxLightbox · fxFormDialog
 layout/            (P0) + fxGrid · fxFlex · fxAspectRatio · fxScrollArea · fxSplitView · fxResizablePane · fxCollapse · fxAccordion · fxStickyHeader · fxResponsive
@@ -155,7 +155,6 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxKbd
 - ✅ FxCode
 - ✅ FxBulletList (ordered / unordered)
-- ⏳ FxHeading · P3 — overlaps FxLabel(HEADING); may be dropped
 
 #### Buttons & Actions
 - ✅ FxButton
@@ -163,8 +162,8 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxToggleButton
 - ✅ FxCopyButton
 - ✅ FxButtonGroup / FxSegmentedControl
-- ⏳ FxSplitButton · P2
-- ⏳ FxMenuButton · P2
+- ✅ FxSplitButton
+- ✅ FxMenuButton
 
 #### Inputs
 - ✅ FxTextField
@@ -224,7 +223,6 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxCollapse / FxAccordion
 - ✅ FxStickyHeader
 - ✅ FxResponsive (breakpoint helpers)
-- ❌ FxDivider — superseded by `FxSeparator`; will be removed from the roster
 
 #### Navigation
 - ✅ FxTabs

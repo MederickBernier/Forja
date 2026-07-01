@@ -33,6 +33,7 @@ io/forja/components/FxToastTest.class
 io/forja/components/FxLinkTest.class
 io/forja/components/FxChipTest.class
 io/forja/components/FxAvatarTest.class
+io/forja/components/PhaseJSmokeTest.class
 io/forja/components/FxCopyButtonTest.class
 io/forja/components/FxTimePickerTest.class
 io/forja/components/FxStatusDotTest.class

@@ -2199,3 +2199,44 @@
     -fx-cursor: hand;
 }
 .forja-theme-toggle:hover { -fx-background-color: -forja-input-bg-hover; }
+
+/* Split button */
+.forja-split-button {
+    -fx-background-color: -forja-accent;
+    -fx-text-fill: white;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 6px 12px;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+.forja-split-button:hover { -fx-background-color: -forja-accent-hover; }
+.forja-split-button:secondary {
+    -fx-background-color: -forja-input-bg;
+    -fx-text-fill: -forja-text-primary;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+}
+.forja-split-button:ghost {
+    -fx-background-color: transparent;
+    -fx-text-fill: -forja-text-primary;
+}
+.forja-split-button:danger { -fx-background-color: -forja-danger; }
+.forja-split-button .arrow { -fx-background-color: white; }
+.forja-split-button:secondary .arrow,
+.forja-split-button:ghost .arrow { -fx-background-color: -forja-text-muted; }
+
+/* Menu button (icon-only kebab) */
+.forja-menu-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 6px 8px;
+    -fx-cursor: hand;
+}
+.forja-menu-button:hover { -fx-background-color: -forja-input-bg-hover; }
+.forja-menu-button:primary { -fx-background-color: -forja-accent; }
+.forja-menu-button:primary .forja-icon { -fx-icon-color: white; }
+.forja-menu-button:danger .forja-icon { -fx-icon-color: -forja-danger; }
+.forja-menu-button .arrow-button { -fx-padding: 0; }
+.forja-menu-button > .arrow-button > .arrow { -fx-background-color: transparent; -fx-shape: ""; -fx-padding: 0; }

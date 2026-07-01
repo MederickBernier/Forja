@@ -25,6 +25,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxChip/FxChip.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxTree/FxTree.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxToggleButton/FxToggleButton.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxMenuButton/FxMenuButton.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/styling/FxStyle.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxBlockquote/FxBlockquote.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxDescriptionList/FxDescriptionList.java
@@ -110,6 +111,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxThemeToggle/FxThemeToggle.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxHoverCard/FxHoverCard.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxRangeSlider/FxRangeSlider.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxSplitButton/FxSplitButton.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxText/FxTextSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxTextField/FxTextField.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/fileAndMediaInput/fxFileChooser/FxFileChooser.java

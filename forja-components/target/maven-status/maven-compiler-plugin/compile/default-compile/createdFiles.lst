@@ -27,6 +27,7 @@ io/forja/components/utilities/fxFocusTrap/FxFocusTrap$Builder.class
 io/forja/components/inputs/fxMaskedInput/FxMaskedInput$Builder.class
 io/forja/components/layout/fxResponsive/FxResponsive$Entry.class
 io/forja/components/feedbackAndStatus/fxSkeleton/FxSkeleton.class
+io/forja/components/buttonsAndActions/fxMenuButton/FxMenuButton.class
 io/forja/components/layout/fxResizablePane/FxResizablePane$Builder.class
 io/forja/components/validation/fxFormField/FxFormField.class
 io/forja/components/overlays/fxFormDialog/FxFormDialog$Builder.class
@@ -64,6 +65,7 @@ io/forja/components/inputs/fxTextArea/FxTextArea$1.class
 io/forja/components/layout/fxAccordion/FxAccordion.class
 io/forja/components/layout/fxCard/CardVariant.class
 io/forja/components/navigation/fxMenuBar/FxMenuBar$Builder.class
+io/forja/components/buttonsAndActions/fxMenuButton/FxMenuButton$Builder.class
 io/forja/components/validation/fxValidator/Rule.class
 io/forja/components/buttonsAndActions/fxIconButton/FxIconButtonSkin$1.class
 io/forja/components/inputs/fxAutocomplete/FxAutocomplete$Builder.class
@@ -164,6 +166,7 @@ io/forja/components/inputs/fxPasswordField/FxPasswordField$1.class
 io/forja/components/fileAndMediaInput/fxFileDropzone/FxFileDropzone$Builder.class
 io/forja/components/typography/fxLink/FxLink.class
 io/forja/components/layout/fxRow/FxRow.class
+io/forja/components/buttonsAndActions/fxSplitButton/FxSplitButton.class
 io/forja/components/selection/fxSlider/FxSlider.class
 io/forja/components/overlays/fxHoverCard/FxHoverCard$Builder.class
 io/forja/util/ForjaStylesheets.class
@@ -188,6 +191,7 @@ io/forja/components/inputs/fxOTPInput/FxOTPInput$OnComplete.class
 io/forja/components/overlays/fxHoverCard/FxHoverCard$1.class
 io/forja/styling/FxStyleBuilder.class
 io/forja/components/utilities/fxIcon/FxIcon.class
+io/forja/components/buttonsAndActions/fxSplitButton/FxSplitButton$Builder.class
 io/forja/components/feedbackAndStatus/fxAlert/FxAlert$Builder.class
 io/forja/components/inputs/fxOTPInput/FxOTPInput$Builder.class
 io/forja/components/typography/fxLabel/LabelVariant.class
@@ -245,6 +249,7 @@ io/forja/components/navigation/fxDropdownMenu/FxDropdownMenu$Builder.class
 io/forja/components/buttonsAndActions/fxIconButton/FxIconButton$1.class
 io/forja/components/buttonsAndActions/fxButtonGroup/FxButtonGroup$Builder.class
 io/forja/components/utilities/fxPortal/FxPortal.class
+io/forja/components/buttonsAndActions/fxSplitButton/FxSplitButton$1.class
 io/forja/components/overlays/fxFormDialog/FxFormDialog$OnSubmit.class
 io/forja/builder/FxComponentBuilder.class
 io/forja/components/layout/fxSection/FxSection$Builder.class
@@ -300,6 +305,7 @@ io/forja/components/validation/fxValidator/FxValidator.class
 io/forja/components/selection/fxSwitch/FxSwitch$Builder.class
 io/forja/components/navigation/fxVerticalTabs/FxVerticalTabs.class
 io/forja/components/typography/fxBlockquote/FxBlockquote.class
+io/forja/components/buttonsAndActions/fxMenuButton/FxMenuButton$1.class
 io/forja/components/utilities/fxKeybindingHint/FxKeybindingHint$Builder.class
 io/forja/components/fileAndMediaInput/fxFileChooser/FxFileChooser$OnChoose.class
 io/forja/components/layout/fxCollapse/FxCollapse.class

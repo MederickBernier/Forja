@@ -1,0 +1,65 @@
+site_name: Forja
+site_description: A modern JavaFX UI component library for Java 8 and above.
+site_url: https://mederick.github.io/forja/
+repo_url: https://github.com/mederick/forja
+repo_name: mederick/forja
+edit_uri: edit/master/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - content.code.copy
+    - content.tabs.link
+    - search.highlight
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Foundation: foundation.md
+  - Components:
+      - Buttons & Actions: buttons-and-actions/index.md
+      - Typography: typography/index.md
+      - Inputs: inputs/index.md
+      - Selection: selection/index.md
+      - Date & Time: date-and-time/index.md
+      - Layout: layout/index.md
+      - Feedback & Status: feedback-and-status/index.md
+      - Overlays: overlays/index.md
+      - Data Display: data-display/index.md
+      - Charts: charts/index.md
+      - Media: media/index.md
+      - File Input: file-and-media-input/index.md
+      - Navigation: navigation/index.md
+      - Utilities: utilities/index.md
+      - Validation: validation/index.md
+  - Roadmap: roadmap.md

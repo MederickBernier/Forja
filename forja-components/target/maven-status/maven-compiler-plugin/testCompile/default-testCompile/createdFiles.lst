@@ -18,6 +18,7 @@ io/forja/components/FxSkeletonTest.class
 io/forja/components/FxCodeTest.class
 io/forja/testsupport/ForjaTestSupport.class
 io/forja/components/FxRadioGroupTest.class
+io/forja/components/PhaseESmokeTest.class
 io/forja/components/FxAvatarGroupTest.class
 io/forja/components/FxContainerTest.class
 io/forja/components/FxSectionTest.class

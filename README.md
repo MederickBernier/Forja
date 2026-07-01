@@ -115,7 +115,11 @@ utilities/         fxIcon · fxThemeToggle · fxKeybindingHint · fxSearchHighli
 typography/        (P0) + fxBulletList
 ```
 
-Empty category folders held for future work: `charts`, `fileAndMediaInput`, `media`, `navigation`, `validation`.
+Empty category folders held for future work: `charts`, `media`, `navigation`, `validation`.
+
+```
+fileAndMediaInput/ fxFileChooser · fxFileDropzone · fxImagePicker
+```
 
 ### Build roadmap
 
@@ -190,9 +194,9 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxMiniCalendar
 
 #### Files & Media Input
-- ⏳ FxFileChooser · P2
-- ⏳ FxFileDropzone · P2
-- ⏳ FxImagePicker · P2
+- ✅ FxFileChooser
+- ✅ FxFileDropzone
+- ✅ FxImagePicker
 - ⏳ FxImageCropper · P3
 
 #### Layout

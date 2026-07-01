@@ -75,6 +75,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxDialog/FxDialog.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dateAndTime/fxDateRangePicker/FxDateRangePicker.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dateAndTime/fxDateTimePicker/FxDateTimePicker.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/fileAndMediaInput/fxImagePicker/FxImagePicker.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxCheckGroup/FxCheckGroup.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxTable/FxTable.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxColorPicker/FxColorPicker.java
@@ -89,6 +90,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxRangeSlider/FxRangeSlider.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxText/FxTextSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxTextField/FxTextField.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/fileAndMediaInput/fxFileChooser/FxFileChooser.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxProgressCircle/FxProgressCircle.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxScrollSpy/FxScrollSpy.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxToast/FxToast.java
@@ -107,4 +109,5 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxConfirmDialog/FxConfirmDialog.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxRadioGroup/FxRadioGroup.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxAspectRatio/FxAspectRatio.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/fileAndMediaInput/fxFileDropzone/FxFileDropzone.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/builder/FxComponentBuilder.java

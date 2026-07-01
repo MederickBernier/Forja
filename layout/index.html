@@ -1,0 +1,3087 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A modern JavaFX UI component library for Java 8 and above.">
+      
+      
+      
+        <link rel="canonical" href="https://mederickbernier.github.io/Forja/layout/">
+      
+      
+        <link rel="prev" href="../date-and-time/">
+      
+      
+        <link rel="next" href="../feedback-and-status/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Layout - Forja</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#layout" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Forja" class="md-header__button md-logo" aria-label="Forja" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Forja
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Layout
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MederickBernier/Forja" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MederickBernier/Forja
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Forja" class="md-nav__button md-logo" aria-label="Forja" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Forja
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MederickBernier/Forja" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MederickBernier/Forja
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../foundation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Components
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Components
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buttons-and-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buttons & Actions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Typography
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inputs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inputs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../date-and-time/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Date & Time
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layout
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layout
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fxseparator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxSeparator
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxSeparator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxspacer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxSpacer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxSpacer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxstack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxStack
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxStack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxrow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxRow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxRow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxcontainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxContainer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxContainer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxsection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxSection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxSection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxcard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxCard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxCard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxgrid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxGrid
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxGrid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxflex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxFlex
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxFlex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxaspectratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxAspectRatio
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxAspectRatio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxscrollarea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxScrollArea
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxScrollArea">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxsplitview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxSplitView
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxSplitView">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxresizablepane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxResizablePane
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxResizablePane">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxcollapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxCollapse
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxCollapse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxaccordion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxAccordion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxAccordion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxstickyheader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxStickyHeader
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxStickyHeader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxresponsive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxResponsive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxResponsive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feedback-and-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feedback & Status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overlays/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overlays
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-display/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Display
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Charts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file-and-media-input/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    File Input
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fxseparator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxSeparator
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxSeparator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxspacer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxSpacer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxSpacer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxstack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxStack
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxStack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxrow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxRow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxRow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxcontainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxContainer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxContainer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxsection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxSection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxSection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxcard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxCard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxCard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxgrid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxGrid
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxGrid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxflex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxFlex
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxFlex">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxaspectratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxAspectRatio
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxAspectRatio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxscrollarea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxScrollArea
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxScrollArea">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxsplitview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxSplitView
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxSplitView">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxresizablepane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxResizablePane
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxResizablePane">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxcollapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxCollapse
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxCollapse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxaccordion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxAccordion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxAccordion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxstickyheader" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxStickyHeader
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxStickyHeader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fxresponsive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FxResponsive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FxResponsive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder-methods_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Builder methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="layout">Layout</h1>
+<p>Structural primitives — arrange other components.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#fxseparator">FxSeparator</a></td>
+<td>Horizontal or vertical divider line.</td>
+</tr>
+<tr>
+<td><a href="#fxspacer">FxSpacer</a></td>
+<td>Absorbs available space between siblings.</td>
+</tr>
+<tr>
+<td><a href="#fxstack">FxStack</a></td>
+<td>Vertical flow with spacing.</td>
+</tr>
+<tr>
+<td><a href="#fxrow">FxRow</a></td>
+<td>Horizontal flow with spacing.</td>
+</tr>
+<tr>
+<td><a href="#fxcontainer">FxContainer</a></td>
+<td>Max-width centered container.</td>
+</tr>
+<tr>
+<td><a href="#fxsection">FxSection</a></td>
+<td>Titled section wrapper.</td>
+</tr>
+<tr>
+<td><a href="#fxcard">FxCard</a></td>
+<td>Framed content card with variant, header, and footer slots.</td>
+</tr>
+<tr>
+<td><a href="#fxgrid">FxGrid</a></td>
+<td>Fluent-builder <code>GridPane</code> wrapper.</td>
+</tr>
+<tr>
+<td><a href="#fxflex">FxFlex</a></td>
+<td>Wrap-flow layout (<code>FlowPane</code>) with gap control.</td>
+</tr>
+<tr>
+<td><a href="#fxaspectratio">FxAspectRatio</a></td>
+<td>Constrains a single child to a fixed width:height ratio.</td>
+</tr>
+<tr>
+<td><a href="#fxscrollarea">FxScrollArea</a></td>
+<td>Styled <code>ScrollPane</code> wrapper.</td>
+</tr>
+<tr>
+<td><a href="#fxsplitview">FxSplitView</a></td>
+<td>Styled resizable <code>SplitPane</code>.</td>
+</tr>
+<tr>
+<td><a href="#fxresizablepane">FxResizablePane</a></td>
+<td>Container with user-draggable edge handle.</td>
+</tr>
+<tr>
+<td><a href="#fxcollapse">FxCollapse</a></td>
+<td>Single-section collapsible with header + expandable body.</td>
+</tr>
+<tr>
+<td><a href="#fxaccordion">FxAccordion</a></td>
+<td>Stack of <code>FxCollapse</code> sections with optional single-open enforcement.</td>
+</tr>
+<tr>
+<td><a href="#fxstickyheader">FxStickyHeader</a></td>
+<td>Pins its header to the top of a host <code>ScrollPane</code>.</td>
+</tr>
+<tr>
+<td><a href="#fxresponsive">FxResponsive</a></td>
+<td>Swaps children based on width breakpoints.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxseparator">FxSeparator</h2>
+<p>Divider line. Horizontal or vertical, thin or bold.</p>
+<h3 id="usage">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">FxSeparator</span><span class="w"> </span><span class="n">hr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxSeparator</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="p">.</span><span class="na">orientation</span><span class="p">(</span><span class="n">Orientation</span><span class="p">.</span><span class="na">HORIZONTAL</span><span class="p">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="p">.</span><span class="na">variant</span><span class="p">(</span><span class="n">SeparatorVariant</span><span class="p">.</span><span class="na">DEFAULT</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>orientation(Orientation)</code></td>
+<td><code>Orientation</code></td>
+<td><code>HORIZONTAL</code></td>
+<td>Line direction.</td>
+</tr>
+<tr>
+<td><code>variant(SeparatorVariant)</code></td>
+<td><code>SeparatorVariant</code></td>
+<td><code>DEFAULT</code></td>
+<td>Style variant.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxspacer">FxSpacer</h2>
+<p>Absorbs available space between siblings inside an <code>HBox</code> / <code>VBox</code>. Ships as a <code>Region</code> with <code>Priority.ALWAYS</code> grow already set.</p>
+<h3 id="usage_1">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">HBox</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HBox</span><span class="p">(</span><span class="n">leftNode</span><span class="p">,</span><span class="w"> </span><span class="n">FxSpacer</span><span class="p">.</span><span class="na">builder</span><span class="p">().</span><span class="na">build</span><span class="p">(),</span><span class="w"> </span><span class="n">rightNode</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="builder-methods_1">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>size(SpacingSize)</code></td>
+<td><code>SpacingSize</code></td>
+<td><code>NONE</code></td>
+<td>Optional minimum size along the axis.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxstack">FxStack</h2>
+<p>Vertical flow with spacing. Thin wrapper around <code>VBox</code> with a token-based spacing scale.</p>
+<h3 id="usage_2">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">FxStack</span><span class="w"> </span><span class="n">stack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxStack</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="p">.</span><span class="na">spacing</span><span class="p">(</span><span class="n">SpacingSize</span><span class="p">.</span><span class="na">MD</span><span class="p">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="p">.</span><span class="na">children</span><span class="p">(</span><span class="n">header</span><span class="p">,</span><span class="w"> </span><span class="n">body</span><span class="p">,</span><span class="w"> </span><span class="n">footer</span><span class="p">)</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_2">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>spacing(SpacingSize)</code></td>
+<td><code>SpacingSize</code></td>
+<td><code>SM</code></td>
+<td>Gap between children.</td>
+</tr>
+<tr>
+<td><code>alignment(Pos)</code></td>
+<td><code>Pos</code></td>
+<td><code>TOP_LEFT</code></td>
+<td>Content alignment.</td>
+</tr>
+<tr>
+<td><code>children(Node...)</code></td>
+<td><code>Node[]</code></td>
+<td>empty</td>
+<td>Child nodes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxrow">FxRow</h2>
+<p>Horizontal flow with spacing. Thin wrapper around <code>HBox</code> with a token-based spacing scale.</p>
+<h3 id="usage_3">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">FxRow</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxRow</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="p">.</span><span class="na">spacing</span><span class="p">(</span><span class="n">SpacingSize</span><span class="p">.</span><span class="na">SM</span><span class="p">)</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">.</span><span class="na">children</span><span class="p">(</span><span class="n">icon</span><span class="p">,</span><span class="w"> </span><span class="n">label</span><span class="p">,</span><span class="w"> </span><span class="n">spacer</span><span class="p">,</span><span class="w"> </span><span class="n">action</span><span class="p">)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_3">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>spacing(SpacingSize)</code></td>
+<td><code>SpacingSize</code></td>
+<td><code>SM</code></td>
+<td>Gap between children.</td>
+</tr>
+<tr>
+<td><code>alignment(Pos)</code></td>
+<td><code>Pos</code></td>
+<td><code>CENTER_LEFT</code></td>
+<td>Content alignment.</td>
+</tr>
+<tr>
+<td><code>children(Node...)</code></td>
+<td><code>Node[]</code></td>
+<td>empty</td>
+<td>Child nodes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxcontainer">FxContainer</h2>
+<p>Max-width centered container. Use for page-level content wrappers that shouldn't stretch full-width on wide screens.</p>
+<h3 id="usage_4">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">FxContainer</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxContainer</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="p">.</span><span class="na">width</span><span class="p">(</span><span class="n">ContainerWidth</span><span class="p">.</span><span class="na">LG</span><span class="p">)</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="p">.</span><span class="na">children</span><span class="p">(</span><span class="n">headerRow</span><span class="p">,</span><span class="w"> </span><span class="n">mainSection</span><span class="p">)</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_4">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>width(ContainerWidth)</code></td>
+<td><code>ContainerWidth</code></td>
+<td><code>MD</code></td>
+<td>Max width preset.</td>
+</tr>
+<tr>
+<td><code>children(Node...)</code></td>
+<td><code>Node[]</code></td>
+<td>empty</td>
+<td>Contained children.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxsection">FxSection</h2>
+<p>Titled section wrapper. Renders a section-heading label above a body slot.</p>
+<h3 id="usage_5">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">FxSection</span><span class="w"> </span><span class="n">settings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxSection</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="p">.</span><span class="na">title</span><span class="p">(</span><span class="s">&quot;Preferences&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="p">.</span><span class="na">children</span><span class="p">(</span><span class="n">themeToggle</span><span class="p">,</span><span class="w"> </span><span class="n">densityToggle</span><span class="p">)</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_5">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title(String)</code></td>
+<td><code>String</code></td>
+<td><code>""</code></td>
+<td>Section heading text.</td>
+</tr>
+<tr>
+<td><code>description(String)</code></td>
+<td><code>String</code></td>
+<td><code>""</code></td>
+<td>Optional descriptive line under title.</td>
+</tr>
+<tr>
+<td><code>children(Node...)</code></td>
+<td><code>Node[]</code></td>
+<td>empty</td>
+<td>Body content.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxcard">FxCard</h2>
+<p>Framed content card. Slots for header, body, and footer, plus a <code>CardVariant</code> (<code>DEFAULT</code> / <code>OUTLINED</code> / <code>ELEVATED</code>).</p>
+<h3 id="usage_6">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">FxCard</span><span class="w"> </span><span class="n">card</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxCard</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="p">.</span><span class="na">variant</span><span class="p">(</span><span class="n">CardVariant</span><span class="p">.</span><span class="na">ELEVATED</span><span class="p">)</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="n">FxLabel</span><span class="p">.</span><span class="na">builder</span><span class="p">().</span><span class="na">text</span><span class="p">(</span><span class="s">&quot;Sales&quot;</span><span class="p">).</span><span class="na">variant</span><span class="p">(</span><span class="n">LabelVariant</span><span class="p">.</span><span class="na">HEADING</span><span class="p">).</span><span class="na">build</span><span class="p">())</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="p">.</span><span class="na">body</span><span class="p">(</span><span class="n">FxText</span><span class="p">.</span><span class="na">builder</span><span class="p">().</span><span class="na">text</span><span class="p">(</span><span class="s">&quot;Q3 revenue up 12%.&quot;</span><span class="p">).</span><span class="na">build</span><span class="p">())</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_6">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>variant(CardVariant)</code></td>
+<td><code>CardVariant</code></td>
+<td><code>DEFAULT</code></td>
+<td>Visual variant.</td>
+</tr>
+<tr>
+<td><code>header(Node)</code></td>
+<td><code>Node</code></td>
+<td>none</td>
+<td>Header slot.</td>
+</tr>
+<tr>
+<td><code>body(Node)</code></td>
+<td><code>Node</code></td>
+<td>none</td>
+<td>Body slot.</td>
+</tr>
+<tr>
+<td><code>footer(Node)</code></td>
+<td><code>Node</code></td>
+<td>none</td>
+<td>Footer slot.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxgrid">FxGrid</h2>
+<p>Fluent-builder <code>GridPane</code> wrapper. Add children with explicit <code>(col, row)</code> coordinates plus optional span.</p>
+<h3 id="usage_7">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">FxGrid</span><span class="w"> </span><span class="n">form</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxGrid</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="p">.</span><span class="na">hgap</span><span class="p">(</span><span class="mi">12</span><span class="p">).</span><span class="na">vgap</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">nameLabel</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">).</span><span class="na">add</span><span class="p">(</span><span class="n">nameField</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">emailLabel</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">).</span><span class="na">add</span><span class="p">(</span><span class="n">emailField</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_7">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hgap(double)</code></td>
+<td><code>double</code></td>
+<td><code>0</code></td>
+<td>Horizontal gap.</td>
+</tr>
+<tr>
+<td><code>vgap(double)</code></td>
+<td><code>double</code></td>
+<td><code>0</code></td>
+<td>Vertical gap.</td>
+</tr>
+<tr>
+<td><code>alignment(Pos)</code></td>
+<td><code>Pos</code></td>
+<td><code>TOP_LEFT</code></td>
+<td>Content alignment.</td>
+</tr>
+<tr>
+<td><code>add(Node, int, int)</code></td>
+<td>node + col + row</td>
+<td>—</td>
+<td>Add child at (col, row) with span 1x1.</td>
+</tr>
+<tr>
+<td><code>add(Node, int, int, int, int)</code></td>
+<td>node + col + row + colSpan + rowSpan</td>
+<td>—</td>
+<td>Add child with span.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxflex">FxFlex</h2>
+<p>Wrap-flow layout — a styled <code>FlowPane</code>. Children flow row-by-row (or column-by-column) and wrap to a new line when the axis fills.</p>
+<h3 id="usage_8">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">FxFlex</span><span class="w"> </span><span class="n">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxFlex</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="p">.</span><span class="na">hgap</span><span class="p">(</span><span class="mi">6</span><span class="p">).</span><span class="na">vgap</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="p">.</span><span class="na">children</span><span class="p">(</span><span class="n">tag1</span><span class="p">,</span><span class="w"> </span><span class="n">tag2</span><span class="p">,</span><span class="w"> </span><span class="n">tag3</span><span class="p">,</span><span class="w"> </span><span class="n">tag4</span><span class="p">)</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_8">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>orientation(Orientation)</code></td>
+<td><code>Orientation</code></td>
+<td><code>HORIZONTAL</code></td>
+<td>Flow direction.</td>
+</tr>
+<tr>
+<td><code>hgap(double)</code></td>
+<td><code>double</code></td>
+<td><code>0</code></td>
+<td>Horizontal gap.</td>
+</tr>
+<tr>
+<td><code>vgap(double)</code></td>
+<td><code>double</code></td>
+<td><code>0</code></td>
+<td>Vertical gap.</td>
+</tr>
+<tr>
+<td><code>gap(double)</code></td>
+<td><code>double</code></td>
+<td><code>0</code></td>
+<td>Sets both <code>hgap</code> and <code>vgap</code>.</td>
+</tr>
+<tr>
+<td><code>alignment(Pos)</code></td>
+<td><code>Pos</code></td>
+<td><code>TOP_LEFT</code></td>
+<td>Content alignment.</td>
+</tr>
+<tr>
+<td><code>children(Node...)</code></td>
+<td><code>Node[]</code></td>
+<td>empty</td>
+<td>Child nodes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxaspectratio">FxAspectRatio</h2>
+<p>Container that constrains its single child to a fixed width:height ratio. Takes the available width from its parent, computes <code>height = width / ratio</code>, and lays out the child.</p>
+<h3 id="usage_9">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">FxAspectRatio</span><span class="w"> </span><span class="n">banner</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxAspectRatio</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="p">.</span><span class="na">ratio</span><span class="p">(</span><span class="mf">16.0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">9.0</span><span class="p">)</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="p">.</span><span class="na">child</span><span class="p">(</span><span class="n">imageView</span><span class="p">)</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_9">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ratio(double)</code></td>
+<td><code>double</code></td>
+<td><code>1.0</code></td>
+<td>Width / height ratio.</td>
+</tr>
+<tr>
+<td><code>child(Node)</code></td>
+<td><code>Node</code></td>
+<td><code>null</code></td>
+<td>Single child.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxscrollarea">FxScrollArea</h2>
+<p>Styled <code>ScrollPane</code> wrapper. Content, viewport, and scrollbar APIs remain fully accessible.</p>
+<h3 id="usage_10">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">FxScrollArea</span><span class="w"> </span><span class="n">sa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxScrollArea</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="p">.</span><span class="na">content</span><span class="p">(</span><span class="n">longVBox</span><span class="p">)</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="p">.</span><span class="na">fitToWidth</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_10">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>content(Node)</code></td>
+<td><code>Node</code></td>
+<td>none</td>
+<td>Scrolled content.</td>
+</tr>
+<tr>
+<td><code>fitToWidth(boolean)</code></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+<td>Match content width to viewport.</td>
+</tr>
+<tr>
+<td><code>fitToHeight(boolean)</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>Match content height to viewport.</td>
+</tr>
+<tr>
+<td><code>hbarPolicy(ScrollBarPolicy)</code></td>
+<td><code>ScrollBarPolicy</code></td>
+<td><code>AS_NEEDED</code></td>
+<td>Horizontal scroll bar policy.</td>
+</tr>
+<tr>
+<td><code>vbarPolicy(ScrollBarPolicy)</code></td>
+<td><code>ScrollBarPolicy</code></td>
+<td><code>AS_NEEDED</code></td>
+<td>Vertical scroll bar policy.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxsplitview">FxSplitView</h2>
+<p>Styled resizable split view — a <code>SplitPane</code> wrapper. Divider positioning and item management remain fully accessible.</p>
+<h3 id="usage_11">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">FxSplitView</span><span class="w"> </span><span class="n">editor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxSplitView</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="p">.</span><span class="na">items</span><span class="p">(</span><span class="n">fileTree</span><span class="p">,</span><span class="w"> </span><span class="n">codeArea</span><span class="p">)</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="p">.</span><span class="na">dividerPositions</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_11">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>orientation(Orientation)</code></td>
+<td><code>Orientation</code></td>
+<td><code>HORIZONTAL</code></td>
+<td>Split direction.</td>
+</tr>
+<tr>
+<td><code>items(Node...)</code></td>
+<td><code>Node[]</code></td>
+<td>empty</td>
+<td>Split children.</td>
+</tr>
+<tr>
+<td><code>dividerPositions(double...)</code></td>
+<td><code>double[]</code></td>
+<td>auto</td>
+<td>Initial divider positions in <code>[0, 1]</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxresizablepane">FxResizablePane</h2>
+<p>Container whose single child can be resized along one edge by dragging a user-visible handle. Useful for sidebars and drawer-style panels that aren't full overlays.</p>
+<h3 id="usage_12">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">FxResizablePane</span><span class="w"> </span><span class="n">sidebar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxResizablePane</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="p">.</span><span class="na">child</span><span class="p">(</span><span class="n">sidebarContent</span><span class="p">)</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="p">.</span><span class="na">side</span><span class="p">(</span><span class="n">Side</span><span class="p">.</span><span class="na">RIGHT</span><span class="p">)</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="p">.</span><span class="na">extent</span><span class="p">(</span><span class="mi">240</span><span class="p">).</span><span class="na">minExtent</span><span class="p">(</span><span class="mi">120</span><span class="p">).</span><span class="na">maxExtent</span><span class="p">(</span><span class="mi">480</span><span class="p">)</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_12">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>child(Node)</code></td>
+<td><code>Node</code></td>
+<td>none</td>
+<td>Single child.</td>
+</tr>
+<tr>
+<td><code>side(Side)</code></td>
+<td><code>Side</code></td>
+<td><code>RIGHT</code></td>
+<td>Which edge hosts the drag handle.</td>
+</tr>
+<tr>
+<td><code>extent(double)</code></td>
+<td><code>double</code></td>
+<td><code>240</code></td>
+<td>Child size along the drag axis.</td>
+</tr>
+<tr>
+<td><code>minExtent(double)</code></td>
+<td><code>double</code></td>
+<td><code>80</code></td>
+<td>Minimum extent.</td>
+</tr>
+<tr>
+<td><code>maxExtent(double)</code></td>
+<td><code>double</code></td>
+<td><code>MAX_VALUE</code></td>
+<td>Maximum extent.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxcollapse">FxCollapse</h2>
+<p>Single-section collapsible — a clickable header row plus an expandable body slot. The chevron rotates via the <code>:expanded</code> pseudo-class.</p>
+<h3 id="usage_13">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">FxCollapse</span><span class="w"> </span><span class="n">details</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxCollapse</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="p">.</span><span class="na">title</span><span class="p">(</span><span class="s">&quot;Details&quot;</span><span class="p">)</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="p">.</span><span class="na">content</span><span class="p">(</span><span class="n">detailsBody</span><span class="p">)</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="p">.</span><span class="na">expanded</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_13">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title(String)</code></td>
+<td><code>String</code></td>
+<td><code>""</code></td>
+<td>Header text.</td>
+</tr>
+<tr>
+<td><code>content(Node)</code></td>
+<td><code>Node</code></td>
+<td>none</td>
+<td>Expandable body node.</td>
+</tr>
+<tr>
+<td><code>expanded(boolean)</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>Initial expanded state.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxaccordion">FxAccordion</h2>
+<p>Vertical stack of <code>FxCollapse</code> sections. When <code>singleOpen</code> is <code>true</code>, expanding one section collapses the others.</p>
+<h3 id="usage_14">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">FxAccordion</span><span class="w"> </span><span class="n">faq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxAccordion</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="p">.</span><span class="na">sections</span><span class="p">(</span><span class="n">shipping</span><span class="p">,</span><span class="w"> </span><span class="n">returns</span><span class="p">,</span><span class="w"> </span><span class="n">contact</span><span class="p">)</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="p">.</span><span class="na">singleOpen</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_14">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sections(FxCollapse...)</code></td>
+<td><code>FxCollapse[]</code></td>
+<td>empty</td>
+<td>Section list.</td>
+</tr>
+<tr>
+<td><code>singleOpen(boolean)</code></td>
+<td><code>boolean</code></td>
+<td><code>true</code></td>
+<td>Enforce one-open-at-a-time.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxstickyheader">FxStickyHeader</h2>
+<p>Pins its first child (the header) to the top of a host <code>ScrollPane</code>'s viewport while the rest of the content scrolls underneath.</p>
+<h3 id="usage_15">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">FxStickyHeader</span><span class="w"> </span><span class="n">sticky</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxStickyHeader</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="n">sectionTitle</span><span class="p">)</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="p">.</span><span class="na">body</span><span class="p">(</span><span class="n">longContent</span><span class="p">)</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="n">scrollPane</span><span class="p">.</span><span class="na">setContent</span><span class="p">(</span><span class="n">sticky</span><span class="p">);</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="n">sticky</span><span class="p">.</span><span class="na">attachTo</span><span class="p">(</span><span class="n">scrollPane</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="builder-methods_15">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>header(Node)</code></td>
+<td><code>Node</code></td>
+<td>none</td>
+<td>Pinned header.</td>
+</tr>
+<tr>
+<td><code>body(Node)</code></td>
+<td><code>Node</code></td>
+<td>none</td>
+<td>Scrolling body.</td>
+</tr>
+<tr>
+<td><code>attachTo(ScrollPane)</code></td>
+<td><code>ScrollPane</code></td>
+<td>none</td>
+<td>Wires the header's translateY to the scroll pane's vvalue.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fxresponsive">FxResponsive</h2>
+<p>Responsive container — swaps its visible child based on the current width and a set of named breakpoints. Picks the entry with the greatest <code>minWidth ≤ getWidth()</code>.</p>
+<h3 id="usage_16">Usage</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">FxResponsive</span><span class="w"> </span><span class="n">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FxResponsive</span><span class="p">.</span><span class="na">builder</span><span class="p">()</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="p">.</span><span class="na">at</span><span class="p">(</span><span class="s">&quot;base&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">mobileLayout</span><span class="p">)</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="p">.</span><span class="na">at</span><span class="p">(</span><span class="s">&quot;md&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">768</span><span class="p">,</span><span class="w"> </span><span class="n">tabletLayout</span><span class="p">)</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span><span class="p">.</span><span class="na">at</span><span class="p">(</span><span class="s">&quot;lg&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1024</span><span class="p">,</span><span class="w"> </span><span class="n">desktopLayout</span><span class="p">)</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="builder-methods_16">Builder methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>at(String, double, Node)</code></td>
+<td>name + minWidth + node</td>
+<td>—</td>
+<td>Register a breakpoint.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "navigation.instant", "content.code.copy", "content.tabs.link", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

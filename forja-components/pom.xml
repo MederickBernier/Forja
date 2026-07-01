@@ -14,6 +14,8 @@
     <artifactId>forja-components</artifactId>
     <packaging>jar</packaging>
     <name>Forja Components</name>
+    <description>Forja component library — buttons, inputs, overlays, charts, media, and layout primitives for JavaFX.</description>
+    <url>https://github.com/mederick/forja</url>
 
     <dependencies>
         <dependency>

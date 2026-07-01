@@ -76,7 +76,7 @@ Early development. Not yet published to Maven Central.
 | `SemanticVariant` shared token enum (default/muted/accent/success/warning/danger/info) | ✅ |
 | `ForjaTestSupport` headless TestFX helpers | ✅ |
 | Bundled fonts (Inter, JetBrains Mono) | ⏳ |
-| Javadoc site & Maven Central release | ⏳ |
+| Javadoc site & Maven Central release | 🔨 setup complete, publish pending credentials |
 
 ### Package layout
 

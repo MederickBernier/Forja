@@ -1,0 +1,212 @@
+@options
+@packages
+-classpath
+'/home/enigma/.m2/repository/org/openjfx/javafx-controls/17.0.10/javafx-controls-17.0.10.jar:/home/enigma/.m2/repository/org/openjfx/javafx-controls/17.0.10/javafx-controls-17.0.10-linux.jar:/home/enigma/.m2/repository/org/openjfx/javafx-graphics/17.0.10/javafx-graphics-17.0.10.jar:/home/enigma/.m2/repository/org/openjfx/javafx-graphics/17.0.10/javafx-graphics-17.0.10-linux.jar:/home/enigma/.m2/repository/org/openjfx/javafx-media/17.0.10/javafx-media-17.0.10.jar:/home/enigma/.m2/repository/org/openjfx/javafx-media/17.0.10/javafx-media-17.0.10-linux.jar:/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-javafx/11.5.0/ikonli-javafx-11.5.0.jar:/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-core/11.5.0/ikonli-core-11.5.0.jar:/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-feather-pack/11.5.0/ikonli-feather-pack-11.5.0.jar:/home/enigma/.m2/repository/org/fxmisc/richtext/richtextfx/0.10.9/richtextfx-0.10.9.jar:/home/enigma/.m2/repository/org/reactfx/reactfx/2.0-M5/reactfx-2.0-M5.jar:/home/enigma/.m2/repository/org/fxmisc/undo/undofx/2.1.1/undofx-2.1.1.jar:/home/enigma/.m2/repository/org/fxmisc/flowless/flowless/0.6.9/flowless-0.6.9.jar:/home/enigma/.m2/repository/org/fxmisc/wellbehaved/wellbehavedfx/0.3.3/wellbehavedfx-0.3.3.jar:/home/enigma/.m2/repository/org/openjfx/javafx-base/12.0.1/javafx-base-12.0.1.jar:/home/enigma/.m2/repository/org/openjfx/javafx-base/12.0.1/javafx-base-12.0.1-linux.jar'
+-encoding
+'UTF-8'
+-protected
+-quiet
+--release
+8
+-sourcepath
+'/home/enigma/Forja/forja-components/src/main/java:/home/enigma/Forja/forja-components/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/enigma/Forja/forja-components/target/apidocs'
+-docencoding
+'UTF-8'
+-Xdoclint:none
+-doctitle
+'Forja Components 0.1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/enigma/Forja/forja-components/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Forja Components 0.1.0-SNAPSHOT API'
+io.forja.tokens
+io.forja.styling
+io.forja.util
+io.forja
+io.forja.builder
+io.forja.components.utilities.fxSearchHighlight
+io.forja.components.utilities.fxFocusTrap
+io.forja.components.utilities.fxThemeToggle
+io.forja.components.utilities.fxPortal
+io.forja.components.utilities.fxIcon
+io.forja.components.utilities.fxScrollSpy
+io.forja.components.utilities.fxKeybindingHint
+io.forja.components.validation.fxErrorSummary
+io.forja.components.validation.fxFormField
+io.forja.components.validation.fxValidator
+io.forja.components.validation.fxForm
+io.forja.components.dataDisplay.fxTimeline
+io.forja.components.dataDisplay.fxDataGrid
+io.forja.components.dataDisplay.fxTreeTable
+io.forja.components.dataDisplay.fxStat
+io.forja.components.dataDisplay.fxImage
+io.forja.components.dataDisplay.fxList
+io.forja.components.dataDisplay.fxCarousel
+io.forja.components.dataDisplay.fxTable
+io.forja.components.dataDisplay.fxAvatarGroup
+io.forja.components.dataDisplay.fxVirtualList
+io.forja.components.dataDisplay.fxTree
+io.forja.components.dataDisplay.fxAvatar
+io.forja.components.dataDisplay.fxDescriptionList
+io.forja.components.dataDisplay.fxMasonry
+io.forja.components.dataDisplay.fxKanbanBoard
+io.forja.components.inputs.fxJsonEditor
+io.forja.components.inputs.fxTextField
+io.forja.components.inputs
+io.forja.components.inputs.fxTagInput
+io.forja.components.inputs.fxOTPInput
+io.forja.components.inputs.fxTextArea
+io.forja.components.inputs.fxSearchField
+io.forja.components.inputs.fxPasswordField
+io.forja.components.inputs.fxAutocomplete
+io.forja.components.inputs.fxCodeEditor
+io.forja.components.inputs.fxNumberField
+io.forja.components.inputs.fxMaskedInput
+io.forja.components.inputs.fxMarkdownEditor
+io.forja.components.inputs.fxRichTextEditor
+io.forja.components.navigation.fxPagination
+io.forja.components.navigation.fxStepper
+io.forja.components.navigation.fxDropdownMenu
+io.forja.components.navigation.fxContextMenu
+io.forja.components.navigation.fxAppBar
+io.forja.components.navigation.fxBreadcrumbs
+io.forja.components.navigation.fxAnchorNav
+io.forja.components.navigation.fxCommandPalette
+io.forja.components.navigation.fxVerticalTabs
+io.forja.components.navigation.fxMenuBar
+io.forja.components.navigation.fxTabs
+io.forja.components.navigation.fxSidebar
+io.forja.components.navigation.fxSidebarNav
+io.forja.components.media.fxImageGallery
+io.forja.components.media.fxVideoPlayer
+io.forja.components.media.fxAudioPlayer
+io.forja.components.media.fxWaveform
+io.forja.components.fileAndMediaInput.fxFileDropzone
+io.forja.components.fileAndMediaInput.fxImagePicker
+io.forja.components.fileAndMediaInput.fxImageCropper
+io.forja.components.fileAndMediaInput.fxFileChooser
+io.forja.components.typography.fxBulletList
+io.forja.components.typography.fxLabel
+io.forja.components.typography.fxKbd
+io.forja.components.typography.fxBlockquote
+io.forja.components.typography.fxCode
+io.forja.components.typography.fxLink
+io.forja.components.typography.fxText
+io.forja.components.selection.fxSwitch
+io.forja.components.selection.fxCheckBox
+io.forja.components.selection.fxRating
+io.forja.components.selection.fxComboBox
+io.forja.components.selection.fxCheckGroup
+io.forja.components.selection.fxSlider
+io.forja.components.selection.fxMultiSelect
+io.forja.components.selection.fxRadioGroup
+io.forja.components.selection.fxColorPicker
+io.forja.components.selection.fxRangeSlider
+io.forja.components.layout.fxCard
+io.forja.components.layout.fxScrollArea
+io.forja.components.layout.fxSplitView
+io.forja.components.layout.fxSeparator
+io.forja.components.layout.fxStickyHeader
+io.forja.components.layout.fxStack
+io.forja.components.layout.fxContainer
+io.forja.components.layout.fxSection
+io.forja.components.layout.fxAccordion
+io.forja.components.layout.fxResizablePane
+io.forja.components.layout.fxGrid
+io.forja.components.layout.fxFlex
+io.forja.components.layout.fxCollapse
+io.forja.components.layout.fxSpacer
+io.forja.components.layout.fxRow
+io.forja.components.layout.fxAspectRatio
+io.forja.components.layout.fxResponsive
+io.forja.components.dateAndTime.fxMiniCalendar
+io.forja.components.dateAndTime.fxTimePicker
+io.forja.components.dateAndTime.fxDatePicker
+io.forja.components.dateAndTime.fxCalendar
+io.forja.components.dateAndTime.fxDateTimePicker
+io.forja.components.dateAndTime.fxDateRangePicker
+io.forja.components.charts.fxSparkline
+io.forja.components.charts.fxRadarChart
+io.forja.components.charts.fxHeatmap
+io.forja.components.charts.fxBarChart
+io.forja.components.charts.fxLineChart
+io.forja.components.charts.fxDonutChart
+io.forja.components.charts.fxAreaChart
+io.forja.components.charts.fxGauge
+io.forja.components.charts.fxPieChart
+io.forja.components.charts.fxScatterPlot
+io.forja.components.overlays.fxDialog
+io.forja.components.overlays.fxHoverCard
+io.forja.components.overlays.fxLightbox
+io.forja.components.overlays.fxPopover
+io.forja.components.overlays.fxBottomSheet
+io.forja.components.overlays.fxFormDialog
+io.forja.components.overlays.fxDrawer
+io.forja.components.overlays.fxConfirmDialog
+io.forja.components.overlays
+io.forja.components.overlays.fxTooltip
+io.forja.components.buttonsAndActions.fxButton
+io.forja.components.buttonsAndActions.fxToggleButton
+io.forja.components.buttonsAndActions.fxIconButton
+io.forja.components.buttonsAndActions.fxMenuButton
+io.forja.components.buttonsAndActions.fxCopyButton
+io.forja.components.buttonsAndActions.fxButtonGroup
+io.forja.components.buttonsAndActions.fxSplitButton
+io.forja.components.feedbackAndStatus.fxErrorState
+io.forja.components.feedbackAndStatus.fxProgressBar
+io.forja.components.feedbackAndStatus.fxToast
+io.forja.components.feedbackAndStatus.fxBadge
+io.forja.components.feedbackAndStatus.fxAlert
+io.forja.components.feedbackAndStatus.fxStatusDot
+io.forja.components.feedbackAndStatus.fxBanner
+io.forja.components.feedbackAndStatus.fxNotificationCenter
+io.forja.components.feedbackAndStatus.fxProgressCircle
+io.forja.components.feedbackAndStatus.fxChip
+io.forja.components.feedbackAndStatus.fxEmptyState
+io.forja.components.feedbackAndStatus.fxResultPage
+io.forja.components.feedbackAndStatus.fxSkeleton
+/home/enigma/.m2/repository/org/openjfx/javafx-controls/17.0.10/javafx-controls-17.0.10.jar = 1778720806112
+/home/enigma/.m2/repository/org/openjfx/javafx-controls/17.0.10/javafx-controls-17.0.10-linux.jar = 1778720806582
+/home/enigma/.m2/repository/org/openjfx/javafx-graphics/17.0.10/javafx-graphics-17.0.10.jar = 1778720806162
+/home/enigma/.m2/repository/org/openjfx/javafx-graphics/17.0.10/javafx-graphics-17.0.10-linux.jar = 1778720806972
+/home/enigma/.m2/repository/org/openjfx/javafx-media/17.0.10/javafx-media-17.0.10.jar = 1782889558067
+/home/enigma/.m2/repository/org/openjfx/javafx-media/17.0.10/javafx-media-17.0.10-linux.jar = 1782889558217
+/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-javafx/11.5.0/ikonli-javafx-11.5.0.jar = 1589051072000
+/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-core/11.5.0/ikonli-core-11.5.0.jar = 1589051079000
+/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-feather-pack/11.5.0/ikonli-feather-pack-11.5.0.jar = 1589051066000
+/home/enigma/.m2/repository/org/fxmisc/richtext/richtextfx/0.10.9/richtextfx-0.10.9.jar = 1646078777000
+/home/enigma/.m2/repository/org/reactfx/reactfx/2.0-M5/reactfx-2.0-M5.jar = 1461992391000
+/home/enigma/.m2/repository/org/fxmisc/undo/undofx/2.1.1/undofx-2.1.1.jar = 1616489685000
+/home/enigma/.m2/repository/org/fxmisc/flowless/flowless/0.6.9/flowless-0.6.9.jar = 1645709512000
+/home/enigma/.m2/repository/org/fxmisc/wellbehaved/wellbehavedfx/0.3.3/wellbehavedfx-0.3.3.jar = 1523561348000
+/home/enigma/.m2/repository/org/openjfx/javafx-base/12.0.1/javafx-base-12.0.1.jar = 1781237010993
+/home/enigma/.m2/repository/org/openjfx/javafx-base/12.0.1/javafx-base-12.0.1-linux.jar = 1781237011084
+/home/enigma/Forja/forja-components/src/main/java = 1778719138842
+/home/enigma/Forja/forja-components/target/generated-sources/annotations = 1781834707103
+/home/enigma/Forja/forja-components/target/apidocs/allpackages-index.html = 1782891368766
+/home/enigma/Forja/forja-components/target/apidocs/script.js = 1782891368886
+/home/enigma/Forja/forja-components/target/apidocs/overview-tree.html = 1782891368606
+/home/enigma/Forja/forja-components/target/apidocs/package-search-index.js = 1782891368766
+/home/enigma/Forja/forja-components/target/apidocs/index.html = 1782891368616
+/home/enigma/Forja/forja-components/target/apidocs/tag-search-index.js = 1782891368766
+/home/enigma/Forja/forja-components/target/apidocs/stylesheet.css = 1782891368886
+/home/enigma/Forja/forja-components/target/apidocs/search.js = 1782891368886
+/home/enigma/Forja/forja-components/target/apidocs/element-list = 1782891367996
+/home/enigma/Forja/forja-components/target/apidocs/member-search-index.js = 1782891368766
+/home/enigma/Forja/forja-components/target/apidocs/allclasses-index.html = 1782891368766
+/home/enigma/Forja/forja-components/target/apidocs/type-search-index.js = 1782891368766
+/home/enigma/Forja/forja-components/target/apidocs/jquery-ui.overrides.css = 1782891368896
+/home/enigma/Forja/forja-components/target/apidocs/overview-summary.html = 1782891368886
+/home/enigma/Forja/forja-components/target/apidocs/module-search-index.js = 1782891368766
+/home/enigma/Forja/forja-components/target/apidocs/deprecated-list.html = 1782891368606
+/home/enigma/Forja/forja-components/target/apidocs/help-doc.html = 1782891368886
+/home/enigma/Forja/forja-components/target/apidocs/index-all.html = 1782891368886

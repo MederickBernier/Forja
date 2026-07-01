@@ -14,6 +14,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/builder/FxNodeBuilder.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxKeybindingHint/FxKeybindingHint.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxAvatarGroup/FxAvatarGroup.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxMaskedInput/FxMaskedInput.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxSearchHighlight/FxSearchHighlight.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxTreeTable/FxTreeTable.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/InputVariant.java
@@ -29,6 +30,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxLabel/LabelVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSplitView/FxSplitView.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxStatusDot/FxStatusDot.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxAutocomplete/FxAutocomplete.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxAvatar/FxAvatar.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxCode/FxCode.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSpacer/FxSpacer.java
@@ -52,6 +54,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxCollapse/FxCollapse.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxAvatar/AvatarSize.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxResponsive/FxResponsive.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxTagInput/FxTagInput.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSeparator/FxSeparator.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxProgressBar/FxProgressBar.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSeparator/FxSeparatorSkin.java
@@ -59,15 +62,18 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSeparator/SeparatorVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxCheckBox/FxCheckBox.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxComboBox/FxComboBox.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxOTPInput/FxOTPInput.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxCard/CardVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxButton/ButtonVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxTooltip/FxTooltip.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxLink/LinkVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/tokens/SpacingSize.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxIcon/FxIcon.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxRating/FxRating.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxDialog/FxDialog.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxCheckGroup/FxCheckGroup.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxTable/FxTable.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxColorPicker/FxColorPicker.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxGrid/FxGrid.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxResizablePane/FxResizablePane.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxStat/FxStat.java
@@ -76,6 +82,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxText/FxText.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxAccordion/FxAccordion.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxThemeToggle/FxThemeToggle.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxRangeSlider/FxRangeSlider.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxText/FxTextSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxTextField/FxTextField.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxProgressCircle/FxProgressCircle.java
@@ -89,6 +96,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxChip/FxChipSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxIconButton/FxIconButtonSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxSwitch/FxSwitch.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxMultiSelect/FxMultiSelect.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxAlert/FxAlert.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxButton/FxButtonSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxStack/FxStack.java

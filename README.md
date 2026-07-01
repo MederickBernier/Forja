@@ -102,10 +102,10 @@ layout/            fxSeparator · fxSpacer · fxStack · fxRow · fxContainer ·
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot
 dataDisplay/       fxAvatar · fxAvatarGroup
 utilities/         fxIcon
-inputs/            fxTextField · fxTextArea · fxPasswordField · fxNumberField · fxSearchField
+inputs/            fxTextField · fxTextArea · fxPasswordField · fxNumberField · fxSearchField · fxAutocomplete · fxTagInput · fxOTPInput · fxMaskedInput
                    (+ shared InputVariant)
 dateAndTime/       fxDatePicker · fxTimePicker
-selection/         fxCheckBox · fxCheckGroup · fxRadioGroup · fxSwitch · fxSlider · fxComboBox
+selection/         fxCheckBox · fxCheckGroup · fxRadioGroup · fxSwitch · fxSlider · fxComboBox · fxMultiSelect · fxRangeSlider · fxRating · fxColorPicker
 buttonsAndActions/ fxButton · fxIconButton · fxToggleButton · fxButtonGroup · fxCopyButton
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot · fxProgressBar · fxProgressCircle · fxSkeleton · fxAlert · fxBanner · fxToast
 overlays/          OverlayHost · fxTooltip · fxDialog · fxConfirmDialog
@@ -160,10 +160,10 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxPasswordField
 - ✅ FxNumberField
 - ✅ FxSearchField
-- ⏳ FxAutocomplete · P2
-- ⏳ FxTagInput · P2
-- ⏳ FxOTPInput · P2
-- ⏳ FxMaskedInput · P2
+- ✅ FxAutocomplete
+- ✅ FxTagInput
+- ✅ FxOTPInput
+- ✅ FxMaskedInput
 - ⏳ FxRichTextEditor · P3
 - ⏳ FxMarkdownEditor · P3
 - ⏳ FxCodeEditor · P3
@@ -176,10 +176,10 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxSwitch
 - ✅ FxComboBox
 - ✅ FxSlider
-- ⏳ FxMultiSelect · P2
-- ⏳ FxRangeSlider · P2
-- ⏳ FxRating · P2
-- ⏳ FxColorPicker · P2
+- ✅ FxMultiSelect
+- ✅ FxRangeSlider
+- ✅ FxRating
+- ✅ FxColorPicker
 
 #### Date & Time
 - ✅ FxDatePicker

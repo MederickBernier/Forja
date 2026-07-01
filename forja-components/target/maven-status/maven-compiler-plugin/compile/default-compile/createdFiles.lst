@@ -12,9 +12,11 @@ io/forja/components/dateAndTime/fxDatePicker/FxDatePicker$3.class
 io/forja/components/typography/fxKbd/FxKbd.class
 io/forja/components/utilities/fxSearchHighlight/FxSearchHighlight.class
 io/forja/components/typography/fxKbd/FxKbd$Builder.class
+io/forja/components/inputs/fxTagInput/FxTagInput$Builder.class
 io/forja/components/buttonsAndActions/fxCopyButton/FxCopyButton.class
 io/forja/components/layout/fxResizablePane/FxResizablePane.class
 io/forja/components/utilities/fxFocusTrap/FxFocusTrap$Builder.class
+io/forja/components/inputs/fxMaskedInput/FxMaskedInput$Builder.class
 io/forja/components/layout/fxResponsive/FxResponsive$Entry.class
 io/forja/components/feedbackAndStatus/fxSkeleton/FxSkeleton.class
 io/forja/components/layout/fxResizablePane/FxResizablePane$Builder.class
@@ -23,6 +25,7 @@ io/forja/components/feedbackAndStatus/fxBanner/FxBanner$Builder.class
 io/forja/components/buttonsAndActions/fxButtonGroup/FxButtonGroup.class
 io/forja/components/typography/fxLabel/FxLabel.class
 io/forja/components/typography/fxLink/LinkVariant.class
+io/forja/components/inputs/fxAutocomplete/FxAutocomplete.class
 io/forja/components/overlays/fxTooltip/FxTooltip$Builder.class
 io/forja/components/utilities/fxSearchHighlight/FxSearchHighlight$Builder.class
 io/forja/components/layout/fxStickyHeader/FxStickyHeader.class
@@ -30,10 +33,13 @@ io/forja/components/buttonsAndActions/fxIconButton/IconPosition.class
 io/forja/components/layout/fxScrollArea/FxScrollArea$Builder.class
 io/forja/components/layout/fxStickyHeader/FxStickyHeader$Builder.class
 io/forja/components/layout/fxGrid/FxGrid$Builder.class
+io/forja/components/inputs/fxAutocomplete/FxAutocomplete$OnSelect.class
 io/forja/components/buttonsAndActions/fxButton/FxButtonSkin.class
+io/forja/components/selection/fxRangeSlider/FxRangeSlider$Builder.class
 io/forja/components/utilities/fxScrollSpy/FxScrollSpy.class
 io/forja/components/layout/fxSeparator/FxSeparatorSkin$1.class
 io/forja/components/layout/fxStack/FxStack.class
+io/forja/components/selection/fxMultiSelect/FxMultiSelect$Builder.class
 io/forja/components/feedbackAndStatus/fxSkeleton/FxSkeleton$Builder.class
 io/forja/components/buttonsAndActions/fxButton/FxButton.class
 io/forja/components/buttonsAndActions/fxButton/ButtonVariant.class
@@ -41,6 +47,8 @@ io/forja/components/inputs/fxTextArea/FxTextArea$1.class
 io/forja/components/layout/fxAccordion/FxAccordion.class
 io/forja/components/layout/fxCard/CardVariant.class
 io/forja/components/buttonsAndActions/fxIconButton/FxIconButtonSkin$1.class
+io/forja/components/inputs/fxAutocomplete/FxAutocomplete$Builder.class
+io/forja/components/selection/fxRangeSlider/FxRangeSlider.class
 io/forja/components/feedbackAndStatus/fxAlert/FxAlert$OnDismiss.class
 io/forja/components/layout/fxCollapse/FxCollapse$Builder.class
 io/forja/components/dataDisplay/fxStat/FxStat$Builder.class
@@ -55,6 +63,7 @@ io/forja/components/layout/fxAspectRatio/FxAspectRatio.class
 io/forja/builder/FxNodeBuilder.class
 io/forja/components/utilities/fxKeybindingHint/FxKeybindingHint.class
 io/forja/components/dataDisplay/fxDescriptionList/FxDescriptionList$Entry.class
+io/forja/components/selection/fxRating/FxRating$Builder.class
 io/forja/components/layout/fxSeparator/FxSeparator.class
 io/forja/components/inputs/fxNumberField/FxNumberField.class
 io/forja/components/buttonsAndActions/fxCopyButton/FxCopyButton$1.class
@@ -65,11 +74,13 @@ io/forja/components/layout/fxSeparator/FxSeparator$Builder.class
 io/forja/components/selection/fxSlider/FxSlider$Builder.class
 io/forja/components/inputs/fxTextField/FxTextField$1.class
 io/forja/components/inputs/fxPasswordField/FxPasswordField$Builder.class
+io/forja/components/selection/fxMultiSelect/FxMultiSelect.class
 io/forja/components/typography/fxBulletList/FxBulletList$Kind.class
 io/forja/components/dataDisplay/fxTree/FxTree$Builder.class
 io/forja/components/layout/fxSpacer/FxSpacer$Builder.class
 io/forja/components/buttonsAndActions/fxToggleButton/FxToggleButton$Builder.class
 io/forja/components/buttonsAndActions/fxToggleButton/FxToggleButton$1.class
+io/forja/components/selection/fxRating/FxRating.class
 io/forja/components/layout/fxFlex/FxFlex.class
 io/forja/components/layout/fxResizablePane/FxResizablePane$1.class
 io/forja/components/typography/fxBulletList/FxBulletList$Builder.class
@@ -89,12 +100,15 @@ io/forja/components/feedbackAndStatus/fxToast/FxToast$1.class
 io/forja/components/feedbackAndStatus/fxStatusDot/FxStatusDot.class
 io/forja/components/layout/fxFlex/FxFlex$Builder.class
 io/forja/components/dataDisplay/fxList/FxList$Builder.class
+io/forja/components/inputs/fxTagInput/FxTagInput$1.class
 io/forja/components/layout/fxSection/FxSection.class
 io/forja/components/feedbackAndStatus/fxProgressBar/FxProgressBar$Builder.class
+io/forja/components/selection/fxRating/FxRating$OnChange.class
 io/forja/components/dataDisplay/fxStat/FxStat$Trend.class
 io/forja/components/dateAndTime/fxTimePicker/FxTimePicker$Builder.class
 io/forja/components/layout/fxContainer/FxContainer.class
 io/forja/components/dataDisplay/fxAvatar/AvatarSize.class
+io/forja/components/inputs/fxMaskedInput/FxMaskedInput.class
 io/forja/components/layout/fxGrid/FxGrid.class
 io/forja/components/feedbackAndStatus/fxBadge/FxBadge$Builder.class
 io/forja/components/selection/fxSwitch/FxSwitch.class
@@ -114,6 +128,8 @@ io/forja/components/typography/fxText/FxText.class
 io/forja/Forja$1.class
 io/forja/components/typography/fxCode/FxCode.class
 io/forja/components/selection/fxSwitch/FxSwitch$OnChange.class
+io/forja/components/inputs/fxTagInput/FxTagInput$OnChange.class
+io/forja/components/inputs/fxOTPInput/FxOTPInput.class
 io/forja/components/layout/fxCard/FxCard$Builder.class
 io/forja/components/typography/fxLink/FxLinkSkin$1.class
 io/forja/components/typography/fxLink/FxLink$Builder.class
@@ -121,9 +137,11 @@ io/forja/styling/FxStyle.class
 io/forja/components/overlays/fxDialog/FxDialog.class
 io/forja/components/selection/fxCheckGroup/FxCheckGroup$Builder.class
 io/forja/tokens/SemanticVariant.class
+io/forja/components/inputs/fxOTPInput/FxOTPInput$OnComplete.class
 io/forja/styling/FxStyleBuilder.class
 io/forja/components/utilities/fxIcon/FxIcon.class
 io/forja/components/feedbackAndStatus/fxAlert/FxAlert$Builder.class
+io/forja/components/inputs/fxOTPInput/FxOTPInput$Builder.class
 io/forja/components/typography/fxLabel/LabelVariant.class
 io/forja/components/inputs/fxTextArea/FxTextArea$Builder.class
 io/forja/components/selection/fxCheckBox/FxCheckBox$Builder.class
@@ -160,6 +178,7 @@ io/forja/components/selection/fxRadioGroup/FxRadioGroup.class
 io/forja/components/typography/fxLabel/FxLabelSkin$1.class
 io/forja/components/selection/fxComboBox/FxComboBox$Builder.class
 io/forja/components/typography/fxLabel/FxLabel$Builder.class
+io/forja/components/selection/fxColorPicker/FxColorPicker$Builder.class
 io/forja/components/buttonsAndActions/fxIconButton/FxIconButton$1.class
 io/forja/components/buttonsAndActions/fxButtonGroup/FxButtonGroup$Builder.class
 io/forja/components/utilities/fxPortal/FxPortal.class
@@ -168,6 +187,7 @@ io/forja/components/layout/fxSection/FxSection$Builder.class
 io/forja/components/typography/fxLink/FxLinkSkin.class
 io/forja/components/inputs/fxPasswordField/FxPasswordField.class
 io/forja/components/dataDisplay/fxDescriptionList/FxDescriptionList$Builder.class
+io/forja/components/selection/fxColorPicker/FxColorPicker.class
 io/forja/components/utilities/fxThemeToggle/FxThemeToggle.class
 io/forja/components/dataDisplay/fxImage/FxImage.class
 io/forja/components/dataDisplay/fxAvatarGroup/FxAvatarGroup.class
@@ -196,6 +216,7 @@ io/forja/components/inputs/InputVariant.class
 io/forja/components/feedbackAndStatus/fxBadge/FxBadgeSkin.class
 io/forja/components/typography/fxLabel/FxLabelSkin.class
 io/forja/components/layout/fxAccordion/FxAccordion$Builder.class
+io/forja/components/inputs/fxTagInput/FxTagInput.class
 io/forja/components/selection/fxComboBox/FxComboBox.class
 io/forja/components/selection/fxSwitch/FxSwitch$Builder.class
 io/forja/components/typography/fxBlockquote/FxBlockquote.class

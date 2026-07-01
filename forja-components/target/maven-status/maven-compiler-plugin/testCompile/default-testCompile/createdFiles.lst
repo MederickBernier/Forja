@@ -23,6 +23,7 @@ io/forja/components/FxSectionTest.class
 io/forja/components/FxConfirmDialogTest.class
 io/forja/components/FxAlertTest.class
 io/forja/components/FxTextTest.class
+io/forja/components/PhaseCSmokeTest.class
 io/forja/components/FxButtonGroupTest.class
 io/forja/components/FxComboBoxTest.class
 io/forja/components/FxToastTest.class

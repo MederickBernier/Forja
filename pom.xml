@@ -31,6 +31,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javafx.version>17.0.10</javafx.version>
         <ikonli.version>11.5.0</ikonli.version>
+        <richtextfx.version>0.10.9</richtextfx.version>
     </properties>
 
     <dependencyManagement>
@@ -56,6 +57,11 @@
                 <groupId>org.kordamp.ikonli</groupId>
                 <artifactId>ikonli-feather-pack</artifactId>
                 <version>${ikonli.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.fxmisc.richtext</groupId>
+                <artifactId>richtextfx</artifactId>
+                <version>${richtextfx.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.testfx</groupId>

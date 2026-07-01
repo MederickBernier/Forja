@@ -2240,3 +2240,60 @@
 .forja-menu-button:danger .forja-icon { -fx-icon-color: -forja-danger; }
 .forja-menu-button .arrow-button { -fx-padding: 0; }
 .forja-menu-button > .arrow-button > .arrow { -fx-background-color: transparent; -fx-shape: ""; -fx-padding: 0; }
+
+/* ─── Phase K: editors ─── */
+
+.forja-code-editor,
+.forja-json-editor {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+.forja-code-editor-inner {
+    -fx-background-color: transparent;
+    -fx-font-family: "JetBrains Mono", "Courier New", monospace;
+    -fx-font-size: 13px;
+}
+.forja-code-editor-inner .paragraph-box:has-caret .paragraph-text .text {
+    -fx-fill: -forja-text-primary;
+}
+.forja-code-editor-inner .lineno {
+    -fx-background-color: -forja-input-bg;
+    -fx-text-fill: -forja-text-muted;
+    -fx-padding: 0 6px 0 6px;
+}
+
+.json-key         { -fx-fill: -forja-accent; }
+.json-string      { -fx-fill: -forja-success; }
+.json-number      { -fx-fill: -forja-warning; }
+.json-boolean     { -fx-fill: -forja-danger; }
+.json-null        { -fx-fill: -forja-text-muted; }
+.json-punctuation { -fx-fill: -forja-text-primary; }
+
+.forja-rich-text-editor {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-spacing: 0;
+}
+.forja-rich-text-editor-toolbar {
+    -fx-padding: 6px 8px;
+    -fx-border-color: transparent transparent -forja-border-default transparent;
+    -fx-border-width: 0 0 0.5px 0;
+}
+.forja-rich-text-editor-inner {
+    -fx-background-color: transparent;
+    -fx-font-size: 13px;
+    -fx-padding: 8px 10px;
+}
+
+.forja-markdown-editor {
+    -fx-background-color: transparent;
+}
+.forja-markdown-editor-preview {
+    -fx-background-color: -forja-bg-surface;
+}

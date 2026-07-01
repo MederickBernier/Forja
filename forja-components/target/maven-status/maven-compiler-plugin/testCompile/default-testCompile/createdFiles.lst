@@ -15,6 +15,7 @@ io/forja/components/FxCardTest.class
 io/forja/components/FxKbdTest.class
 io/forja/components/FxSeparatorTest.class
 io/forja/components/FxStackTest.class
+io/forja/components/PhaseKSmokeTest.class
 io/forja/components/FxSkeletonTest.class
 io/forja/components/FxCodeTest.class
 io/forja/testsupport/ForjaTestSupport.class

@@ -102,7 +102,7 @@ layout/            fxSeparator · fxSpacer · fxStack · fxRow · fxContainer ·
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot
 dataDisplay/       fxAvatar · fxAvatarGroup
 utilities/         fxIcon
-inputs/            fxTextField · fxTextArea · fxPasswordField · fxNumberField · fxSearchField · fxAutocomplete · fxTagInput · fxOTPInput · fxMaskedInput
+inputs/            fxTextField · fxTextArea · fxPasswordField · fxNumberField · fxSearchField · fxAutocomplete · fxTagInput · fxOTPInput · fxMaskedInput · fxCodeEditor · fxRichTextEditor · fxMarkdownEditor · fxJsonEditor
                    (+ shared InputVariant)
 dateAndTime/       fxDatePicker · fxTimePicker · fxDateTimePicker · fxDateRangePicker · fxCalendar · fxMiniCalendar
 selection/         fxCheckBox · fxCheckGroup · fxRadioGroup · fxSwitch · fxSlider · fxComboBox · fxMultiSelect · fxRangeSlider · fxRating · fxColorPicker
@@ -175,10 +175,10 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxTagInput
 - ✅ FxOTPInput
 - ✅ FxMaskedInput
-- ⏳ FxRichTextEditor · P3
-- ⏳ FxMarkdownEditor · P3
-- ⏳ FxCodeEditor · P3
-- ⏳ FxJsonEditor · P3
+- ✅ FxRichTextEditor
+- ✅ FxMarkdownEditor
+- ✅ FxCodeEditor
+- ✅ FxJsonEditor
 
 #### Selection
 - ✅ FxCheckBox

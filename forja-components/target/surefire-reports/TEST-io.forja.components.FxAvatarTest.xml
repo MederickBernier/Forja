@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxAvatarTest" time="2.634" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxAvatarTest" time="2.752" tests="7" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="17"/>
+    <property name="java.specification.version" value="25"/>
     <property name="javafx.runtime.version" value="12.0.1+2"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/enigma/Forja/forja-components/target/test-classes:/home/enigma/Forja/forja-components/target/classes:/home/enigma/.m2/repository/org/openjfx/javafx-controls/17.0.10/javafx-controls-17.0.10.jar:/home/enigma/.m2/repository/org/openjfx/javafx-controls/17.0.10/javafx-controls-17.0.10-linux.jar:/home/enigma/.m2/repository/org/openjfx/javafx-graphics/17.0.10/javafx-graphics-17.0.10.jar:/home/enigma/.m2/repository/org/openjfx/javafx-graphics/17.0.10/javafx-graphics-17.0.10-linux.jar:/home/enigma/.m2/repository/org/openjfx/javafx-media/17.0.10/javafx-media-17.0.10.jar:/home/enigma/.m2/repository/org/openjfx/javafx-media/17.0.10/javafx-media-17.0.10-linux.jar:/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-javafx/11.5.0/ikonli-javafx-11.5.0.jar:/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-core/11.5.0/ikonli-core-11.5.0.jar:/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-feather-pack/11.5.0/ikonli-feather-pack-11.5.0.jar:/home/enigma/.m2/repository/org/fxmisc/richtext/richtextfx/0.10.9/richtextfx-0.10.9.jar:/home/enigma/.m2/repository/org/reactfx/reactfx/2.0-M5/reactfx-2.0-M5.jar:/home/enigma/.m2/repository/org/fxmisc/undo/undofx/2.1.1/undofx-2.1.1.jar:/home/enigma/.m2/repository/org/fxmisc/flowless/flowless/0.6.9/flowless-0.6.9.jar:/home/enigma/.m2/repository/org/fxmisc/wellbehaved/wellbehavedfx/0.3.3/wellbehavedfx-0.3.3.jar:/home/enigma/.m2/repository/org/testfx/testfx-core/4.0.18/testfx-core-4.0.18.jar:/home/enigma/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/enigma/.m2/repository/org/assertj/assertj-core/3.13.2/assertj-core-3.13.2.jar:/home/enigma/.m2/repository/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar:/home/enigma/.m2/repository/org/testfx/testfx-junit5/4.0.18/testfx-junit5-4.0.18.jar:/home/enigma/.m2/repository/org/testfx/openjfx-monocle/jdk-12.0.1+2/openjfx-monocle-jdk-12.0.1+2.jar:/home/enigma/.m2/repository/org/openjfx/javafx-base/12.0.1/javafx-base-12.0.1.jar:/home/enigma/.m2/repository/org/openjfx/javafx-base/12.0.1/javafx-base-12.0.1-linux.jar:/home/enigma/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/home/enigma/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/enigma/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/enigma/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/enigma/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/enigma/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/home/enigma/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/enigma/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
-    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Jyga\Forja\forja-components\target\test-classes;C:\Jyga\Forja\forja-components\target\classes;C:\maven-repo\org\openjfx\javafx-controls\17.0.10\javafx-controls-17.0.10.jar;C:\maven-repo\org\openjfx\javafx-controls\17.0.10\javafx-controls-17.0.10-win.jar;C:\maven-repo\org\openjfx\javafx-graphics\17.0.10\javafx-graphics-17.0.10.jar;C:\maven-repo\org\openjfx\javafx-graphics\17.0.10\javafx-graphics-17.0.10-win.jar;C:\maven-repo\org\openjfx\javafx-media\17.0.10\javafx-media-17.0.10.jar;C:\maven-repo\org\openjfx\javafx-media\17.0.10\javafx-media-17.0.10-win.jar;C:\maven-repo\org\kordamp\ikonli\ikonli-javafx\11.5.0\ikonli-javafx-11.5.0.jar;C:\maven-repo\org\kordamp\ikonli\ikonli-core\11.5.0\ikonli-core-11.5.0.jar;C:\maven-repo\org\kordamp\ikonli\ikonli-feather-pack\11.5.0\ikonli-feather-pack-11.5.0.jar;C:\maven-repo\org\fxmisc\richtext\richtextfx\0.10.9\richtextfx-0.10.9.jar;C:\maven-repo\org\reactfx\reactfx\2.0-M5\reactfx-2.0-M5.jar;C:\maven-repo\org\fxmisc\undo\undofx\2.1.1\undofx-2.1.1.jar;C:\maven-repo\org\fxmisc\flowless\flowless\0.6.9\flowless-0.6.9.jar;C:\maven-repo\org\fxmisc\wellbehaved\wellbehavedfx\0.3.3\wellbehavedfx-0.3.3.jar;C:\maven-repo\org\testfx\testfx-core\4.0.18\testfx-core-4.0.18.jar;C:\maven-repo\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\maven-repo\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\maven-repo\org\osgi\org.osgi.core\6.0.0\org.osgi.core-6.0.0.jar;C:\maven-repo\org\testfx\testfx-junit5\4.0.18\testfx-junit5-4.0.18.jar;C:\maven-repo\org\testfx\openjfx-monocle\jdk-12.0.1+2\openjfx-monocle-jdk-12.0.1+2.jar;C:\maven-repo\org\openjfx\javafx-base\12.0.1\javafx-base-12.0.1.jar;C:\maven-repo\org\openjfx\javafx-base\12.0.1\javafx-base-12.0.1-win.jar;C:\maven-repo\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\maven-repo\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\maven-repo\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\maven-repo\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\maven-repo\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\maven-repo\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\maven-repo\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\maven-repo\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="America/Toronto"/>
     <property name="javafx.version" value="12.0.1"/>
-    <property name="os.name" value="Linux"/>
-    <property name="java.vm.specification.version" value="17"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
     <property name="prism.text" value="t2k"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/enigma/Forja/forja-components/target/surefire/surefirebooter-20260701033307153_3.jar /home/enigma/Forja/forja-components/target/surefire 2026-07-01T03-33-07_067-jvmRun1 surefire-20260701033307153_1tmp surefire_0-20260701033307153_2tmp"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.boot.library.path" value="C:\Java\25\bin"/>
+    <property name="sun.java.command" value="C:\Users\MédérickBernier\AppData\Local\Temp\surefire162516594922037797\surefirebooter-20260701083407390_3.jar C:\Users\MédérickBernier\AppData\Local\Temp\surefire162516594922037797 2026-07-01T08-34-07_307-jvmRun1 surefire-20260701083407390_1tmp surefire_0-20260701083407390_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/enigma/Forja/forja-components/target/test-classes:/home/enigma/Forja/forja-components/target/classes:/home/enigma/.m2/repository/org/openjfx/javafx-controls/17.0.10/javafx-controls-17.0.10.jar:/home/enigma/.m2/repository/org/openjfx/javafx-controls/17.0.10/javafx-controls-17.0.10-linux.jar:/home/enigma/.m2/repository/org/openjfx/javafx-graphics/17.0.10/javafx-graphics-17.0.10.jar:/home/enigma/.m2/repository/org/openjfx/javafx-graphics/17.0.10/javafx-graphics-17.0.10-linux.jar:/home/enigma/.m2/repository/org/openjfx/javafx-media/17.0.10/javafx-media-17.0.10.jar:/home/enigma/.m2/repository/org/openjfx/javafx-media/17.0.10/javafx-media-17.0.10-linux.jar:/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-javafx/11.5.0/ikonli-javafx-11.5.0.jar:/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-core/11.5.0/ikonli-core-11.5.0.jar:/home/enigma/.m2/repository/org/kordamp/ikonli/ikonli-feather-pack/11.5.0/ikonli-feather-pack-11.5.0.jar:/home/enigma/.m2/repository/org/fxmisc/richtext/richtextfx/0.10.9/richtextfx-0.10.9.jar:/home/enigma/.m2/repository/org/reactfx/reactfx/2.0-M5/reactfx-2.0-M5.jar:/home/enigma/.m2/repository/org/fxmisc/undo/undofx/2.1.1/undofx-2.1.1.jar:/home/enigma/.m2/repository/org/fxmisc/flowless/flowless/0.6.9/flowless-0.6.9.jar:/home/enigma/.m2/repository/org/fxmisc/wellbehaved/wellbehavedfx/0.3.3/wellbehavedfx-0.3.3.jar:/home/enigma/.m2/repository/org/testfx/testfx-core/4.0.18/testfx-core-4.0.18.jar:/home/enigma/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/enigma/.m2/repository/org/assertj/assertj-core/3.13.2/assertj-core-3.13.2.jar:/home/enigma/.m2/repository/org/osgi/org.osgi.core/6.0.0/org.osgi.core-6.0.0.jar:/home/enigma/.m2/repository/org/testfx/testfx-junit5/4.0.18/testfx-junit5-4.0.18.jar:/home/enigma/.m2/repository/org/testfx/openjfx-monocle/jdk-12.0.1+2/openjfx-monocle-jdk-12.0.1+2.jar:/home/enigma/.m2/repository/org/openjfx/javafx-base/12.0.1/javafx-base-12.0.1.jar:/home/enigma/.m2/repository/org/openjfx/javafx-base/12.0.1/javafx-base-12.0.1-linux.jar:/home/enigma/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/home/enigma/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/enigma/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/enigma/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/enigma/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/enigma/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/home/enigma/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/enigma/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="surefire.test.class.path" value="C:\Jyga\Forja\forja-components\target\test-classes;C:\Jyga\Forja\forja-components\target\classes;C:\maven-repo\org\openjfx\javafx-controls\17.0.10\javafx-controls-17.0.10.jar;C:\maven-repo\org\openjfx\javafx-controls\17.0.10\javafx-controls-17.0.10-win.jar;C:\maven-repo\org\openjfx\javafx-graphics\17.0.10\javafx-graphics-17.0.10.jar;C:\maven-repo\org\openjfx\javafx-graphics\17.0.10\javafx-graphics-17.0.10-win.jar;C:\maven-repo\org\openjfx\javafx-media\17.0.10\javafx-media-17.0.10.jar;C:\maven-repo\org\openjfx\javafx-media\17.0.10\javafx-media-17.0.10-win.jar;C:\maven-repo\org\kordamp\ikonli\ikonli-javafx\11.5.0\ikonli-javafx-11.5.0.jar;C:\maven-repo\org\kordamp\ikonli\ikonli-core\11.5.0\ikonli-core-11.5.0.jar;C:\maven-repo\org\kordamp\ikonli\ikonli-feather-pack\11.5.0\ikonli-feather-pack-11.5.0.jar;C:\maven-repo\org\fxmisc\richtext\richtextfx\0.10.9\richtextfx-0.10.9.jar;C:\maven-repo\org\reactfx\reactfx\2.0-M5\reactfx-2.0-M5.jar;C:\maven-repo\org\fxmisc\undo\undofx\2.1.1\undofx-2.1.1.jar;C:\maven-repo\org\fxmisc\flowless\flowless\0.6.9\flowless-0.6.9.jar;C:\maven-repo\org\fxmisc\wellbehaved\wellbehavedfx\0.3.3\wellbehavedfx-0.3.3.jar;C:\maven-repo\org\testfx\testfx-core\4.0.18\testfx-core-4.0.18.jar;C:\maven-repo\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\maven-repo\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\maven-repo\org\osgi\org.osgi.core\6.0.0\org.osgi.core-6.0.0.jar;C:\maven-repo\org\testfx\testfx-junit5\4.0.18\testfx-junit5-4.0.18.jar;C:\maven-repo\org\testfx\openjfx-monocle\jdk-12.0.1+2\openjfx-monocle-jdk-12.0.1+2.jar;C:\maven-repo\org\openjfx\javafx-base\12.0.1\javafx-base-12.0.1.jar;C:\maven-repo\org\openjfx\javafx-base\12.0.1\javafx-base-12.0.1-win.jar;C:\maven-repo\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\maven-repo\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\maven-repo\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\maven-repo\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\maven-repo\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\maven-repo\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\maven-repo\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\maven-repo\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/enigma"/>
+    <property name="user.home" value="C:\Users\MédérickBernier"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2026-04-21"/>
-    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+    <property name="java.home" value="C:\Java\25"/>
     <property name="glass.platform" value="Monocle"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/enigma/Forja/forja-components"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Jyga\Forja\forja-components"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="prism.order" value="sw"/>
@@ -34,38 +37,42 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="testfx.robot" value="glass"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="/home/enigma/Forja/forja-components/target/surefire/surefirebooter-20260701033307153_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\MédérickBernier\AppData\Local\Temp\surefire162516594922037797\surefirebooter-20260701083407390_3.jar"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="17.0.19+10-1-24.04.2-Ubuntu"/>
-    <property name="user.name" value="enigma"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.15.167.4-microsoft-standard-WSL2"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.runtime.version" value="25.0.3+9-LTS-195"/>
+    <property name="user.name" value="MederickBernier"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/enigma/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-17"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\maven-repo"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\MDRICK~2\AppData\Local\Temp\"/>
     <property name="monocle.platform" value="Headless"/>
-    <property name="java.version" value="17.0.19"/>
-    <property name="user.dir" value="/home/enigma/Forja/forja-components"/>
+    <property name="java.version" value="25.0.3"/>
+    <property name="user.dir" value="C:\Jyga\Forja\forja-components"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="testfx.headless" value="true"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Java\25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe;C:\Program Files (x86)\OpenLogic\jdk-8.0.482.08-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\MédérickBernier\scoop\apps\maven\current\bin;C:\Users\MédérickBernier\scoop\shims;C:\Users\MédérickBernier\AppData\Local\Microsoft\WindowsApps;C:\Java\13\bin;C:\Java\8\bin;C:\Users\MédérickBernier\.dotnet\tools;C:\Users\MédérickBernier\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\MédérickBernier\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\MédérickBernier\AppData\Local\GitHubDesktop\bin;C:\Java\8\bin;C:\Program Files\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Users\MédérickBernier\scoop\apps\maven\current\bin;C:\Users\MédérickBernier\scoop\shims;C:\Users\MédérickBernier\AppData\Local\Microsoft\WindowsApps;C:\Java\13\bin;C:\Java\8\bin;C:\Users\MédérickBernier\.dotnet\tools;C:\Users\MédérickBernier\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\MédérickBernier\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\MédérickBernier\AppData\Local\GitHubDesktop\bin;C:\Java\25\bin;C:\Users\MédérickBernier\go\bin;C:\Espressif\tools\cmake\3.30.2\bin;C:\Users\MédérickBernier\AppData\Local\Python\bin;C:\CLion 2026.1.3\bin;C:\msys64\mingw64\bin;C:\Users\MédérickBernier\AppData\Local\Pandoc\;C:\Users\MédérickBernier\AppData\Roaming\npm;C:\Users\MédérickBernier\.dotnet\tools;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Ubuntu"/>
-    <property name="java.vm.version" value="17.0.19+10-1-24.04.2-Ubuntu"/>
-    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.3+9-LTS-195"/>
+    <property name="stdin.encoding" value="Cp1252"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="61.0"/>
+    <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="allSizesMapToCorrectPseudoClassAndDiameter" classname="io.forja.components.FxAvatarTest" time="0.415"/>
-  <testcase name="nullOrEmptySourceHidesImageView" classname="io.forja.components.FxAvatarTest" time="0.413"/>
-  <testcase name="constructorVariants" classname="io.forja.components.FxAvatarTest" time="0.413"/>
-  <testcase name="builderSetsAllProperties" classname="io.forja.components.FxAvatarTest" time="0.309"/>
-  <testcase name="initialsPropertyPropagatesToLabel" classname="io.forja.components.FxAvatarTest" time="0.412"/>
-  <testcase name="builderDefaults" classname="io.forja.components.FxAvatarTest" time="0.309"/>
-  <testcase name="sizePseudoClassUpdates" classname="io.forja.components.FxAvatarTest" time="0.361"/>
+  <testcase name="allSizesMapToCorrectPseudoClassAndDiameter" classname="io.forja.components.FxAvatarTest" time="0.428"/>
+  <testcase name="nullOrEmptySourceHidesImageView" classname="io.forja.components.FxAvatarTest" time="0.432"/>
+  <testcase name="constructorVariants" classname="io.forja.components.FxAvatarTest" time="0.434"/>
+  <testcase name="builderSetsAllProperties" classname="io.forja.components.FxAvatarTest" time="0.325"/>
+  <testcase name="initialsPropertyPropagatesToLabel" classname="io.forja.components.FxAvatarTest" time="0.429"/>
+  <testcase name="builderDefaults" classname="io.forja.components.FxAvatarTest" time="0.322"/>
+  <testcase name="sizePseudoClassUpdates" classname="io.forja.components.FxAvatarTest" time="0.377"/>
 </testsuite>

@@ -6,18 +6,18 @@ A modern JavaFX UI component library for Java 8 and above.
 
 Forja sits on top of JavaFX — not around it. It leverages the existing scene graph, CSS engine, skin architecture, and property binding system, and adds the one thing JavaFX has always been missing: a design system, a fluent API, and components that look like they were made in this decade.
 
-**135 components** across 14 categories.
+**139 components** across 15 categories.
 
 ## Docs
 
 Full component reference, quickstart, and foundation guide:
-**[https://mederick.github.io/forja/](https://mederick.github.io/forja/)**
+**[https://mederickbernier.github.io/Forja/](https://mederickbernier.github.io/Forja/)**
 
 ## Install
 
 ```xml
 <dependency>
-    <groupId>io.forja</groupId>
+    <groupId>io.github.mederickbernier</groupId>
     <artifactId>forja-components</artifactId>
     <version>0.1.0</version>
 </dependency>
@@ -75,8 +75,8 @@ public class MyApp extends Application {
 
 ## Contributing
 
-See the [Roadmap](https://mederick.github.io/forja/roadmap/) for milestone status.
-Issues and PRs welcome at [github.com/mederick/forja](https://github.com/mederick/forja).
+See the [Roadmap](https://mederickbernier.github.io/Forja/roadmap/) for milestone status.
+Issues and PRs welcome at [github.com/MederickBernier/Forja](https://github.com/MederickBernier/Forja).
 
 ## License
 

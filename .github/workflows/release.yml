@@ -1,42 +1,59 @@
 name: release
 
-# Manual trigger only. Publishes forja-components to Sonatype Central.
-# Requires the following secrets on the repo:
-#   SIGNING_KEY       — ASCII-armored PGP private key (gpg --export-secret-keys -a)
-#   SIGNING_PASSPHRASE — key passphrase
-#   CENTRAL_USER      — Sonatype Central portal token username
-#   CENTRAL_TOKEN     — Sonatype Central portal token secret
+# Push a tag like `v0.1.0` to build the forja-components jar and publish it as a
+# GitHub Release asset. Download the jar from the release and use it as a local
+# dependency. Maven Central publishing is deferred (pom metadata is already in
+# place for when it's wired up later).
+#
+# Only forja-components is built and attached — the forja-demo module is never
+# bundled into the release.
 
 on:
+  push:
+    tags:
+      - 'v*'
   workflow_dispatch:
     inputs:
       version:
-        description: "Release version (e.g. 0.1.0). Leave blank to publish the current SNAPSHOT."
+        description: "Release version (e.g. 0.1.0). Leave blank to build the current version."
         required: false
 
+permissions:
+  contents: write
+
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
-    environment: release
     steps:
       - uses: actions/checkout@v4
-      - name: Set up JDK 17 + Maven credentials
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: 17
           distribution: temurin
           cache: maven
-          server-id: central
-          server-username: CENTRAL_USER
-          server-password: CENTRAL_TOKEN
-          gpg-private-key: ${{ secrets.SIGNING_KEY }}
-          gpg-passphrase: SIGNING_PASSPHRASE
+
+      - name: Resolve release version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            V="${GITHUB_REF_NAME#v}"
+          else
+            V="${{ github.event.inputs.version }}"
+          fi
+          echo "value=$V" >> "$GITHUB_OUTPUT"
+
       - name: Set release version
-        if: ${{ github.event.inputs.version != '' }}
-        run: mvn -B -ntp versions:set -DnewVersion=${{ github.event.inputs.version }} -DprocessAllModules
-      - name: Deploy to Sonatype Central
-        env:
-          CENTRAL_USER: ${{ secrets.CENTRAL_USER }}
-          CENTRAL_TOKEN: ${{ secrets.CENTRAL_TOKEN }}
-          SIGNING_PASSPHRASE: ${{ secrets.SIGNING_PASSPHRASE }}
-        run: mvn -B -ntp -P release -pl forja-components -am deploy
+        if: ${{ steps.version.outputs.value != '' }}
+        run: mvn -B -ntp versions:set -DnewVersion=${{ steps.version.outputs.value }} -DprocessAllModules
+
+      - name: Build forja-components jar
+        run: mvn -B -ntp -pl forja-components -am -Dmaven.source.skip=true -Dmaven.javadoc.skip=true package
+
+      - name: Create GitHub Release
+        if: ${{ github.event_name == 'push' }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          generate_release_notes: true
+          files: forja-components/target/forja-components-*.jar

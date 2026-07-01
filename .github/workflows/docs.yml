@@ -30,11 +30,11 @@ jobs:
           python-version: '3.12'
           cache: pip
 
-      - name: Install mkdocs-material
-        run: pip install mkdocs-material
+      - name: Install docs dependencies
+        run: pip install -r requirements-docs.txt
 
       - name: Verify strict build
         run: mkdocs build --strict --site-dir _site
 
       - name: Deploy to gh-pages
-        run: mkdocs gh-deploy --force --clean --message "docs: deploy $GITHUB_SHA"
+        run: mkdocs gh-deploy --force --clean --message "deploy $GITHUB_SHA"

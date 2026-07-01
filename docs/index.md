@@ -20,7 +20,7 @@ Forja provides:
 
 ## What ships
 
-**135 components** across 14 categories:
+**139 components** across 15 categories:
 
 | Category | Count | Highlights |
 |---|---|---|

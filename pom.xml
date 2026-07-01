@@ -5,14 +5,14 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.forja</groupId>
+    <groupId>io.github.mederickbernier</groupId>
     <artifactId>forja-parent</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Forja Parent</name>
     <description>A modern JavaFX UI component library for Java 8 and above.</description>
-    <url>https://github.com/mederick/forja</url>
+    <url>https://github.com/MederickBernier/Forja</url>
     <inceptionYear>2026</inceptionYear>
 
     <licenses>
@@ -28,20 +28,20 @@
             <id>mederick</id>
             <name>Mederick Bernier</name>
             <email>mederick.bernier@hotmail.ca</email>
-            <url>https://github.com/mederick</url>
+            <url>https://github.com/MederickBernier</url>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/mederick/forja.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/mederick/forja.git</developerConnection>
-        <url>https://github.com/mederick/forja</url>
+        <connection>scm:git:https://github.com/MederickBernier/Forja.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/MederickBernier/Forja.git</developerConnection>
+        <url>https://github.com/MederickBernier/Forja</url>
         <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/mederick/forja/issues</url>
+        <url>https://github.com/MederickBernier/Forja/issues</url>
     </issueManagement>
 
     <distributionManagement>

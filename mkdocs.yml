@@ -1,8 +1,8 @@
 site_name: Forja
 site_description: A modern JavaFX UI component library for Java 8 and above.
-site_url: https://mederick.github.io/forja/
-repo_url: https://github.com/mederick/forja
-repo_name: mederick/forja
+site_url: https://mederickbernier.github.io/Forja/
+repo_url: https://github.com/MederickBernier/Forja
+repo_name: MederickBernier/Forja
 edit_uri: edit/master/docs/
 
 theme:

@@ -5,7 +5,168 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ada2d8-726f-4065-b80a-ec655913ac3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/buttons-and-actions/FxButton.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/buttons-and-actions/FxButtonGroup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/buttons-and-actions/FxCopyButton.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/buttons-and-actions/FxIconButton.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/buttons-and-actions/FxMenuButton.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/buttons-and-actions/FxSplitButton.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/buttons-and-actions/FxToggleButton.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/buttons-and-actions/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/buttons-and-actions/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/FxAreaChart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/FxBarChart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/FxDonutChart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/FxGauge.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/FxHeatmap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/FxLineChart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/FxPieChart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/FxRadarChart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/FxScatterPlot.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/FxSparkline.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/charts/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/charts/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxAvatar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxAvatarGroup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxCarousel.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxDataGrid.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxDescriptionList.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxImage.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxKanbanBoard.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxList.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxMasonry.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxStat.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxTable.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxTimeline.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxTree.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxTreeTable.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/FxVirtualList.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/data-display/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/data-display/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/date-and-time/FxCalendar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/date-and-time/FxDatePicker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/date-and-time/FxDateRangePicker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/date-and-time/FxDateTimePicker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/date-and-time/FxMiniCalendar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/date-and-time/FxTimePicker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/date-and-time/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/date-and-time/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxAlert.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxBadge.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxBanner.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxChip.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxEmptyState.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxErrorState.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxNotificationCenter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxProgressBar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxProgressCircle.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxResultPage.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxSkeleton.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxStatusDot.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/FxToast.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/feedback-and-status/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/feedback-and-status/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/file-and-media-input/FxFileChooser.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/file-and-media-input/FxFileDropzone.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/file-and-media-input/FxImageCropper.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/file-and-media-input/FxImagePicker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/file-and-media-input/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/file-and-media-input/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxAutocomplete.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxCodeEditor.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxJsonEditor.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxMarkdownEditor.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxMaskedInput.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxNumberField.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxOTPInput.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxPasswordField.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxRichTextEditor.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxSearchField.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxTagInput.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxTextArea.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/FxTextField.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/inputs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/inputs/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxAccordion.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxAspectRatio.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxCard.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxCollapse.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxContainer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxFlex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxGrid.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxResizablePane.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxResponsive.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxRow.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxScrollArea.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxSection.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxSeparator.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxSpacer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxSplitView.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxStack.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/FxStickyHeader.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/layout/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/layout/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/media/FxAudioPlayer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/media/FxImageGallery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/media/FxVideoPlayer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/media/FxWaveform.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/media/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/media/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxAnchorNav.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxAppBar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxBreadcrumbs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxCommandPalette.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxContextMenu.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxDropdownMenu.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxMenuBar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxPagination.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxSidebar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxSidebarNav.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxStepper.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxTabs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/FxVerticalTabs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/navigation/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/navigation/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overlays/FxBottomSheet.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overlays/FxConfirmDialog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overlays/FxDialog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overlays/FxDrawer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overlays/FxFormDialog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overlays/FxHoverCard.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overlays/FxLightbox.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overlays/FxPopover.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overlays/FxTooltip.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overlays/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overlays/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/FxCheckBox.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/FxCheckGroup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/FxColorPicker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/FxComboBox.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/FxMultiSelect.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/FxRadioGroup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/FxRangeSlider.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/FxRating.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/FxSlider.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/FxSwitch.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/selection/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/selection/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/typography/FxBlockquote.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/typography/FxBulletList.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/typography/FxCode.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/typography/FxKbd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/typography/FxLabel.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/typography/FxLink.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/typography/FxText.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/typography/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/typography/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/utilities/FxFocusTrap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/utilities/FxIcon.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/utilities/FxKeybindingHint.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/utilities/FxPortal.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/utilities/FxScrollSpy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/utilities/FxSearchHighlight.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/utilities/FxThemeToggle.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/utilities/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/utilities/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/validation/FxErrorSummary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/validation/FxForm.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/validation/FxFormField.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/validation/FxValidator.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/validation/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/validation/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-components/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forja-components/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forja-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forja-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +183,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MederickBernier"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MederickBernier/Forja.git",
+    "accountId": "4b939f27-2252-408c-a491-d0c5b642b7b8"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -34,17 +207,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DemoApp.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Jyga/Forja",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="25ada2d8-726f-4065-b80a-ec655913ac3d" name="Changes" comment="" />
@@ -52,7 +236,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778723076657</updated>
+      <workItem from="1782905021312" duration="1422000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

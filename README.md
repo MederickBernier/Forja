@@ -110,7 +110,7 @@ buttonsAndActions/ fxButton · fxIconButton · fxToggleButton · fxButtonGroup �
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot · fxProgressBar · fxProgressCircle · fxSkeleton · fxAlert · fxBanner · fxToast · fxNotificationCenter · fxEmptyState · fxErrorState · fxResultPage
 overlays/          OverlayHost · fxTooltip · fxDialog · fxConfirmDialog · fxPopover · fxHoverCard · fxDrawer · fxBottomSheet · fxLightbox · fxFormDialog
 layout/            (P0) + fxGrid · fxFlex · fxAspectRatio · fxScrollArea · fxSplitView · fxResizablePane · fxCollapse · fxAccordion · fxStickyHeader · fxResponsive
-dataDisplay/       fxAvatar · fxAvatarGroup · fxList · fxTable · fxTree · fxTreeTable · fxImage · fxStat · fxDescriptionList
+dataDisplay/       fxAvatar · fxAvatarGroup · fxList · fxTable · fxTree · fxTreeTable · fxImage · fxStat · fxDescriptionList · fxDataGrid · fxVirtualList · fxTimeline · fxKanbanBoard · fxMasonry · fxCarousel
 utilities/         fxIcon · fxThemeToggle · fxKeybindingHint · fxSearchHighlight · fxScrollSpy · fxPortal · fxFocusTrap
 typography/        (P0) + fxBulletList
 ```
@@ -280,12 +280,12 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxImage (with fallback / loading)
 - ✅ FxStat (KPI card)
 - ✅ FxDescriptionList
-- ⏳ FxDataGrid (sortable, filterable, paginated) · P3
-- ⏳ FxVirtualList · P3
-- ⏳ FxTimeline · P3
-- ⏳ FxKanbanBoard · P3
-- ⏳ FxMasonry · P3
-- ⏳ FxCarousel · P3
+- ✅ FxDataGrid (sortable, filterable, paginated)
+- ✅ FxVirtualList
+- ✅ FxTimeline
+- ✅ FxKanbanBoard
+- ✅ FxMasonry
+- ✅ FxCarousel
 
 #### Charts
 - ✅ FxLineChart

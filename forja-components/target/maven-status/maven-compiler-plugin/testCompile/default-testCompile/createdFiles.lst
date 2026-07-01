@@ -1,5 +1,6 @@
 io/forja/components/PhaseDSmokeTest.class
 io/forja/components/FxSliderTest.class
+io/forja/components/PhaseNSmokeTest.class
 io/forja/components/FxTooltipTest.class
 io/forja/components/FxRowTest.class
 io/forja/components/FxDialogTest.class

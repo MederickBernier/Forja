@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: io.forja.components.FxCopyButtonTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.730 s -- in io.forja.components.FxCopyButtonTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.727 s -- in io.forja.components.FxCopyButtonTest

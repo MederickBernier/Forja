@@ -2372,3 +2372,87 @@
 .forja-image-gallery-thumb:hover { -fx-border-color: -forja-accent; }
 
 .forja-waveform { -fx-background-color: transparent; }
+
+/* ─── Phase N: data display P3 ─── */
+
+.forja-data-grid { -fx-spacing: 6px; }
+.forja-data-grid-toolbar { -fx-padding: 2px 0; }
+
+.forja-virtual-list {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+.forja-virtual-list-scroll { -fx-background: transparent; }
+
+.forja-timeline { -fx-padding: 4px 0; }
+.forja-timeline-row { -fx-padding: 0 0 12px 0; }
+.forja-timeline-dot {
+    -fx-background-radius: 999px;
+    -fx-background-color: -forja-accent;
+    -fx-border-color: -forja-bg-surface;
+    -fx-border-width: 2px;
+    -fx-border-radius: 999px;
+}
+.forja-timeline-dot-success { -fx-background-color: -forja-success; }
+.forja-timeline-dot-danger  { -fx-background-color: -forja-danger; }
+.forja-timeline-dot-warning { -fx-background-color: -forja-warning; }
+.forja-timeline-dot-info    { -fx-background-color: -forja-info; }
+.forja-timeline-dot-muted   { -fx-background-color: -forja-text-muted; }
+.forja-timeline-dot-default { -fx-background-color: -forja-border-default; }
+.forja-timeline-line { -fx-background-color: -forja-border-default; }
+.forja-timeline-card {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 8px 10px;
+}
+.forja-timeline-title { -fx-font-weight: bold; }
+.forja-timeline-subtitle { -fx-text-fill: -forja-text-muted; }
+
+.forja-kanban-board {
+    -fx-padding: 8px;
+}
+.forja-kanban-column {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 8px;
+}
+.forja-kanban-column:drop {
+    -fx-border-color: -forja-accent;
+    -fx-background-color: -forja-accent-tint;
+}
+.forja-kanban-column-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: -forja-text-primary;
+    -fx-padding: 0 4px 4px 4px;
+}
+.forja-kanban-column-scroll {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.forja-masonry { -fx-background-color: transparent; }
+
+.forja-carousel {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+.forja-carousel-slide-host { -fx-padding: 4px; }
+.forja-carousel-dots { -fx-padding: 8px; }
+.forja-carousel-dot {
+    -fx-background-color: -forja-border-default;
+    -fx-background-radius: 999px;
+    -fx-cursor: hand;
+}
+.forja-carousel-dot:active { -fx-background-color: -forja-accent; }

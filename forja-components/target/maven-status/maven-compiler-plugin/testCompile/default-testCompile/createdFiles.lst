@@ -42,6 +42,7 @@ io/forja/components/FxCheckBoxTest.class
 io/forja/components/FxProgressCircleTest.class
 io/forja/components/FxIconButtonTest.class
 io/forja/components/FxSearchFieldTest.class
+io/forja/components/PhaseGSmokeTest.class
 io/forja/components/FxProgressBarTest.class
 io/forja/components/FxLabelTest.class
 io/forja/components/FxBannerTest.class

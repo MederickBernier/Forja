@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: io.forja.components.FxTextAreaTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.093 s -- in io.forja.components.FxTextAreaTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.920 s -- in io.forja.components.FxTextAreaTest

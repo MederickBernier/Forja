@@ -115,7 +115,11 @@ utilities/         fxIcon · fxThemeToggle · fxKeybindingHint · fxSearchHighli
 typography/        (P0) + fxBulletList
 ```
 
-Empty category folders held for future work: `charts`, `media`, `navigation`, `validation`.
+Empty category folders held for future work: `charts`, `media`, `validation`.
+
+```
+navigation/        fxTabs · fxVerticalTabs · fxAppBar · fxSidebar · fxSidebarNav · fxBreadcrumbs · fxStepper · fxPagination · fxMenuBar · fxContextMenu · fxDropdownMenu · fxAnchorNav
+```
 
 ```
 fileAndMediaInput/ fxFileChooser · fxFileDropzone · fxImagePicker
@@ -219,18 +223,18 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ❌ FxDivider — superseded by `FxSeparator`; will be removed from the roster
 
 #### Navigation
-- ⏳ FxTabs · P2
-- ⏳ FxVerticalTabs · P2
-- ⏳ FxAppBar / FxNavbar · P2
-- ⏳ FxSidebar · P2
-- ⏳ FxSidebarNav · P2
-- ⏳ FxBreadcrumbs · P2
-- ⏳ FxStepper · P2
-- ⏳ FxPagination · P2
-- ⏳ FxMenuBar · P2
-- ⏳ FxContextMenu · P2
-- ⏳ FxDropdownMenu · P2
-- ⏳ FxAnchorNav (in-page jumps) · P2
+- ✅ FxTabs
+- ✅ FxVerticalTabs
+- ✅ FxAppBar / FxNavbar
+- ✅ FxSidebar
+- ✅ FxSidebarNav
+- ✅ FxBreadcrumbs
+- ✅ FxStepper
+- ✅ FxPagination
+- ✅ FxMenuBar
+- ✅ FxContextMenu
+- ✅ FxDropdownMenu
+- ✅ FxAnchorNav (in-page jumps)
 - ⏳ FxCommandPalette · P3
 
 #### Feedback & Status

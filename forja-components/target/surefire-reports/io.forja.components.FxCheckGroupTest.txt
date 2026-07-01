@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: io.forja.components.FxCheckGroupTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.275 s -- in io.forja.components.FxCheckGroupTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.266 s -- in io.forja.components.FxCheckGroupTest

@@ -7,6 +7,7 @@ io/forja/components/FxBadgeTest.class
 io/forja/components/FxButtonTest.class
 io/forja/components/FxPasswordFieldTest.class
 io/forja/components/FxSpacerTest.class
+io/forja/components/PhaseFSmokeTest.class
 io/forja/components/FxTextFieldTest.class
 io/forja/components/PhaseBSmokeTest.class
 io/forja/components/FxTextAreaTest.class

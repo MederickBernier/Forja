@@ -108,7 +108,7 @@ dateAndTime/       fxDatePicker · fxTimePicker · fxDateTimePicker · fxDateRan
 selection/         fxCheckBox · fxCheckGroup · fxRadioGroup · fxSwitch · fxSlider · fxComboBox · fxMultiSelect · fxRangeSlider · fxRating · fxColorPicker
 buttonsAndActions/ fxButton · fxIconButton · fxToggleButton · fxButtonGroup · fxCopyButton
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot · fxProgressBar · fxProgressCircle · fxSkeleton · fxAlert · fxBanner · fxToast
-overlays/          OverlayHost · fxTooltip · fxDialog · fxConfirmDialog
+overlays/          OverlayHost · fxTooltip · fxDialog · fxConfirmDialog · fxPopover · fxHoverCard · fxDrawer · fxBottomSheet · fxLightbox · fxFormDialog
 layout/            (P0) + fxGrid · fxFlex · fxAspectRatio · fxScrollArea · fxSplitView · fxResizablePane · fxCollapse · fxAccordion · fxStickyHeader · fxResponsive
 dataDisplay/       fxAvatar · fxAvatarGroup · fxList · fxTable · fxTree · fxTreeTable · fxImage · fxStat · fxDescriptionList
 utilities/         fxIcon · fxThemeToggle · fxKeybindingHint · fxSearchHighlight · fxScrollSpy · fxPortal · fxFocusTrap
@@ -252,12 +252,12 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxTooltip
 - ✅ FxDialog
 - ✅ FxConfirmDialog
-- ⏳ FxFormDialog · P2
-- ⏳ FxPopover · P2
-- ⏳ FxHoverCard · P2
-- ⏳ FxDrawer · P2
-- ⏳ FxBottomSheet · P2
-- ⏳ FxLightbox · P2
+- ✅ FxFormDialog
+- ✅ FxPopover
+- ✅ FxHoverCard
+- ✅ FxDrawer
+- ✅ FxBottomSheet
+- ✅ FxLightbox
 
 #### Data Display
 - ✅ FxAvatar

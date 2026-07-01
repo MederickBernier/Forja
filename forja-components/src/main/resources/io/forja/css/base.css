@@ -2338,3 +2338,37 @@
 .forja-gauge { -fx-background-color: transparent; }
 .forja-heatmap { -fx-background-color: transparent; }
 .forja-radar-chart { -fx-background-color: transparent; }
+
+/* ─── Phase M: media ─── */
+
+.forja-video-player {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 6px;
+}
+.forja-video-player-controls { -fx-padding: 4px 2px; }
+
+.forja-audio-player {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 6px 8px;
+}
+
+.forja-image-gallery { -fx-padding: 4px; }
+.forja-image-gallery-thumb {
+    -fx-cursor: hand;
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+.forja-image-gallery-thumb:hover { -fx-border-color: -forja-accent; }
+
+.forja-waveform { -fx-background-color: transparent; }

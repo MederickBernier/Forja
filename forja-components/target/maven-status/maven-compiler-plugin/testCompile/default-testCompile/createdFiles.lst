@@ -23,6 +23,7 @@ io/forja/components/FxRadioGroupTest.class
 io/forja/components/PhaseESmokeTest.class
 io/forja/components/FxAvatarGroupTest.class
 io/forja/components/PhaseLSmokeTest.class
+io/forja/components/PhaseMSmokeTest.class
 io/forja/components/FxContainerTest.class
 io/forja/components/FxSectionTest.class
 io/forja/components/FxConfirmDialogTest.class

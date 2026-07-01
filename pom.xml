@@ -49,6 +49,12 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-media</artifactId>
+                <version>${javafx.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
                 <groupId>org.kordamp.ikonli</groupId>
                 <artifactId>ikonli-javafx</artifactId>
                 <version>${ikonli.version}</version>

@@ -115,10 +115,11 @@ utilities/         fxIcon · fxThemeToggle · fxKeybindingHint · fxSearchHighli
 typography/        (P0) + fxBulletList
 ```
 
-Empty category folders held for future work: `media`.
+All category folders now populated.
 
 ```
 charts/            fxLineChart · fxBarChart · fxAreaChart · fxScatterPlot · fxPieChart · fxDonutChart · fxSparkline · fxGauge · fxHeatmap · fxRadarChart
+media/             fxVideoPlayer · fxAudioPlayer · fxImageGallery · fxWaveform
 ```
 
 ```
@@ -299,10 +300,10 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxRadarChart
 
 #### Media
-- ⏳ FxVideoPlayer · P3
-- ⏳ FxAudioPlayer · P3
-- ⏳ FxImageGallery · P3
-- ⏳ FxWaveform · P3
+- ✅ FxVideoPlayer
+- ✅ FxAudioPlayer
+- ✅ FxImageGallery
+- ✅ FxWaveform
 
 #### Validation
 - ✅ FxForm (declarative form binding)

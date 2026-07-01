@@ -41,6 +41,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxStatusDot/FxStatusDot.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxAutocomplete/FxAutocomplete.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxAvatar/FxAvatar.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/media/fxAudioPlayer/FxAudioPlayer.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/validation/fxValidator/FxValidator.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxCode/FxCode.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSpacer/FxSpacer.java
@@ -53,6 +54,8 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/navigation/fxAppBar/FxAppBar.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxDrawer/FxDrawer.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxNotificationCenter/FxNotificationCenter.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/media/fxVideoPlayer/FxVideoPlayer.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/media/fxImageGallery/FxImageGallery.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxFlex/FxFlex.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/util/ForjaStylesheets.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxStickyHeader/FxStickyHeader.java
@@ -95,6 +98,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxLink/LinkVariant.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/tokens/SpacingSize.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxIcon/FxIcon.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/media/fxWaveform/FxWaveform.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxBottomSheet/FxBottomSheet.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxRating/FxRating.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxDialog/FxDialog.java

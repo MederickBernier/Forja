@@ -16,6 +16,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/builder/FxNodeBuilder.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxKeybindingHint/FxKeybindingHint.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxAvatarGroup/FxAvatarGroup.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/validation/fxFormField/FxFormField.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxMaskedInput/FxMaskedInput.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxSearchHighlight/FxSearchHighlight.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxTreeTable/FxTreeTable.java
@@ -36,6 +37,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxStatusDot/FxStatusDot.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxAutocomplete/FxAutocomplete.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxAvatar/FxAvatar.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/validation/fxValidator/FxValidator.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxCode/FxCode.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSpacer/FxSpacer.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxIconButton/FxIconButton.java
@@ -45,6 +47,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxButtonGroup/FxButtonGroup.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/navigation/fxAppBar/FxAppBar.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxDrawer/FxDrawer.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxNotificationCenter/FxNotificationCenter.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxFlex/FxFlex.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/util/ForjaStylesheets.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxStickyHeader/FxStickyHeader.java
@@ -65,6 +68,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/navigation/fxBreadcrumbs/FxBreadcrumbs.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxResponsive/FxResponsive.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/navigation/fxMenuBar/FxMenuBar.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/validation/fxErrorSummary/FxErrorSummary.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxTagInput/FxTagInput.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxSeparator/FxSeparator.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxProgressBar/FxProgressBar.java
@@ -86,10 +90,12 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxRating/FxRating.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxDialog/FxDialog.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dateAndTime/fxDateRangePicker/FxDateRangePicker.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/validation/fxValidator/Rule.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dateAndTime/fxDateTimePicker/FxDateTimePicker.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/navigation/fxContextMenu/FxContextMenu.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/fileAndMediaInput/fxImagePicker/FxImagePicker.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxCheckGroup/FxCheckGroup.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxErrorState/FxErrorState.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/dataDisplay/fxTable/FxTable.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxColorPicker/FxColorPicker.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxGrid/FxGrid.java
@@ -107,6 +113,7 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/typography/fxText/FxTextSkin.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/inputs/fxTextField/FxTextField.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/fileAndMediaInput/fxFileChooser/FxFileChooser.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxEmptyState/FxEmptyState.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxProgressCircle/FxProgressCircle.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/utilities/fxScrollSpy/FxScrollSpy.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxPopover/FxPopover.java
@@ -122,7 +129,9 @@
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxMultiSelect/FxMultiSelect.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxAlert/FxAlert.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/buttonsAndActions/fxButton/FxButtonSkin.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/feedbackAndStatus/fxResultPage/FxResultPage.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxStack/FxStack.java
+/home/enigma/Forja/forja-components/src/main/java/io/forja/components/validation/fxForm/FxForm.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/overlays/fxConfirmDialog/FxConfirmDialog.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/selection/fxRadioGroup/FxRadioGroup.java
 /home/enigma/Forja/forja-components/src/main/java/io/forja/components/layout/fxAspectRatio/FxAspectRatio.java

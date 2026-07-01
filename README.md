@@ -107,7 +107,7 @@ inputs/            fxTextField · fxTextArea · fxPasswordField · fxNumberField
 dateAndTime/       fxDatePicker · fxTimePicker · fxDateTimePicker · fxDateRangePicker · fxCalendar · fxMiniCalendar
 selection/         fxCheckBox · fxCheckGroup · fxRadioGroup · fxSwitch · fxSlider · fxComboBox · fxMultiSelect · fxRangeSlider · fxRating · fxColorPicker
 buttonsAndActions/ fxButton · fxIconButton · fxToggleButton · fxButtonGroup · fxCopyButton
-feedbackAndStatus/ fxBadge · fxChip · fxStatusDot · fxProgressBar · fxProgressCircle · fxSkeleton · fxAlert · fxBanner · fxToast
+feedbackAndStatus/ fxBadge · fxChip · fxStatusDot · fxProgressBar · fxProgressCircle · fxSkeleton · fxAlert · fxBanner · fxToast · fxNotificationCenter · fxEmptyState · fxErrorState · fxResultPage
 overlays/          OverlayHost · fxTooltip · fxDialog · fxConfirmDialog · fxPopover · fxHoverCard · fxDrawer · fxBottomSheet · fxLightbox · fxFormDialog
 layout/            (P0) + fxGrid · fxFlex · fxAspectRatio · fxScrollArea · fxSplitView · fxResizablePane · fxCollapse · fxAccordion · fxStickyHeader · fxResponsive
 dataDisplay/       fxAvatar · fxAvatarGroup · fxList · fxTable · fxTree · fxTreeTable · fxImage · fxStat · fxDescriptionList
@@ -115,7 +115,11 @@ utilities/         fxIcon · fxThemeToggle · fxKeybindingHint · fxSearchHighli
 typography/        (P0) + fxBulletList
 ```
 
-Empty category folders held for future work: `charts`, `media`, `validation`.
+Empty category folders held for future work: `charts`, `media`.
+
+```
+validation/        fxValidator (+ Rule) · fxFormField · fxErrorSummary · fxForm
+```
 
 ```
 navigation/        fxTabs · fxVerticalTabs · fxAppBar · fxSidebar · fxSidebarNav · fxBreadcrumbs · fxStepper · fxPagination · fxMenuBar · fxContextMenu · fxDropdownMenu · fxAnchorNav
@@ -135,7 +139,7 @@ FxLink · FxText · FxBlockquote · FxKbd · FxCode · FxBadge · FxChip · FxSt
 **v0.2 — P1 (form basics + feedback)**
 FxCard · FxTextField · FxTextArea · FxPasswordField · FxNumberField · FxSearchField · FxCheckBox · FxCheckGroup · FxRadioGroup · FxSwitch · FxComboBox · FxSlider · FxProgressBar · FxProgressCircle · FxAlert · FxBanner · FxTooltip · FxDialog · FxConfirmDialog · FxToast · FxSkeleton · FxToggleButton · FxButtonGroup / FxSegmentedControl · FxCopyButton
 
-**v0.3 — P2 (composites: navigation, overlays, data display, layout, advanced inputs, validation, utilities)**
+**v0.3 — P2 (composites: navigation, overlays, data display, layout, advanced inputs, validation, utilities) ✅ shipped**
 Navigation, overlays built on the FxToast overlay-host, data tables/lists/trees, advanced layout primitives, validation infrastructure, theme/keybinding/scroll utilities. ~60 items — see categories below.
 
 **v1.0 candidates — P3 (heavy / specialized)**
@@ -247,10 +251,10 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxBanner
 - ✅ FxToast (rides on OverlayHost)
 - ✅ FxSkeleton
-- ⏳ FxNotificationCenter · P2
-- ⏳ FxEmptyState · P2
-- ⏳ FxErrorState · P2
-- ⏳ FxResultPage (success / failure summary) · P2
+- ✅ FxNotificationCenter
+- ✅ FxEmptyState
+- ✅ FxErrorState
+- ✅ FxResultPage (success / failure summary)
 
 #### Overlays
 - ✅ FxTooltip
@@ -299,10 +303,10 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ⏳ FxWaveform · P3
 
 #### Validation
-- ⏳ FxForm (declarative form binding) · P2
-- ⏳ FxFormField (label + control + error slot) · P2
-- ⏳ FxValidator (rule engine) · P2
-- ⏳ FxErrorSummary · P2
+- ✅ FxForm (declarative form binding)
+- ✅ FxFormField (label + control + error slot)
+- ✅ FxValidator (rule engine)
+- ✅ FxErrorSummary
 
 #### Utilities
 - ✅ FxIcon (icon glyph wrapper — bundles Feather pack)

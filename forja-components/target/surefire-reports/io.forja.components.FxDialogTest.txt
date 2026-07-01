@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: io.forja.components.FxDialogTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.200 s -- in io.forja.components.FxDialogTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.207 s -- in io.forja.components.FxDialogTest

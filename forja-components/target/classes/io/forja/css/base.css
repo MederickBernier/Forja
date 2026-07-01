@@ -1589,3 +1589,613 @@
 .forja-dialog-footer {
     -fx-padding: 4px 0 0 0;
 }
+
+/* ─── Phase I: CSS backlog for Phase B–H components ─── */
+
+/* Tabs */
+.forja-tabs {
+    -fx-tab-min-height: 32px;
+    -fx-tab-max-height: 32px;
+}
+.forja-tabs .tab-header-background { -fx-background-color: transparent; }
+.forja-tabs .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 4px 12px;
+    -fx-background-radius: 6px 6px 0 0;
+}
+.forja-tabs .tab:selected {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-accent transparent transparent transparent;
+    -fx-border-width: 2px 0 0 0;
+}
+.forja-tabs .tab .tab-label {
+    -fx-text-fill: -forja-text-muted;
+    -fx-font-size: 13px;
+}
+.forja-tabs .tab:selected .tab-label {
+    -fx-text-fill: -forja-accent;
+    -fx-font-weight: bold;
+}
+.forja-vertical-tabs .tab { -fx-background-radius: 6px 0 0 6px; }
+
+/* App bar */
+.forja-app-bar {
+    -fx-padding: 10px 16px;
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: transparent transparent -forja-border-default transparent;
+    -fx-border-width: 0 0 0.5px 0;
+}
+.forja-app-bar-title { -fx-font-weight: bold; }
+
+/* Sidebar + sidebar nav */
+.forja-sidebar {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: transparent -forja-border-default transparent transparent;
+    -fx-border-width: 0 0.5px 0 0;
+    -fx-padding: 12px 8px;
+}
+.forja-sidebar-nav {
+    -fx-spacing: 2px;
+}
+.forja-sidebar-nav-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: -forja-text-primary;
+    -fx-padding: 8px 12px;
+    -fx-background-radius: 6px;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+.forja-sidebar-nav-item:hover { -fx-background-color: -forja-input-bg-hover; }
+.forja-sidebar-nav-item:active {
+    -fx-background-color: -forja-accent-tint;
+    -fx-text-fill: -forja-accent;
+}
+
+/* Breadcrumbs */
+.forja-breadcrumbs { -fx-padding: 4px 0; }
+.forja-breadcrumbs-sep { -fx-text-fill: -forja-text-muted; }
+.forja-breadcrumbs-current { -fx-text-fill: -forja-text-primary; -fx-font-weight: bold; }
+
+/* Stepper */
+.forja-stepper { -fx-padding: 6px 0; }
+.forja-stepper-dot {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 1.5px;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-alignment: center;
+}
+.forja-stepper-dot .forja-label { -fx-text-fill: -forja-text-muted; -fx-font-size: 11px; }
+.forja-stepper-dot:done {
+    -fx-background-color: -forja-accent;
+    -fx-border-color: -forja-accent;
+}
+.forja-stepper-dot:done .forja-label { -fx-text-fill: white; }
+.forja-stepper-dot:active {
+    -fx-border-color: -forja-accent;
+}
+.forja-stepper-dot:active .forja-label { -fx-text-fill: -forja-accent; -fx-font-weight: bold; }
+.forja-stepper-line { -fx-background-color: -forja-border-default; }
+.forja-stepper-caption { -fx-padding: 2px 0 0 0; }
+
+/* Pagination */
+.forja-pagination { -fx-padding: 4px 0; }
+.forja-pagination-page {
+    -fx-background-color: transparent;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-min-width: 32px;
+    -fx-padding: 4px 8px;
+    -fx-text-fill: -forja-text-primary;
+    -fx-cursor: hand;
+}
+.forja-pagination-page:hover { -fx-background-color: -forja-input-bg-hover; }
+.forja-pagination-page:active {
+    -fx-background-color: -forja-accent;
+    -fx-text-fill: white;
+    -fx-border-color: -forja-accent;
+}
+.forja-pagination-ellipsis {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: -forja-text-muted;
+    -fx-cursor: default;
+}
+
+/* Menu bar / context menu / dropdown menu */
+.forja-menu-bar {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: transparent transparent -forja-border-default transparent;
+    -fx-border-width: 0 0 0.5px 0;
+}
+.forja-menu-bar .menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -forja-text-primary;
+    -fx-padding: 6px 10px;
+}
+.forja-menu-bar .menu-button:hover { -fx-background-color: -forja-input-bg-hover; }
+
+.forja-context-menu {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 4px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.14), 10, 0.04, 0, 3);
+}
+.forja-context-menu .menu-item { -fx-padding: 6px 12px; }
+.forja-context-menu .menu-item:hover { -fx-background-color: -forja-accent-tint; }
+.forja-context-menu .menu-item .label { -fx-text-fill: -forja-text-primary; }
+
+.forja-dropdown-menu {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-text-fill: -forja-text-primary;
+    -fx-padding: 6px 12px;
+    -fx-cursor: hand;
+}
+.forja-dropdown-menu:hover { -fx-background-color: -forja-input-bg-hover; }
+.forja-dropdown-menu .arrow { -fx-background-color: -forja-text-muted; }
+
+/* Anchor nav */
+.forja-anchor-nav { -fx-padding: 6px 0; }
+.forja-anchor-nav-link:active {
+    -fx-text-fill: -forja-accent;
+    -fx-font-weight: bold;
+}
+
+/* Notification center */
+.forja-notification-center {
+    -fx-spacing: 8px;
+}
+
+/* Empty state / error state */
+.forja-empty-state {
+    -fx-padding: 32px 16px;
+}
+.forja-empty-state-icon { -fx-icon-color: -forja-text-muted; }
+.forja-empty-state-heading { -fx-font-weight: bold; -fx-text-fill: -forja-text-primary; }
+.forja-empty-state-description { -fx-text-fill: -forja-text-muted; }
+
+.forja-error-state .forja-empty-state-icon { -fx-icon-color: -forja-danger; }
+.forja-error-state .forja-empty-state-heading { -fx-text-fill: -forja-danger; }
+
+/* Result page */
+.forja-result-page { -fx-padding: 48px 24px; }
+.forja-result-page-icon { -fx-icon-color: -forja-text-muted; }
+.forja-result-page:success .forja-result-page-icon { -fx-icon-color: -forja-success; }
+.forja-result-page:failure .forja-result-page-icon { -fx-icon-color: -forja-danger; }
+.forja-result-page:pending .forja-result-page-icon { -fx-icon-color: -forja-info; }
+.forja-result-page:warning .forja-result-page-icon { -fx-icon-color: -forja-warning; }
+.forja-result-page-title { -fx-font-weight: bold; }
+.forja-result-page-description { -fx-text-fill: -forja-text-muted; }
+
+/* Form + FormField + ErrorSummary */
+.forja-form { -fx-spacing: 12px; }
+.forja-form-field { -fx-spacing: 4px; }
+.forja-form-field-label { -fx-text-fill: -forja-text-muted; -fx-font-size: 12px; }
+.forja-form-field:required .forja-form-field-label { -fx-text-fill: -forja-text-primary; }
+.forja-form-field-error {
+    -fx-text-fill: -forja-danger;
+    -fx-font-size: 11px;
+    -fx-padding: 0 0 0 2px;
+}
+.forja-form-field:invalid .forja-form-field-label { -fx-text-fill: -forja-danger; }
+
+.forja-error-summary {
+    -fx-background-color: -forja-danger-tint;
+    -fx-border-color: -forja-danger;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 12px 14px;
+}
+.forja-error-summary-icon { -fx-icon-color: -forja-danger; -fx-icon-size: 16; }
+.forja-error-summary-title { -fx-font-weight: bold; -fx-text-fill: -forja-danger; }
+.forja-error-summary-item { -fx-text-fill: -forja-danger; }
+
+/* Popover + HoverCard */
+.forja-popover {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.14), 12, 0.05, 0, 4);
+}
+
+/* Drawer */
+.forja-drawer { -fx-background-color: transparent; }
+.forja-drawer-scrim { -fx-background-color: rgba(0,0,0,0.4); }
+.forja-drawer-panel {
+    -fx-background-color: -forja-bg-surface;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.24), 20, 0.06, 0, 6);
+}
+
+/* Bottom sheet */
+.forja-bottom-sheet { -fx-background-color: transparent; }
+.forja-bottom-sheet-scrim { -fx-background-color: rgba(0,0,0,0.4); }
+.forja-bottom-sheet-panel {
+    -fx-background-color: -forja-bg-surface;
+    -fx-background-radius: 12px 12px 0 0;
+    -fx-padding: 8px 16px 20px 16px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 16, 0.05, 0, -4);
+}
+.forja-bottom-sheet-grabber {
+    -fx-background-color: -forja-border-default;
+    -fx-background-radius: 999px;
+}
+
+/* Lightbox */
+.forja-lightbox { -fx-background-color: transparent; }
+.forja-lightbox-scrim { -fx-background-color: rgba(0,0,0,0.85); }
+.forja-lightbox-top-bar { -fx-padding: 12px 16px; }
+.forja-lightbox-nav { -fx-padding: 16px; }
+
+/* Form dialog reuses forja-dialog styling */
+.forja-form-dialog .forja-dialog-panel { -fx-min-width: 420px; }
+
+/* Tag input */
+.forja-tag-input { -fx-spacing: 4px; }
+.forja-tag-input-row {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 4px 8px;
+}
+.forja-tag-input:focused .forja-tag-input-row {
+    -fx-border-color: -forja-accent-focus;
+    -fx-border-width: 1px;
+    -fx-padding: 4px 7.5px;
+}
+.forja-tag-input:error .forja-tag-input-row {
+    -fx-border-color: -forja-danger;
+    -fx-border-width: 1px;
+}
+.forja-tag-input-editor {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 2px 0;
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 13px;
+    -fx-prompt-text-fill: -forja-text-muted;
+}
+.forja-tag-input-helper { -fx-padding: 0 0 0 10px; -fx-text-fill: -forja-text-muted; }
+
+/* OTP input */
+.forja-otp-input { -fx-spacing: 6px; }
+.forja-otp-input-box {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 18px;
+    -fx-alignment: center;
+}
+.forja-otp-input-box:focused {
+    -fx-border-color: -forja-accent-focus;
+    -fx-border-width: 1.5px;
+}
+
+/* Masked input just wraps text field — no extra styling needed */
+.forja-masked-input { -fx-spacing: 0; }
+
+/* Multi-select */
+.forja-multi-select {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 6px 10px;
+    -fx-cursor: hand;
+    -fx-min-height: 36px;
+    -fx-max-height: 36px;
+}
+.forja-multi-select:hover { -fx-background-color: -forja-input-bg-hover; }
+.forja-multi-select-list {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 6px;
+}
+.forja-multi-select-scroll {
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.14), 10, 0.04, 0, 3);
+}
+
+/* Range slider */
+.forja-range-slider { -fx-spacing: 4px; }
+.forja-range-slider-value { -fx-text-fill: -forja-text-muted; }
+.forja-range-slider-low .track,
+.forja-range-slider-high .track {
+    -fx-background-color: -forja-border-default;
+    -fx-background-radius: 999px;
+    -fx-pref-height: 4px;
+}
+.forja-range-slider-low .thumb,
+.forja-range-slider-high .thumb {
+    -fx-background-color: -forja-accent;
+    -fx-background-radius: 999px;
+    -fx-min-width: 14px;
+    -fx-min-height: 14px;
+    -fx-max-width: 14px;
+    -fx-max-height: 14px;
+}
+
+/* Rating */
+.forja-rating { -fx-padding: 2px 0; }
+.forja-rating-star {
+    -fx-icon-color: -forja-border-default;
+    -fx-cursor: hand;
+    -fx-icon-size: 18;
+}
+.forja-rating-star:filled { -fx-icon-color: -forja-warning; }
+.forja-rating-star:preview { -fx-icon-color: -forja-warning; -fx-opacity: 0.6; }
+
+/* Color picker */
+.forja-color-picker {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+
+/* Date / time / range pickers already covered above, add composite classes */
+.forja-date-time-picker { -fx-spacing: 4px; }
+.forja-date-time-picker-row { -fx-spacing: 8px; }
+.forja-date-time-picker-helper { -fx-padding: 0 0 0 10px; -fx-text-fill: -forja-text-muted; }
+
+.forja-date-range-picker { -fx-spacing: 4px; }
+.forja-date-range-picker-row { -fx-spacing: 8px; }
+.forja-date-range-picker-helper { -fx-padding: 0 0 0 10px; -fx-text-fill: -forja-text-muted; }
+
+/* Calendar */
+.forja-calendar {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 12px;
+}
+.forja-calendar-header { -fx-padding: 0 0 6px 0; }
+.forja-calendar-grid { -fx-padding: 4px 0 0 0; }
+.forja-calendar-weekday { -fx-text-fill: -forja-text-muted; -fx-font-size: 11px; }
+.forja-calendar-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -forja-text-primary;
+    -fx-border-color: transparent;
+    -fx-background-radius: 999px;
+    -fx-min-width: 32px;
+    -fx-min-height: 32px;
+    -fx-max-width: 32px;
+    -fx-max-height: 32px;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+.forja-calendar-cell:hover { -fx-background-color: -forja-input-bg-hover; }
+.forja-calendar-cell:today {
+    -fx-border-color: -forja-accent;
+    -fx-border-width: 1px;
+    -fx-border-radius: 999px;
+}
+.forja-calendar-cell:selected {
+    -fx-background-color: -forja-accent;
+    -fx-text-fill: white;
+}
+.forja-calendar-cell:out-month { -fx-text-fill: -forja-text-muted; -fx-opacity: 0.5; }
+
+.forja-mini-calendar .forja-calendar-cell {
+    -fx-min-width: 24px;
+    -fx-min-height: 24px;
+    -fx-max-width: 24px;
+    -fx-max-height: 24px;
+    -fx-font-size: 11px;
+}
+
+/* File chooser + dropzone + image picker */
+.forja-file-chooser { -fx-padding: 4px 0; }
+.forja-file-chooser .forja-label { -fx-text-fill: -forja-text-muted; }
+
+.forja-file-dropzone {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 1.5px;
+    -fx-border-style: dashed;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 32px 24px;
+}
+.forja-file-dropzone:dragging {
+    -fx-background-color: -forja-accent-tint;
+    -fx-border-color: -forja-accent;
+}
+.forja-file-dropzone-icon { -fx-icon-color: -forja-text-muted; -fx-icon-size: 32; }
+.forja-file-dropzone-prompt { -fx-text-fill: -forja-text-muted; }
+
+.forja-image-picker { -fx-spacing: 8px; }
+.forja-image-picker-preview {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+/* Grid / Flex / AspectRatio — mostly structural, minimal styling */
+.forja-grid { -fx-hgap: 0; -fx-vgap: 0; }
+.forja-flex { -fx-hgap: 0; -fx-vgap: 0; }
+.forja-aspect-ratio { -fx-background-color: transparent; }
+
+/* ScrollArea */
+.forja-scroll-area {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.forja-scroll-area > .viewport { -fx-background-color: transparent; }
+
+/* SplitView / ResizablePane */
+.forja-split-view { -fx-background-color: transparent; }
+.forja-split-view .split-pane-divider {
+    -fx-background-color: -forja-border-default;
+    -fx-padding: 0 1px;
+}
+
+.forja-resizable-pane { -fx-background-color: transparent; }
+.forja-resizable-pane-handle {
+    -fx-background-color: -forja-border-default;
+}
+.forja-resizable-pane-handle:hover { -fx-background-color: -forja-accent; }
+
+/* Collapse / Accordion */
+.forja-collapse { -fx-spacing: 0; }
+.forja-collapse-header {
+    -fx-background-color: transparent;
+    -fx-padding: 8px 12px;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0 0 0.5px 0;
+    -fx-cursor: hand;
+}
+.forja-collapse-header:hover { -fx-background-color: -forja-input-bg-hover; }
+.forja-collapse-title { -fx-text-fill: -forja-text-primary; -fx-font-weight: bold; }
+.forja-collapse-chevron { -fx-icon-color: -forja-text-muted; }
+.forja-collapse:expanded .forja-collapse-chevron { -fx-icon-color: -forja-accent; }
+.forja-collapse-body { -fx-padding: 10px 12px; }
+
+.forja-accordion { -fx-spacing: 0; }
+
+/* Sticky header */
+.forja-sticky-header { -fx-background-color: transparent; }
+
+/* Responsive */
+.forja-responsive { -fx-background-color: transparent; }
+
+/* List */
+.forja-list {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+.forja-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -forja-text-primary;
+    -fx-padding: 6px 12px;
+    -fx-font-size: 13px;
+}
+.forja-list .list-cell:hover { -fx-background-color: -forja-input-bg-hover; }
+.forja-list .list-cell:selected { -fx-background-color: -forja-accent-tint; -fx-text-fill: -forja-accent; }
+
+/* Table */
+.forja-table {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+.forja-table .column-header-background { -fx-background-color: -forja-input-bg; }
+.forja-table .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: -forja-border-default transparent -forja-border-default transparent;
+    -fx-border-width: 0 0 0.5px 0;
+    -fx-padding: 8px 12px;
+}
+.forja-table .column-header .label {
+    -fx-text-fill: -forja-text-muted;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+.forja-table .table-cell {
+    -fx-text-fill: -forja-text-primary;
+    -fx-padding: 8px 12px;
+    -fx-border-color: -forja-border-default transparent transparent transparent;
+    -fx-border-width: 0.5px 0 0 0;
+    -fx-font-size: 13px;
+}
+.forja-table .table-row-cell { -fx-background-color: transparent; }
+.forja-table .table-row-cell:hover { -fx-background-color: -forja-input-bg-hover; }
+.forja-table .table-row-cell:selected { -fx-background-color: -forja-accent-tint; }
+.forja-table .table-row-cell:selected .table-cell { -fx-text-fill: -forja-accent; }
+
+/* Tree / TreeTable */
+.forja-tree,
+.forja-tree-table {
+    -fx-background-color: -forja-bg-surface;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+.forja-tree .tree-cell,
+.forja-tree-table .tree-table-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -forja-text-primary;
+    -fx-padding: 4px 6px;
+    -fx-font-size: 13px;
+}
+.forja-tree .tree-cell:selected,
+.forja-tree-table .tree-table-cell:selected {
+    -fx-background-color: -forja-accent-tint;
+    -fx-text-fill: -forja-accent;
+}
+.forja-tree-table .column-header-background { -fx-background-color: -forja-input-bg; }
+
+/* Image */
+.forja-image { -fx-background-color: transparent; }
+.forja-image-fallback { -fx-icon-color: -forja-text-muted; -fx-icon-size: 32; }
+
+/* Stat (KPI card) */
+.forja-stat { -fx-padding: 4px 0; }
+.forja-stat-label { -fx-text-fill: -forja-text-muted; -fx-font-size: 12px; }
+.forja-stat-value { -fx-text-fill: -forja-text-primary; }
+.forja-stat-trend { -fx-padding: 2px 0 0 0; }
+.forja-stat:up .forja-stat-trend-icon { -fx-icon-color: -forja-success; }
+.forja-stat:up .forja-stat-trend-text { -fx-text-fill: -forja-success; }
+.forja-stat:down .forja-stat-trend-icon { -fx-icon-color: -forja-danger; }
+.forja-stat:down .forja-stat-trend-text { -fx-text-fill: -forja-danger; }
+.forja-stat:flat .forja-stat-trend-icon { -fx-icon-color: -forja-text-muted; }
+.forja-stat:flat .forja-stat-trend-text { -fx-text-fill: -forja-text-muted; }
+
+/* Description list */
+.forja-description-list { -fx-hgap: 16px; -fx-vgap: 6px; }
+.forja-description-list-term { -fx-text-fill: -forja-text-muted; -fx-font-size: 12px; }
+.forja-description-list-description { -fx-text-fill: -forja-text-primary; }
+
+/* Bullet list */
+.forja-bullet-list { -fx-spacing: 4px; }
+.forja-bullet-list-marker { -fx-text-fill: -forja-text-muted; -fx-min-width: 20px; }
+.forja-bullet-list-text { -fx-text-fill: -forja-text-primary; }
+
+/* Theme toggle */
+.forja-theme-toggle {
+    -fx-background-color: transparent;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-min-width: 32px;
+    -fx-min-height: 32px;
+    -fx-max-width: 32px;
+    -fx-max-height: 32px;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+}
+.forja-theme-toggle:hover { -fx-background-color: -forja-input-bg-hover; }

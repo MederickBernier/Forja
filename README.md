@@ -109,6 +109,10 @@ selection/         fxCheckBox · fxCheckGroup · fxRadioGroup · fxSwitch · fxS
 buttonsAndActions/ fxButton · fxIconButton · fxToggleButton · fxButtonGroup · fxCopyButton
 feedbackAndStatus/ fxBadge · fxChip · fxStatusDot · fxProgressBar · fxProgressCircle · fxSkeleton · fxAlert · fxBanner · fxToast
 overlays/          OverlayHost · fxTooltip · fxDialog · fxConfirmDialog
+layout/            (P0) + fxGrid · fxFlex · fxAspectRatio · fxScrollArea · fxSplitView · fxResizablePane · fxCollapse · fxAccordion · fxStickyHeader · fxResponsive
+dataDisplay/       fxAvatar · fxAvatarGroup · fxList · fxTable · fxTree · fxTreeTable · fxImage · fxStat · fxDescriptionList
+utilities/         fxIcon · fxThemeToggle · fxKeybindingHint · fxSearchHighlight · fxScrollSpy · fxPortal · fxFocusTrap
+typography/        (P0) + fxBulletList
 ```
 
 Empty category folders held for future work: `charts`, `fileAndMediaInput`, `media`, `navigation`, `validation`.
@@ -138,7 +142,7 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxBlockquote
 - ✅ FxKbd
 - ✅ FxCode
-- ⏳ FxBulletList (ordered / unordered) · P2
+- ✅ FxBulletList (ordered / unordered)
 - ⏳ FxHeading · P3 — overlaps FxLabel(HEADING); may be dropped
 
 #### Buttons & Actions
@@ -199,15 +203,15 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 - ✅ FxContainer (max-width centered)
 - ✅ FxSection
 - ✅ FxCard
-- ⏳ FxGrid · P2
-- ⏳ FxFlex · P2
-- ⏳ FxAspectRatio · P2
-- ⏳ FxScrollArea · P2
-- ⏳ FxSplitView (resizable split) · P2
-- ⏳ FxResizablePane · P2
-- ⏳ FxCollapse / FxAccordion · P2
-- ⏳ FxStickyHeader · P2
-- ⏳ FxResponsive (breakpoint helpers) · P2
+- ✅ FxGrid
+- ✅ FxFlex
+- ✅ FxAspectRatio
+- ✅ FxScrollArea
+- ✅ FxSplitView (resizable split)
+- ✅ FxResizablePane
+- ✅ FxCollapse / FxAccordion
+- ✅ FxStickyHeader
+- ✅ FxResponsive (breakpoint helpers)
 - ❌ FxDivider — superseded by `FxSeparator`; will be removed from the roster
 
 #### Navigation
@@ -254,13 +258,13 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 #### Data Display
 - ✅ FxAvatar
 - ✅ FxAvatarGroup
-- ⏳ FxList · P2
-- ⏳ FxTable · P2
-- ⏳ FxTree · P2
-- ⏳ FxTreeTable · P2
-- ⏳ FxImage (with fallback / loading) · P2
-- ⏳ FxStat (KPI card) · P2
-- ⏳ FxDescriptionList · P2
+- ✅ FxList
+- ✅ FxTable
+- ✅ FxTree
+- ✅ FxTreeTable
+- ✅ FxImage (with fallback / loading)
+- ✅ FxStat (KPI card)
+- ✅ FxDescriptionList
 - ⏳ FxDataGrid (sortable, filterable, paginated) · P3
 - ⏳ FxVirtualList · P3
 - ⏳ FxTimeline · P3
@@ -294,12 +298,12 @@ Rich text & code editors (need RichTextFX), virtualized lists, charts (need char
 
 #### Utilities
 - ✅ FxIcon (icon glyph wrapper — bundles Feather pack)
-- ⏳ FxThemeToggle · P2
-- ⏳ FxKeybindingHint · P2
-- ⏳ FxSearchHighlight · P2
-- ⏳ FxScrollSpy · P2
-- ⏳ FxPortal (render-elsewhere helper) · P2
-- ⏳ FxFocusTrap · P2
+- ✅ FxThemeToggle
+- ✅ FxKeybindingHint
+- ✅ FxSearchHighlight
+- ✅ FxScrollSpy
+- ✅ FxPortal (render-elsewhere helper)
+- ✅ FxFocusTrap
 
 ## License
 

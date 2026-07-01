@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: io.forja.components.FxLabelTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.690 s -- in io.forja.components.FxLabelTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.687 s -- in io.forja.components.FxLabelTest

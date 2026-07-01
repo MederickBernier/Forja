@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxTextAreaTest" time="4.093" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="io.forja.components.FxTimePickerTest" time="5.739" tests="16" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="javafx.runtime.version" value="12.0.1+2"/>
@@ -61,15 +61,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="enablingAutoResizeForcesWrapText" classname="io.forja.components.FxTextAreaTest" time="0.368"/>
-  <testcase name="allVariantsHaveCorrespondingPseudoClass" classname="io.forja.components.FxTextAreaTest" time="0.413"/>
-  <testcase name="clearingErrorRevertsToHelperWithoutChangingVariant" classname="io.forja.components.FxTextAreaTest" time="0.361"/>
-  <testcase name="helperTextTogglesHelperLabelVisibility" classname="io.forja.components.FxTextAreaTest" time="0.414"/>
-  <testcase name="autoResizeDisabledKeepsPrefRowCount" classname="io.forja.components.FxTextAreaTest" time="0.363"/>
-  <testcase name="autoResizeUpdatesPrefRowCountToLineCount" classname="io.forja.components.FxTextAreaTest" time="0.413"/>
-  <testcase name="textAndPromptTextDelegateToInnerArea" classname="io.forja.components.FxTextAreaTest" time="0.413"/>
-  <testcase name="errorTakesPrecedenceOverHelperText" classname="io.forja.components.FxTextAreaTest" time="0.309"/>
-  <testcase name="errorTextAutoFlipsVariant" classname="io.forja.components.FxTextAreaTest" time="0.361"/>
-  <testcase name="builderDefaults" classname="io.forja.components.FxTextAreaTest" time="0.309"/>
-  <testcase name="variantPseudoClassUpdates" classname="io.forja.components.FxTextAreaTest" time="0.361"/>
+  <testcase name="setValueClampsToBounds" classname="io.forja.components.FxTimePickerTest" time="0.417"/>
+  <testcase name="valueSyncsSpinners24Hour" classname="io.forja.components.FxTimePickerTest" time="0.31"/>
+  <testcase name="allVariantsHaveCorrespondingPseudoClass" classname="io.forja.components.FxTimePickerTest" time="0.412"/>
+  <testcase name="leadingIconLiteralSugarCreatesFxIcon" classname="io.forja.components.FxTimePickerTest" time="0.309"/>
+  <testcase name="valueSyncsSpinners12HourAmPm" classname="io.forja.components.FxTimePickerTest" time="0.36"/>
+  <testcase name="amPmRowAppearsInTwelveHourMode" classname="io.forja.components.FxTimePickerTest" time="0.31"/>
+  <testcase name="stepMinutesUpdatesSpinnerStep" classname="io.forja.components.FxTimePickerTest" time="0.361"/>
+  <testcase name="hidingSecondsForcesSecondsToZero" classname="io.forja.components.FxTimePickerTest" time="0.362"/>
+  <testcase name="helperTextTogglesVisibility" classname="io.forja.components.FxTimePickerTest" time="0.412"/>
+  <testcase name="showSecondsAddsSpinnerAndRespectsValue" classname="io.forja.components.FxTimePickerTest" time="0.31"/>
+  <testcase name="spinnerEditsUpdateValue" classname="io.forja.components.FxTimePickerTest" time="0.413"/>
+  <testcase name="toggling24HourReconfiguresHourRange" classname="io.forja.components.FxTimePickerTest" time="0.361"/>
+  <testcase name="errorTextAutoFlipsVariant" classname="io.forja.components.FxTimePickerTest" time="0.361"/>
+  <testcase name="leadingIconInserted" classname="io.forja.components.FxTimePickerTest" time="0.361"/>
+  <testcase name="builderDefaults" classname="io.forja.components.FxTimePickerTest" time="0.31"/>
+  <testcase name="variantPseudoClassUpdates" classname="io.forja.components.FxTimePickerTest" time="0.363"/>
 </testsuite>

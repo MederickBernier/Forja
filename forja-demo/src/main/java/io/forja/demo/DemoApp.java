@@ -9,6 +9,7 @@ import io.forja.components.dataDisplay.fxAvatarGroup.FxAvatarGroup;
 import io.forja.components.feedbackAndStatus.fxBadge.FxBadge;
 import io.forja.components.typography.fxBlockquote.FxBlockquote;
 import io.forja.components.dateAndTime.fxDatePicker.FxDatePicker;
+import io.forja.components.dateAndTime.fxTimePicker.FxTimePicker;
 import io.forja.components.inputs.fxNumberField.FxNumberField;
 import io.forja.components.inputs.fxPasswordField.FxPasswordField;
 import io.forja.components.inputs.fxTextArea.FxTextArea;
@@ -49,6 +50,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class DemoApp extends Application {
 
@@ -803,6 +805,45 @@ public class DemoApp extends Application {
 
         VBox datePickers = new VBox(12, dpPlain, dpToday, dpBounded, dpError);
 
+        FxLabel timePickersSectionLabel = FxLabel.builder()
+                .text("Time Pickers")
+                .variant(LabelVariant.SMALL)
+                .muted(true)
+                .build();
+
+        FxTimePicker tp24 = FxTimePicker.builder()
+                .value(LocalTime.of(9, 30))
+                .leadingIcon("fth-clock")
+                .helperText("24-hour mode.")
+                .build();
+
+        FxTimePicker tp12 = FxTimePicker.builder()
+                .value(LocalTime.of(15, 45))
+                .use24Hour(false)
+                .leadingIcon("fth-clock")
+                .helperText("12-hour with AM/PM.")
+                .build();
+
+        FxTimePicker tpSeconds = FxTimePicker.builder()
+                .value(LocalTime.of(23, 59, 59))
+                .showSeconds(true)
+                .stepMinutes(5)
+                .leadingIcon("fth-clock")
+                .helperText("Seconds + 5-min minute step.")
+                .build();
+
+        FxTimePicker tpError = FxTimePicker.builder()
+                .value(LocalTime.of(3, 0))
+                .errorText("Outside allowed window.")
+                .build();
+
+        tp24.setMaxWidth(320);
+        tp12.setMaxWidth(320);
+        tpSeconds.setMaxWidth(320);
+        tpError.setMaxWidth(320);
+
+        VBox timePickers = new VBox(12, tp24, tp12, tpSeconds, tpError);
+
         root.getChildren().addAll(
                 heading,
                 buttonSectionLabel, buttons, disabledButtons,
@@ -830,10 +871,11 @@ public class DemoApp extends Application {
                 textAreasSectionLabel, textAreas,
                 passwordFieldsSectionLabel, passwordFields,
                 numberFieldsSectionLabel, numberFields,
-                datePickersSectionLabel, datePickers
+                datePickersSectionLabel, datePickers,
+                timePickersSectionLabel, timePickers
         );
 
-        Scene scene = new Scene(root, 900, 4620);
+        Scene scene = new Scene(root, 900, 4920);
         Forja.install(scene);
 
         stage.setTitle("Forja Demo");

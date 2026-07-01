@@ -1,4 +1,5 @@
 io/forja/components/dataDisplay/fxAvatar/AvatarSize.class
+io/forja/components/dateAndTime/fxTimePicker/FxTimePicker.class
 io/forja/components/feedbackAndStatus/fxBadge/FxBadge$Builder.class
 io/forja/components/dataDisplay/fxAvatar/FxAvatar.class
 io/forja/components/feedbackAndStatus/fxChip/FxChipSkin.class
@@ -55,6 +56,7 @@ io/forja/components/typography/fxCode/FxCode$Builder.class
 io/forja/FxTheme.class
 io/forja/components/buttonsAndActions/fxIconButton/FxIconButton.class
 io/forja/components/dataDisplay/fxAvatar/FxAvatar$1.class
+io/forja/components/dateAndTime/fxTimePicker/FxTimePicker$1.class
 io/forja/components/dataDisplay/fxAvatar/FxAvatar$Builder.class
 io/forja/components/layout/fxSeparator/SeparatorVariant.class
 io/forja/components/typography/fxLabel/FxLabelSkin$1.class
@@ -93,4 +95,5 @@ io/forja/components/typography/fxLabel/FxLabelSkin.class
 io/forja/components/feedbackAndStatus/fxStatusDot/FxStatusDot.class
 io/forja/components/layout/fxSection/FxSection.class
 io/forja/components/typography/fxBlockquote/FxBlockquote.class
+io/forja/components/dateAndTime/fxTimePicker/FxTimePicker$Builder.class
 io/forja/components/layout/fxContainer/FxContainer.class

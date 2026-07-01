@@ -978,3 +978,120 @@
 .forja-date-picker:disabled .forja-date-picker-row {
     -fx-opacity: 0.5;
 }
+
+.forja-time-picker {
+    -fx-spacing: 4px;
+}
+
+.forja-time-picker-row {
+    -fx-background-color: -forja-input-bg;
+    -fx-border-color: -forja-border-default;
+    -fx-border-width: 0.5px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 0 10px 0 10px;
+    -fx-min-height: 36px;
+    -fx-max-height: 36px;
+}
+
+.forja-time-picker-row:hover {
+    -fx-background-color: -forja-input-bg-hover;
+}
+
+.forja-time-picker:focused .forja-time-picker-row {
+    -fx-border-color: -forja-accent-focus;
+    -fx-border-width: 1px;
+    -fx-padding: 0 9.5px 0 9.5px;
+}
+
+.forja-time-picker:error .forja-time-picker-row {
+    -fx-border-color: -forja-danger;
+    -fx-border-width: 1px;
+    -fx-padding: 0 9.5px 0 9.5px;
+}
+
+.forja-time-picker:success .forja-time-picker-row {
+    -fx-border-color: -forja-success;
+    -fx-border-width: 1px;
+    -fx-padding: 0 9.5px 0 9.5px;
+}
+
+.forja-time-picker-spinner {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-pref-width: 56px;
+}
+
+.forja-time-picker-spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: -forja-text-primary;
+    -fx-font-size: 13px;
+    -fx-alignment: center-right;
+    -fx-padding: 0 2px;
+}
+
+.forja-time-picker-spinner .increment-arrow-button,
+.forja-time-picker-spinner .decrement-arrow-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-padding: 1px 4px;
+}
+
+.forja-time-picker-spinner .increment-arrow-button .increment-arrow,
+.forja-time-picker-spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: -forja-text-muted;
+}
+
+.forja-time-picker:focused .forja-time-picker-spinner .increment-arrow-button .increment-arrow,
+.forja-time-picker:focused .forja-time-picker-spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: -forja-accent;
+}
+
+.forja-time-picker-sep {
+    -fx-text-fill: -forja-text-muted;
+    -fx-font-size: 13px;
+    -fx-padding: 0 2px;
+}
+
+.forja-time-picker-ampm {
+    -fx-text-fill: -forja-text-muted;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 2px 6px;
+    -fx-background-radius: 4px;
+    -fx-background-color: -forja-input-bg-hover;
+}
+
+.forja-time-picker-ampm:hover {
+    -fx-text-fill: -forja-text-primary;
+}
+
+.forja-time-picker-helper {
+    -fx-padding: 0 0 0 10px;
+}
+
+.forja-time-picker-error {
+    -fx-text-fill: -forja-danger;
+}
+
+.forja-time-picker-row .forja-icon {
+    -fx-icon-color: -forja-text-muted;
+}
+
+.forja-time-picker:focused .forja-time-picker-row .forja-icon {
+    -fx-icon-color: -forja-accent;
+}
+
+.forja-time-picker:error .forja-time-picker-row .forja-icon {
+    -fx-icon-color: -forja-danger;
+}
+
+.forja-time-picker:success .forja-time-picker-row .forja-icon {
+    -fx-icon-color: -forja-success;
+}
+
+.forja-time-picker:disabled .forja-time-picker-row {
+    -fx-opacity: 0.5;
+}

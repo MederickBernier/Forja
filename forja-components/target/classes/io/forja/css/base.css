@@ -2297,3 +2297,44 @@
 .forja-markdown-editor-preview {
     -fx-background-color: -forja-bg-surface;
 }
+
+/* ─── Phase L: charts ─── */
+
+.forja-line-chart,
+.forja-bar-chart,
+.forja-area-chart,
+.forja-scatter-plot,
+.forja-pie-chart {
+    -fx-background-color: -forja-bg-surface;
+    -fx-padding: 8px;
+}
+.forja-line-chart .chart-plot-background,
+.forja-bar-chart .chart-plot-background,
+.forja-area-chart .chart-plot-background,
+.forja-scatter-plot .chart-plot-background {
+    -fx-background-color: transparent;
+}
+.forja-line-chart .axis-label,
+.forja-bar-chart .axis-label,
+.forja-area-chart .axis-label,
+.forja-scatter-plot .axis-label {
+    -fx-text-fill: -forja-text-muted;
+    -fx-font-size: 11px;
+}
+.forja-line-chart .chart-legend,
+.forja-bar-chart .chart-legend,
+.forja-area-chart .chart-legend,
+.forja-scatter-plot .chart-legend,
+.forja-pie-chart .chart-legend {
+    -fx-background-color: transparent;
+    -fx-text-fill: -forja-text-muted;
+}
+
+.forja-donut-chart {
+    -fx-clip-content: false;
+}
+
+.forja-sparkline { -fx-background-color: transparent; }
+.forja-gauge { -fx-background-color: transparent; }
+.forja-heatmap { -fx-background-color: transparent; }
+.forja-radar-chart { -fx-background-color: transparent; }

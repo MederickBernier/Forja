@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: io.forja.components.PhaseLSmokeTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.147 s -- in io.forja.components.PhaseLSmokeTest
